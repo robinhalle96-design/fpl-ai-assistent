@@ -1,6 +1,6 @@
 # 🏆 FPL AI Assistant
 
-Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till **Omgång 15**.
+Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till **Omgång 38**.
 
 ---
 

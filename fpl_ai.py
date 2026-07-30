@@ -71,7 +71,7 @@ df = pd.DataFrame(player_projections)
 df = df.sort_values(by='Totalt xP (GW15)', ascending=False)
 df.to_csv('fpl_predictions.csv', index=False)
 
-# 4. Bygg optimalt 15-mannalag under 100m
+# 4. Bygg optimalt 15-mannalag under 100m utan dubbletter
 gks = df[df['pos_type'] == 1].to_dict('records')
 defs = df[df['pos_type'] == 2].to_dict('records')
 mids = df[df['pos_type'] == 3].to_dict('records')
@@ -82,53 +82,48 @@ def build_squad():
     team_counts = {}
 
     def can_add(p):
-        return team_counts.get(p['team_id'], 0) < 3
+        is_not_in_squad = p['id'] not in [x['id'] for x in squad]
+        has_club_space = team_counts.get(p['team_id'], 0) < 3
+        return is_not_in_squad and has_club_space
 
     def add_player(p):
         squad.append(p)
         team_counts[p['team_id']] = team_counts.get(p['team_id'], 0) + 1
 
-    # Välj grundstomme
-    add_player(gks[0])
-    for p in gks[1:]:
-        if can_add(p): add_player(p); break
+    # Välj målvakter
+    for p in gks:
+        if len([x for x in squad if x['pos_type'] == 1]) < 2 and can_add(p):
+            add_player(p)
 
+    # Välj försvarare
     for p in defs:
         if len([x for x in squad if x['pos_type'] == 2]) < 5 and can_add(p):
             add_player(p)
 
+    # Välj mittfältare
     for p in mids:
         if len([x for x in squad if x['pos_type'] == 3]) < 5 and can_add(p):
             add_player(p)
 
+    # Välj forwards
     for p in fwds:
         if len([x for x in squad if x['pos_type'] == 4]) < 3 and can_add(p):
             add_player(p)
 
-    # Budgetjustering: Om över 100m, ersätt billigaste/svagaste bänkspelarna med budgetalternativ
-    current_cost = sum(p['Pris'] for p in squad)
-    if current_cost > 100.0:
-        # Hitta billiga spelare för varje position
-        cheapest_gk = min(gks, key=lambda x: x['Pris'])
-        cheapest_def = min(defs, key=lambda x: x['Pris'])
-        cheapest_mid = min(mids, key=lambda x: x['Pris'])
-
-        # Byt ut reservmålvakten till absolut billigaste
-        gks_in_squad = [p for p in squad if p['pos_type'] == 1]
-        if len(gks_in_squad) > 1:
-            worst_gk = min(gks_in_squad, key=lambda x: x['Totalt xP (GW15)'])
-            squad.remove(worst_gk)
-            squad.append(cheapest_gk)
-
-        # Nedgradera lägst rangerade försvarare/mittfältare tills budget hålls
-        squad.sort(key=lambda x: (x['pos_type'] == 1, x['Totalt xP (GW15)']))
+    # Om priset överstiger 100m, ersätt lägst rangerade med nästa unika billigare spelare
+    while sum(p['Pris'] for p in squad) > 100.0:
+        squad.sort(key=lambda x: x['Totalt xP (GW15)'])
         for i in range(len(squad)):
-            if sum(p['Pris'] for p in squad) <= 100.0:
+            p_to_replace = squad[i]
+            pos = p_to_replace['pos_type']
+            candidates = [p for p in df[df['pos_type'] == pos].to_dict('records') if can_add(p) and p['Pris'] < p_to_replace['Pris']]
+            
+            if candidates:
+                # Minska räknaren för det gamla laget
+                team_counts[p_to_replace['team_id']] -= 1
+                squad[i] = candidates[0]
+                team_counts[candidates[0]['team_id']] = team_counts.get(candidates[0]['team_id'], 0) + 1
                 break
-            if squad[i]['pos_type'] == 2 and squad[i]['id'] != cheapest_def['id']:
-                squad[i] = cheapest_def
-            elif squad[i]['pos_type'] == 3 and squad[i]['id'] != cheapest_mid['id']:
-                squad[i] = cheapest_mid
 
     return pd.DataFrame(squad)
 
@@ -177,5 +172,5 @@ readme_path = os.path.join(script_dir, 'README.md')
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content)
 
-print("Klar! README.md har uppdaterats med budgetanpassat lag.")
+print("Klar! README.md har uppdaterats utan dubbletter.")
 

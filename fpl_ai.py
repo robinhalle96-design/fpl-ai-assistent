@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
-import os 
+import os
+
 # 1. Hämta data från FPL API
 BASE_URL = "https://fantasy.premierleague.com/api/"
 bootstrap = requests.get(f"{BASE_URL}bootstrap-static/").json()
@@ -21,7 +22,7 @@ for event in bootstrap['events']:
 
 target_gw = 15
 
-# 2. Beräkna FDR (Matchsvårighet)
+# 2. Beräkna FDR
 team_fdr = {t_id: [] for t_id in teams.keys()}
 for f in fixtures:
     gw = f.get('event')
@@ -29,9 +30,8 @@ for f in fixtures:
         team_fdr[f['team_h']].append(f['team_h_difficulty'])
         team_fdr[f['team_a']].append(f['team_a_difficulty'])
 
-# 3. Beräkna förväntade poäng (xP) per spelare
+# 3. Beräkna poängprognos
 player_projections = []
-
 for p in players:
     if p['status'] != 'a' and p['chance_of_playing_next_round'] is not None and p['chance_of_playing_next_round'] < 50:
         continue
@@ -71,48 +71,70 @@ df = pd.DataFrame(player_projections)
 df = df.sort_values(by='Totalt xP (GW15)', ascending=False)
 df.to_csv('fpl_predictions.csv', index=False)
 
-# 4. Bygg optimalt 15-mannalag (GDK: 2, DEF: 5, MID: 5, FWD: 3 | Max £100m | Max 3 per lag)
+# 4. Bygg optimalt 15-mannalag under 100m
 gks = df[df['pos_type'] == 1].to_dict('records')
 defs = df[df['pos_type'] == 2].to_dict('records')
 mids = df[df['pos_type'] == 3].to_dict('records')
 fwds = df[df['pos_type'] == 4].to_dict('records')
 
-squad = []
-team_counts = {}
+def build_squad():
+    squad = []
+    team_counts = {}
 
-def can_add(p):
-    if team_counts.get(p['team_id'], 0) >= 3:
-        return False
-    return True
+    def can_add(p):
+        return team_counts.get(p['team_id'], 0) < 3
 
-def add_player(p):
-    squad.append(p)
-    team_counts[p['team_id']] = team_counts.get(p['team_id'], 0) + 1
+    def add_player(p):
+        squad.append(p)
+        team_counts[p['team_id']] = team_counts.get(p['team_id'], 0) + 1
 
-# Välj toppspelares stomme (GDK: 1 lyx + 1 billig, DEF: 3 top + 2 billiga, MID: 3 top + 2 billiga, FWD: 2 top + 1 billig)
-for p in gks[:1]: add_player(p)
-for p in gks[::-1]: 
-    if len([x for x in squad if x['pos_type'] == 1]) < 2 and can_add(p): add_player(p); break
+    # Välj grundstomme
+    add_player(gks[0])
+    for p in gks[1:]:
+        if can_add(p): add_player(p); break
 
-for p in defs[:3]: 
-    if can_add(p): add_player(p)
-for p in defs[::-1]: 
-    if len([x for x in squad if x['pos_type'] == 2]) < 5 and can_add(p): add_player(p)
+    for p in defs:
+        if len([x for x in squad if x['pos_type'] == 2]) < 5 and can_add(p):
+            add_player(p)
 
-for p in mids[:3]: 
-    if can_add(p): add_player(p)
-for p in mids[::-1]: 
-    if len([x for x in squad if x['pos_type'] == 3]) < 5 and can_add(p): add_player(p)
+    for p in mids:
+        if len([x for x in squad if x['pos_type'] == 3]) < 5 and can_add(p):
+            add_player(p)
 
-for p in fwds[:2]: 
-    if can_add(p): add_player(p)
-for p in fwds[::-1]: 
-    if len([x for x in squad if x['pos_type'] == 4]) < 3 and can_add(p): add_player(p)
+    for p in fwds:
+        if len([x for x in squad if x['pos_type'] == 4]) < 3 and can_add(p):
+            add_player(p)
 
-squad_df = pd.DataFrame(squad)
+    # Budgetjustering: Om över 100m, ersätt billigaste/svagaste bänkspelarna med budgetalternativ
+    current_cost = sum(p['Pris'] for p in squad)
+    if current_cost > 100.0:
+        # Hitta billiga spelare för varje position
+        cheapest_gk = min(gks, key=lambda x: x['Pris'])
+        cheapest_def = min(defs, key=lambda x: x['Pris'])
+        cheapest_mid = min(mids, key=lambda x: x['Pris'])
+
+        # Byt ut reservmålvakten till absolut billigaste
+        gks_in_squad = [p for p in squad if p['pos_type'] == 1]
+        if len(gks_in_squad) > 1:
+            worst_gk = min(gks_in_squad, key=lambda x: x['Totalt xP (GW15)'])
+            squad.remove(worst_gk)
+            squad.append(cheapest_gk)
+
+        # Nedgradera lägst rangerade försvarare/mittfältare tills budget hålls
+        squad.sort(key=lambda x: (x['pos_type'] == 1, x['Totalt xP (GW15)']))
+        for i in range(len(squad)):
+            if sum(p['Pris'] for p in squad) <= 100.0:
+                break
+            if squad[i]['pos_type'] == 2 and squad[i]['id'] != cheapest_def['id']:
+                squad[i] = cheapest_def
+            elif squad[i]['pos_type'] == 3 and squad[i]['id'] != cheapest_mid['id']:
+                squad[i] = cheapest_mid
+
+    return pd.DataFrame(squad)
+
+squad_df = build_squad()
 total_cost = round(squad_df['Pris'].sum(), 1)
 
-# Skapa startelva (Bästa 1 GDK + Bästa 10 utespelare)
 starting_gk = squad_df[squad_df['pos_type'] == 1].sort_values(by='Totalt xP (GW15)', ascending=False).head(1)
 outfield = squad_df[squad_df['pos_type'] != 1].sort_values(by='Totalt xP (GW15)', ascending=False)
 starting_10 = outfield.head(10)
@@ -121,7 +143,6 @@ bench = pd.concat([squad_df[squad_df['pos_type'] == 1].tail(1), outfield.tail(4)
 start_xi = pd.concat([starting_gk, starting_10])
 captain = start_xi.iloc[0]['Spelare']
 
-# Formatera för README
 top_20_md = df[['Spelare', 'Lag', 'Pos', 'Pris', 'Snitt FDR', 'Totalt xP (GW15)']].head(20).to_markdown(index=False)
 xi_md = start_xi[['Spelare', 'Lag', 'Pos', 'Pris', 'Totalt xP (GW15)']].to_markdown(index=False)
 bench_md = bench[['Spelare', 'Lag', 'Pos', 'Pris', 'Totalt xP (GW15)']].to_markdown(index=False)
@@ -156,4 +177,5 @@ readme_path = os.path.join(script_dir, 'README.md')
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content)
 
-print("Klar! README.md har uppdaterats.")
+print("Klar! README.md har uppdaterats med budgetanpassat lag.")
+

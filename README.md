@@ -5,7 +5,7 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 ---
 
 ## ⚽ Optimal AI-Startelva (GW15-prognos)
-* **Totalt trupppris:** £106.5m / £100.0m
+* **Totalt trupppris:** £97.5m / £100.0m
 * **Vald Kapten 👑:** **Roefs** (högst förväntade poäng)
 
 ### 🏃 Startelva (11 spelare)
@@ -13,24 +13,24 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 |:------------|:--------------|:------|-------:|-------------------:|
 | Roefs       | Sunderland    | GKP   |    5   |               40   |
 | B.Fernandes | Man Utd       | MID   |   12   |              102.4 |
-| Haaland     | Man City      | FWD   |   15.5 |               91.2 |
 | Semenyo     | Man City      | MID   |    8.5 |               75.8 |
 | Gibbs-White | Nott'm Forest | MID   |    8   |               70.8 |
+| Szoboszlai  | Liverpool     | MID   |    7   |               69.3 |
 | Thiago      | Brentford     | FWD   |    8   |               69   |
-| Gabriel     | Arsenal       | DEF   |    8   |               62.2 |
-| Virgil      | Liverpool     | DEF   |    6.5 |               59.6 |
-| Guéhi       | Man City      | DEF   |    6   |               58.6 |
-| Jair Cunha  | Nott'm Forest | DEF   |    4.5 |               11.6 |
-| Piroe       | Leeds         | FWD   |    5   |                9.6 |
+| Saka        | Arsenal       | MID   |    9.5 |               68.6 |
+| Watkins     | Aston Villa   | FWD   |    8   |               65   |
+| João Pedro  | Chelsea       | FWD   |    7.5 |               64.9 |
+| Diop        | Ipswich Town  | DEF   |    4   |               19.8 |
+| Diop        | Ipswich Town  | DEF   |    4   |               19.8 |
 
 ### 🪑 Bänk (4 spelare)
-| Spelare      | Lag        | Pos   |   Pris |   Totalt xP (GW15) |
-|:-------------|:-----------|:------|-------:|-------------------:|
-| Jörgensen    | Chelsea    | GKP   |    5   |               13.1 |
-| Piroe        | Leeds      | FWD   |    5   |                9.6 |
-| Lavia        | Chelsea    | MID   |    5   |                8.7 |
-| Mundle       | Sunderland | MID   |    5   |                8.6 |
-| B.Badiashile | Chelsea    | DEF   |    4.5 |                7.6 |
+| Spelare   | Lag          | Pos   |   Pris |   Totalt xP (GW15) |
+|:----------|:-------------|:------|-------:|-------------------:|
+| Roefs     | Sunderland   | GKP   |      5 |               40   |
+| Diop      | Ipswich Town | DEF   |      4 |               19.8 |
+| Diop      | Ipswich Town | DEF   |      4 |               19.8 |
+| Diop      | Ipswich Town | DEF   |      4 |               19.8 |
+| Diop      | Ipswich Town | DEF   |      4 |               19.8 |
 
 ---
 

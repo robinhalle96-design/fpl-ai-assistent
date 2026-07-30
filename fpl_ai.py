@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-
+import os 
 # 1. Hämta data från FPL API
 BASE_URL = "https://fantasy.premierleague.com/api/"
 bootstrap = requests.get(f"{BASE_URL}bootstrap-static/").json()
@@ -150,7 +150,10 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 *Databasen uppdateras automatiskt varje natt.*
 """
 
-with open('README.md', 'w', encoding='utf-8') as f:
+script_dir = os.path.dirname(os.path.abspath(__file__))
+readme_path = os.path.join(script_dir, 'README.md')
+
+with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content)
 
-print("Klar! Optimal trupp och startelva har skapats.")
+print("Klar! README.md har uppdaterats.")

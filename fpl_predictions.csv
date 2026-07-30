@@ -46,15 +46,15 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 469,N.Williams,Nott'm Forest,18,DEF,2,5.0,0.0,3.0,3.33,50.0
 122,Minteh,Brighton,5,MID,3,6.0,0.0,3.07,3.31,49.7
 94,Schade,Brentford,4,MID,3,6.0,0.0,3.27,3.26,48.9
-208,Sarr,Crystal Palace,8,MID,3,6.5,0.0,3.07,3.22,48.3
 371,Gravenberch,Liverpool,14,MID,3,6.0,0.0,2.93,3.22,48.3
+208,Sarr,Crystal Palace,8,MID,3,6.5,0.0,3.07,3.22,48.3
 525,Fernandes,Spurs,19,MID,3,6.0,0.0,2.87,3.22,48.2
 200,Lacroix,Crystal Palace,8,DEF,2,6.0,0.0,3.07,3.2,48.0
 136,Welbeck,Brighton,5,FWD,4,6.0,0.0,3.07,3.19,47.9
 261,Iwobi,Fulham,10,MID,3,5.5,0.0,3.13,3.17,47.6
 25,Gyökeres,Arsenal,1,FWD,4,7.5,0.0,3.07,3.17,47.6
-223,Mateta,Crystal Palace,8,FWD,4,6.5,0.0,3.07,3.11,46.6
 124,Groß,Brighton,5,MID,3,5.5,0.0,3.07,3.11,46.6
+223,Mateta,Crystal Palace,8,FWD,4,6.5,0.0,3.07,3.11,46.6
 439,Šeško,Man Utd,16,FWD,4,7.0,0.0,3.0,3.1,46.5
 238,Grealish,Man City,15,MID,3,6.5,0.0,3.0,3.09,46.4
 445,Thiaw,Newcastle,17,DEF,2,5.0,0.0,2.93,3.03,45.4
@@ -86,9 +86,9 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 67,Rayan,Bournemouth,3,MID,3,6.5,0.0,3.13,2.74,41.1
 143,Chalobah,Chelsea,6,DEF,2,5.5,0.0,3.2,2.74,41.0
 372,Mac Allister,Liverpool,14,MID,3,5.5,0.0,2.93,2.72,40.8
+463,Woltemade,Newcastle,17,FWD,4,6.0,0.0,2.93,2.68,40.2
 417,Dalot,Man Utd,16,DEF,2,5.0,0.0,3.0,2.68,40.2
 391,Gvardiol,Man City,15,DEF,2,5.5,0.0,3.0,2.68,40.2
-463,Woltemade,Newcastle,17,FWD,4,6.0,0.0,2.93,2.68,40.2
 529,Roefs,Sunderland,20,GKP,1,5.0,0.0,3.07,2.67,40.0
 113,F.Kadıoğlu,Brighton,5,DEF,2,4.5,0.0,3.07,2.66,39.9
 14,Eze,Arsenal,1,MID,3,6.5,0.0,3.07,2.66,39.9
@@ -100,8 +100,8 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 130,Wieffer,Brighton,5,DEF,2,5.0,0.0,3.07,2.58,38.7
 85,Van den Berg,Brentford,4,DEF,2,5.0,0.0,3.27,2.57,38.5
 328,Struijk,Brighton,5,DEF,2,5.0,0.0,3.07,2.55,38.3
-1,Raya,Arsenal,1,GKP,1,6.0,0.0,3.07,2.54,38.1
 60,Hill,Bournemouth,3,DEF,2,5.5,0.0,3.13,2.54,38.1
+1,Raya,Arsenal,1,GKP,1,6.0,0.0,3.07,2.54,38.1
 88,Kayode,Brentford,4,DEF,2,4.5,0.0,3.27,2.54,38.1
 28,Martinez,Aston Villa,2,GKP,1,5.0,0.0,2.87,2.54,38.0
 159,Caicedo,Chelsea,6,MID,3,5.5,0.0,3.2,2.53,37.9
@@ -113,15 +113,15 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 226,Pickford,Everton,9,GKP,1,5.5,0.0,3.13,2.49,37.4
 384,Donnarumma,Man City,15,GKP,1,5.5,0.0,3.0,2.48,37.2
 248,Beto,Everton,9,FWD,4,5.5,0.0,3.13,2.47,37.1
-109,Verbruggen,Brighton,5,GKP,1,4.5,0.0,3.07,2.46,36.9
 123,Hinshelwood,Brighton,5,MID,3,6.0,0.0,3.07,2.46,36.9
-86,Lewis-Potter,Brentford,4,MID,3,5.5,0.0,3.27,2.44,36.6
+109,Verbruggen,Brighton,5,GKP,1,4.5,0.0,3.07,2.46,36.9
 232,O'Brien,Everton,9,DEF,2,5.0,0.0,3.13,2.44,36.6
 531,Ellborg,Sunderland,20,GKP,1,4.5,0.0,3.07,2.44,36.6
+86,Lewis-Potter,Brentford,4,MID,3,5.5,0.0,3.27,2.44,36.6
 211,Yeremy,Crystal Palace,8,MID,3,5.5,0.0,3.07,2.43,36.5
-329,Rodon,Leeds,13,DEF,2,4.5,0.0,3.27,2.42,36.3
-15,Ødegaard,Arsenal,1,MID,3,6.5,0.0,3.07,2.42,36.3
 97,Jensen,Brentford,4,MID,3,5.5,0.0,3.27,2.42,36.3
+15,Ødegaard,Arsenal,1,MID,3,6.5,0.0,3.07,2.42,36.3
+329,Rodon,Leeds,13,DEF,2,4.5,0.0,3.27,2.42,36.3
 30,Digne,Aston Villa,2,DEF,2,4.5,0.0,2.87,2.41,36.2
 198,Henderson,Crystal Palace,8,GKP,1,5.0,0.0,3.07,2.41,36.1
 269,Sessegnon,Fulham,10,DEF,2,4.5,0.0,3.13,2.41,36.1
@@ -142,12 +142,12 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 233,Mykolenko,Everton,9,DEF,2,4.5,0.0,3.13,2.3,34.5
 57,Petrović,Bournemouth,3,GKP,1,4.5,0.0,3.13,2.28,34.2
 448,Burn,Newcastle,17,DEF,2,5.0,0.0,2.93,2.28,34.1
-471,Milenković,Nott'm Forest,18,DEF,2,5.5,0.0,3.0,2.26,34.0
 467,Sels,Nott'm Forest,18,GKP,1,5.0,0.0,3.0,2.27,34.0
+471,Milenković,Nott'm Forest,18,DEF,2,5.5,0.0,3.0,2.26,34.0
 9,Hincapie,Arsenal,1,DEF,2,5.5,0.0,3.07,2.27,34.0
+332,Justin,Leeds,13,DEF,2,4.5,0.0,3.27,2.26,33.9
 16,Madueke,Arsenal,1,MID,3,6.5,0.0,3.07,2.26,33.9
 140,Sánchez,Chelsea,6,GKP,1,5.0,0.0,3.2,2.26,33.9
-332,Justin,Leeds,13,DEF,2,4.5,0.0,3.27,2.26,33.9
 115,De Cuyper,Brighton,5,DEF,2,4.5,0.0,3.07,2.24,33.7
 514,Tel,Spurs,19,MID,3,6.0,0.0,2.87,2.23,33.5
 250,Leno,Fulham,10,GKP,1,4.5,0.0,3.13,2.22,33.4
@@ -155,14 +155,14 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 497,Dubravka,Spurs,19,GKP,1,4.0,0.0,2.87,2.22,33.3
 488,Sangaré,Nott'm Forest,18,MID,3,5.0,0.0,3.0,2.21,33.1
 457,J.Murphy,Newcastle,17,MID,3,6.0,0.0,2.93,2.2,33.0
+330,Bogle,Leeds,13,DEF,2,4.5,0.0,3.27,2.2,33.0
 455,Tonali,Spurs,19,MID,3,5.5,0.0,2.87,2.2,33.0
 47,Kamara,Aston Villa,2,MID,3,5.0,0.0,2.87,2.2,33.0
-330,Bogle,Leeds,13,DEF,2,4.5,0.0,3.27,2.2,33.0
 516,Bentancur,Spurs,19,MID,3,5.5,0.0,2.87,2.19,32.8
 458,Joelinton,Newcastle,17,MID,3,5.5,0.0,2.93,2.18,32.7
 31,Konsa,Aston Villa,2,DEF,2,4.5,0.0,2.87,2.17,32.6
-412,Lammens,Man Utd,16,GKP,1,5.0,0.0,3.0,2.17,32.5
 473,Aina,Nott'm Forest,18,DEF,2,4.5,0.0,3.0,2.17,32.5
+412,Lammens,Man Utd,16,GKP,1,5.0,0.0,3.0,2.17,32.5
 373,C.Jones,Liverpool,14,MID,3,5.5,0.0,2.93,2.14,32.1
 358,Kerkez,Liverpool,14,DEF,2,5.5,0.0,2.93,2.13,32.0
 249,Barry,Everton,9,FWD,4,5.5,0.0,3.13,2.12,31.8
@@ -170,11 +170,11 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 203,Canvot,Crystal Palace,8,DEF,2,5.0,0.0,3.07,2.09,31.3
 98,Janelt,Brentford,4,MID,3,5.0,0.0,3.27,2.08,31.2
 392,Aït-Nouri,Man City,15,DEF,2,5.5,0.0,3.0,2.08,31.2
-465,Osula,Newcastle,17,FWD,4,6.0,0.0,2.93,2.08,31.1
-17,Merino,Arsenal,1,MID,3,6.0,0.0,3.07,2.07,31.1
 267,Lukić,Fulham,10,MID,3,5.0,0.0,3.13,2.08,31.1
-350,A.Becker,Liverpool,14,GKP,1,5.5,0.0,2.93,2.07,31.0
+17,Merino,Arsenal,1,MID,3,6.0,0.0,3.07,2.07,31.1
+465,Osula,Newcastle,17,FWD,4,6.0,0.0,2.93,2.08,31.1
 160,Garnacho,Aston Villa,2,MID,3,6.0,0.0,2.87,2.07,31.0
+350,A.Becker,Liverpool,14,GKP,1,5.5,0.0,2.93,2.07,31.0
 494,Vicario,Spurs,19,GKP,1,4.5,0.0,2.87,2.05,30.8
 265,Berge,Fulham,10,MID,3,5.0,0.0,3.13,2.05,30.8
 450,Livramento,Newcastle,17,DEF,2,5.0,0.0,2.93,2.05,30.7
@@ -199,9 +199,9 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 331,Gudmundsson,Leeds,13,DEF,2,4.5,0.0,3.27,1.86,27.9
 401,Marmoush,Man City,15,FWD,4,7.0,0.0,3.0,1.86,27.9
 222,Strand Larsen,Crystal Palace,8,FWD,4,6.0,0.0,3.07,1.85,27.7
-339,Longstaff,Leeds,13,MID,3,5.0,0.0,3.27,1.84,27.6
-87,Ajer,Brentford,4,DEF,2,4.5,0.0,3.27,1.84,27.6
 26,Havertz,Arsenal,1,FWD,4,7.5,0.0,3.07,1.84,27.6
+87,Ajer,Brentford,4,DEF,2,4.5,0.0,3.27,1.84,27.6
+339,Longstaff,Leeds,13,MID,3,5.0,0.0,3.27,1.84,27.6
 519,Gallagher,Spurs,19,MID,3,5.5,0.0,2.87,1.84,27.5
 34,Pau,Aston Villa,2,DEF,2,4.5,0.0,2.87,1.83,27.4
 351,Mamardashvili,Liverpool,14,GKP,1,5.0,0.0,2.93,1.82,27.3
@@ -211,15 +211,15 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 33,Mings,Aston Villa,2,DEF,2,4.5,0.0,2.87,1.8,26.9
 36,Maatsen,Aston Villa,2,DEF,2,4.5,0.0,2.87,1.78,26.6
 501,Danso,Spurs,19,DEF,2,5.0,0.0,2.87,1.75,26.2
-553,Isidor,Sunderland,20,FWD,4,5.5,0.0,3.07,1.74,26.1
-502,Robertson,Spurs,19,DEF,2,4.5,0.0,2.87,1.74,26.1
-258,Castagne,Fulham,10,DEF,2,4.5,0.0,3.13,1.74,26.1
-405,N.Gonzalez,Man City,15,MID,3,5.5,0.0,3.0,1.74,26.1
 114,Boscagli,Brighton,5,DEF,2,4.5,0.0,3.07,1.74,26.1
+258,Castagne,Fulham,10,DEF,2,4.5,0.0,3.13,1.74,26.1
+502,Robertson,Spurs,19,DEF,2,4.5,0.0,2.87,1.74,26.1
+553,Isidor,Sunderland,20,FWD,4,5.5,0.0,3.07,1.74,26.1
+405,N.Gonzalez,Man City,15,MID,3,5.5,0.0,3.0,1.74,26.1
 77,Adli,Bournemouth,3,MID,3,5.0,0.0,3.13,1.73,25.9
 430,Mount,Man Utd,16,MID,3,5.5,0.0,3.0,1.71,25.6
-213,Lerma,Crystal Palace,8,MID,3,5.0,0.0,3.07,1.7,25.6
 230,Branthwaite,Everton,9,DEF,2,5.5,0.0,3.13,1.71,25.6
+213,Lerma,Crystal Palace,8,MID,3,5.0,0.0,3.07,1.7,25.6
 522,Gray,Spurs,19,MID,3,5.0,0.0,2.87,1.7,25.5
 490,Wood,Nott'm Forest,18,FWD,4,6.0,0.0,3.0,1.7,25.4
 379,Isak,Liverpool,14,FWD,4,9.0,0.0,2.93,1.69,25.3
@@ -234,15 +234,15 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 209,Johnson,Crystal Palace,8,MID,3,6.0,0.0,3.07,1.6,24.0
 241,McNeil,Everton,9,MID,3,5.5,0.0,3.13,1.58,23.7
 385,Trafford,Man City,15,GKP,1,5.0,0.0,3.0,1.56,23.4
-422,Mazraoui,Man Utd,16,DEF,2,4.5,0.0,3.0,1.54,23.1
 263,Kevin,Fulham,10,MID,3,5.5,0.0,3.13,1.54,23.1
+422,Mazraoui,Man Utd,16,DEF,2,4.5,0.0,3.0,1.54,23.1
 483,Ndoye,Nott'm Forest,18,MID,3,5.5,0.0,3.0,1.51,22.7
-326,Perri,Leeds,13,GKP,1,4.5,0.0,3.27,1.5,22.4
 62,Diakité,Bournemouth,3,DEF,2,5.0,0.0,3.13,1.49,22.4
-344,Gruev,Leeds,13,MID,3,5.0,0.0,3.27,1.47,22.1
+326,Perri,Leeds,13,GKP,1,4.5,0.0,3.27,1.5,22.4
 240,Iroegbunam,Everton,9,MID,3,5.0,0.0,3.13,1.47,22.1
-403,Savinho,Man City,15,MID,3,6.5,0.0,3.0,1.47,22.0
+344,Gruev,Leeds,13,MID,3,5.0,0.0,3.27,1.47,22.1
 70,Kluivert,Bournemouth,3,MID,3,6.0,0.0,3.13,1.47,22.0
+403,Savinho,Man City,15,MID,3,6.5,0.0,3.0,1.47,22.0
 234,Patterson,Everton,9,DEF,2,4.5,0.0,3.13,1.46,21.9
 255,J.Cuenca,Fulham,10,DEF,2,4.5,0.0,3.13,1.46,21.9
 264,Bobb,Fulham,10,MID,3,5.5,0.0,3.13,1.45,21.8
@@ -252,26 +252,26 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 487,Dominguez,Nott'm Forest,18,MID,3,5.0,0.0,3.0,1.41,21.1
 126,O'Riley,Brighton,5,MID,3,5.5,0.0,3.07,1.4,21.0
 440,Zirkzee,Man Utd,16,FWD,4,5.5,0.0,3.0,1.39,20.9
-520,Bergvall,Spurs,19,MID,3,5.5,0.0,2.87,1.38,20.7
 42,Guessand,Aston Villa,2,MID,3,5.5,0.0,2.87,1.38,20.7
 71,Cook,Bournemouth,3,MID,3,5.0,0.0,3.13,1.38,20.7
-546,Adingra,Sunderland,20,MID,3,5.0,0.0,3.07,1.34,20.1
+520,Bergvall,Spurs,19,MID,3,5.5,0.0,2.87,1.38,20.7
 420,Yoro,Man Utd,16,DEF,2,5.0,0.0,3.0,1.34,20.1
-63,Milosavljević,Bournemouth,3,DEF,2,5.0,0.0,3.13,1.32,19.8
+546,Adingra,Sunderland,20,MID,3,5.0,0.0,3.07,1.34,20.1
 259,Diop,Ipswich Town,12,DEF,2,4.0,0.0,2.93,1.32,19.8
+63,Milosavljević,Bournemouth,3,DEF,2,5.0,0.0,3.13,1.32,19.8
 460,Willock,Newcastle,17,MID,3,5.0,0.0,2.93,1.28,19.3
 138,Kostoulas,Brighton,5,FWD,4,5.5,0.0,3.07,1.28,19.2
 212,Hughes,Crystal Palace,8,MID,3,4.5,0.0,3.07,1.28,19.1
 149,Colwill,Chelsea,6,DEF,2,5.0,0.0,3.2,1.27,19.0
 454,Elanga,Newcastle,17,MID,3,6.0,0.0,2.93,1.26,18.9
-151,Acheampong,Chelsea,6,DEF,2,4.5,0.0,3.2,1.25,18.8
 548,Rigg,Sunderland,20,MID,3,5.0,0.0,3.07,1.25,18.8
+151,Acheampong,Chelsea,6,DEF,2,4.5,0.0,3.2,1.25,18.8
 162,Andrey Santos,Man Utd,16,MID,3,5.0,0.0,3.0,1.24,18.6
-246,Röhl,Everton,9,MID,3,5.0,0.0,3.13,1.24,18.5
 27,G.Jesus,Arsenal,1,FWD,4,6.0,0.0,3.07,1.23,18.5
+246,Röhl,Everton,9,MID,3,5.0,0.0,3.13,1.24,18.5
 224,Nketiah,Crystal Palace,8,FWD,4,5.5,0.0,3.07,1.22,18.4
-11,Mosquera,Arsenal,1,DEF,2,5.5,0.0,3.07,1.22,18.3
 271,Muniz,Fulham,10,FWD,4,5.5,0.0,3.13,1.22,18.3
+11,Mosquera,Arsenal,1,DEF,2,5.5,0.0,3.07,1.22,18.3
 485,Bakwa,Nott'm Forest,18,MID,3,5.5,0.0,3.0,1.21,18.2
 147,Tosin,Chelsea,6,DEF,2,4.5,0.0,3.2,1.21,18.2
 29,M.Bizot,Aston Villa,2,GKP,1,4.5,0.0,2.87,1.19,17.8
@@ -281,36 +281,36 @@ id,Spelare,Lag,team_id,Pos,pos_type,Pris,Form,Snitt FDR,xP/Match,Totalt xP (GW15
 206,Chadi Riad,Crystal Palace,8,DEF,2,4.5,0.0,3.07,1.17,17.5
 266,Cairney,Fulham,10,MID,3,5.0,0.0,3.13,1.16,17.4
 539,O'Nien,Sunderland,20,DEF,2,4.0,0.0,3.07,1.15,17.3
-506,Udogie,Spurs,19,DEF,2,4.5,0.0,2.87,1.14,17.1
 215,Devenny,Crystal Palace,8,MID,3,5.0,0.0,3.07,1.14,17.1
+506,Udogie,Spurs,19,DEF,2,4.5,0.0,2.87,1.14,17.1
 468,John,Nott'm Forest,18,GKP,1,4.5,0.0,3.0,1.05,15.7
 333,Bornauw,Leeds,13,DEF,2,4.5,0.0,3.27,1.04,15.6
-243,Alcaraz,Everton,9,MID,3,5.0,0.0,3.13,1.03,15.5
 44,Bailey,Aston Villa,2,MID,3,5.5,0.0,2.87,1.03,15.5
+243,Alcaraz,Everton,9,MID,3,5.0,0.0,3.13,1.03,15.5
 158,Gittens,Chelsea,6,MID,3,6.0,0.0,3.2,1.01,15.2
 37,Lindelöf,Aston Villa,2,DEF,2,4.5,0.0,2.87,1.01,15.1
 395,Lewis,Man City,15,DEF,2,4.5,0.0,3.0,1.0,15.0
 352,Woodman,Liverpool,14,GKP,1,4.0,0.0,2.93,0.99,14.9
 370,Chiesa,Liverpool,14,MID,3,5.5,0.0,2.93,0.99,14.8
 90,Hickey,Brentford,4,DEF,2,4.5,0.0,3.27,0.94,14.2
-413,Bayindir,Man Utd,16,GKP,1,4.5,0.0,3.0,0.94,14.1
 117,Coppola,Brighton,5,DEF,2,4.5,0.0,3.07,0.94,14.1
+413,Bayindir,Man Utd,16,GKP,1,4.5,0.0,3.0,0.94,14.1
 244,Armstrong,Everton,9,MID,3,5.0,0.0,3.13,0.92,13.8
 489,Yates,Nott'm Forest,18,MID,3,4.5,0.0,3.0,0.9,13.5
-464,Wissa,Newcastle,17,FWD,4,6.0,0.0,2.93,0.89,13.4
 551,Angulo,Sunderland,20,MID,3,5.0,0.0,3.07,0.89,13.4
+464,Wissa,Newcastle,17,FWD,4,6.0,0.0,2.93,0.89,13.4
 341,Gnonto,Leeds,13,MID,3,5.0,0.0,3.27,0.88,13.2
 141,Jörgensen,Chelsea,6,GKP,1,5.0,0.0,3.2,0.87,13.1
 343,James,Leeds,13,MID,3,5.0,0.0,3.27,0.86,12.8
 35,Bogarde,Aston Villa,2,MID,3,5.0,0.0,2.87,0.85,12.7
 478,Netz,Nott'm Forest,18,DEF,2,4.5,0.0,3.0,0.82,12.4
 7,Lewis-Skelly,Arsenal,1,MID,3,5.5,0.0,3.07,0.8,12.0
-474,Jair Cunha,Nott'm Forest,18,DEF,2,4.5,0.0,3.0,0.77,11.6
 148,Hato,Chelsea,6,DEF,2,4.5,0.0,3.2,0.77,11.6
+474,Jair Cunha,Nott'm Forest,18,DEF,2,4.5,0.0,3.0,0.77,11.6
 242,George,Everton,9,MID,3,5.5,0.0,3.13,0.72,10.9
 80,Enes Ünal,Bournemouth,3,FWD,4,5.5,0.0,3.13,0.72,10.8
-245,Dibling,Everton,9,MID,3,5.5,0.0,3.13,0.71,10.7
 486,McAtee,Nott'm Forest,18,MID,3,5.5,0.0,3.0,0.71,10.7
+245,Dibling,Everton,9,MID,3,5.5,0.0,3.13,0.71,10.7
 168,Marc Guiu,Chelsea,6,FWD,4,5.0,0.0,3.2,0.7,10.5
 348,Piroe,Leeds,13,FWD,4,5.0,0.0,3.27,0.64,9.6
 161,Lavia,Chelsea,6,MID,3,5.0,0.0,3.2,0.58,8.7

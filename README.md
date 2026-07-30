@@ -6,7 +6,7 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 
 ## ⚽ Optimal AI-Startelva (GW38-prognos)
 * **Totalt trupppris:** £100.0m / £100.0m
-* **Vald Kapten 👑:** **Dubravka** (högst förväntade poäng)
+* **Vald Kapten 👑:** **Fernandes** (högst förväntade poäng)
 
 ### 🏃 Startelva (11 spelare)
 | Spelare     | Lag            | Pos   |   Pris |   Totalt xP (GW15) |

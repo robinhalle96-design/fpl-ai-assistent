@@ -36,10 +36,7 @@ def hamta_och_berakna_fpl_data():
     lag_map = {team['id']: team['name'] for team in data['teams']}
     
     for player in data['elements']:
-        # Hämta spelarens status från API:et ('a' = tillgänglig, 'i' = skadad, 'd' = tveksam, 's' = avstängd)
         player_status = player.get('status', 'a')
-        
-        # Hoppa över spelare som är skadade, avstängda eller osäkra (du kan anpassa detta om du vill ha med 'd')
         if player_status in ['i', 's', 'u']:
             continue
             
@@ -72,7 +69,7 @@ def optimera_fpl_exakta_sparade_byten():
         f.write("Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max 2. Inga minuspoäng tillåts!\n\n")
         
         for_ra_trupp = set()
-        sparade_byten = 0  # Börjar med 0 sparade byten inför omgång 2 (1 tillgängligt)
+        sparade_byten = 0  
         wildcard_anvandt = False
         
         for gw in range(1, 20):
@@ -96,7 +93,7 @@ def optimera_fpl_exakta_sparade_byten():
                 
                 antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
                 
-                if gw == 8:  # Wildcard i omgång 8
+                if gw == 8:  
                     anvander_wildcard_nu = True
                     wildcard_anvandt = True
                 else:
@@ -104,7 +101,6 @@ def optimera_fpl_exakta_sparade_byten():
             
             prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
             
-            # Standard FPL-regler
             prob += pulp.lpSum([x[s] for s in spelar_lista]) == 15
             prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'GK']) == 2
             prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'DEF']) == 5
@@ -138,15 +134,21 @@ def optimera_fpl_exakta_sparade_byten():
                 elif anvander_wildcard_nu:
                     sparade_byten = 0
 
+                # Beräkna totalt förväntat index för hela truppen i denna omgång
+                total_omgangs_poang = sum(omgangs_index[s] for s in nuvarande_trupp)
+
                 f.write(f"## 🏆 Gameweek {gw}")
                 if anvander_wildcard_nu:
                     f.write(" ⚡ **[WILDCARD AKTIVERAT - Hela truppen ombyggd!]**")
                 f.write("\n")
                 
                 if gw > 1 and not anvander_wildcard_nu:
-                    f.write(f"*Gjorda byten denna omgång: {faktiska_byten} | Sparade byten till nästa omgång: {sparade_byten}*\n\n")
+                    f.write(f"*Gjorda byten denna omgång: {faktiska_byten} | Sparade byten till nästa omgång: {sparade_byten}*\n")
                 elif not gw > 1:
-                    f.write(f"*Sparade byten till nästa omgång: {sparade_byten}*\n\n")
+                    f.write(f"*Sparade byten till nästa omgång: {sparade_byten}*\n")
+                
+                # Skriv ut beräknad totalpoäng
+                f.write(f"📈 **Beräknad totalpoäng för truppen:** `{total_omgangs_poang:.1f} poäng`\n\n")
                 
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
                 f.write("|---|---|---|---|---|\n")

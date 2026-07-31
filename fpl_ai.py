@@ -11,6 +11,11 @@ def hamta_och_berakna_fpl_data():
     fixtures = fixtures_response.json()
     
     lag_omgang_fdr = {}
+    lag_namn_dict = {team['id']: team['name'] for team in data['teams']}
+    
+    # För att hålla koll på vilka lag som möter vilka per omgång
+    omgang_matcher = {}
+    
     for match in fixtures:
         gw = match.get('event')
         if gw and gw <= 38:
@@ -21,6 +26,12 @@ def hamta_och_berakna_fpl_data():
             
             lag_omgang_fdr.setdefault(h_team, {})[gw] = h_diff
             lag_omgang_fdr.setdefault(a_team, {})[gw] = a_diff
+            
+            h_namn = lag_namn_dict.get(h_team, "Hemma")
+            a_namn = lag_namn_dict.get(a_team, "Borta")
+            
+            omgang_matcher.setdefault(gw, {})[h_team] = f"vs {a_namn} (H)"
+            omgang_matcher.setdefault(gw, {})[a_team] = f"vs {h_namn} (B)"
 
     spelar_lista = []
     spelares_pris = {}
@@ -31,7 +42,6 @@ def hamta_och_berakna_fpl_data():
     spelares_bas_index = {}
     
     position_map = {1: 'GK', 2: 'DEF', 3: 'MID', 4: 'FWD'}
-    lag_map = {team['id']: team['name'] for team in data['teams']}
     
     for player in data['elements']:
         player_status = player.get('status', 'a')
@@ -39,7 +49,10 @@ def hamta_och_berakna_fpl_data():
             continue
             
         minuter_spelade = player.get('minutes', 0)
-        if minuter_spelade < 900:
+        pris_mil = player.get('now_cost') / 10.0
+        
+        # Strikt minutfilter men tillåt billiga spelare (t.ex. 4.5M) om de är i starka lag och har historik
+        if minuter_spelade < 900 and pris_mil > 5.0:
             continue
             
         p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
@@ -54,55 +67,32 @@ def hamta_och_berakna_fpl_data():
         
         spelar_lista.append(p_id)
         spelares_bas_index[p_id] = float(snitt_poang_per_match)
-        spelares_pris[p_id] = player['now_cost'] / 10.0
-        spelares_lag[p_id] = lag_map.get(player['team'], 'Okänt')
+        spelares_pris[p_id] = pris_mil
+        spelares_lag[p_id] = lag_namn_dict.get(player['team'], 'Okänt')
         spelares_lag_id[p_id] = player['team']
         spelares_position[p_id] = position_map.get(player['element_type'], 'Unknown')
         spelares_minuter[p_id] = minuter_spelade
         
-    return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr
+    return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr, omgang_matcher
 
-def optimera_fpl_med_AI_chip():
-    spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
+def optimera_fpl_med_starka_billiga():
+    spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("AI optimerar trupp, startelva och hittar de bästa omgångarna för alla chip (GW 1-38)...")
+    print("Optimerar trupp med fokus på starka lag även för billiga spelare samt matchscheman...")
     
-    # Övergripande optimering för att välja ut de optimala omgångarna för chip
-    master_prob = pulp.LpProblem("FPL_Master_Chip_Optimization", pulp.LpMaximize)
-    
-    # Binära variabler för chip per omgång (1 om chippet används i omgång gw)
-    wc1 = pulp.LpVariable.dicts("WC1", range(2, 39), cat='Binary')
-    wc2 = pulp.LpVariable.dicts("WC2", range(2, 39), cat='Binary')
-    fh = pulp.LpVariable.dicts("FH", range(1, 39), cat='Binary')
-    tc = pulp.LpVariable.dicts("TC", range(1, 39), cat='Binary')
-    bb = pulp.LpVariable.dicts("BB", range(1, 39), cat='Binary')
-    
-    # Regler: Varje chip får bara användas en gång (eller max 2 gånger för WC om man delar upp det, här sätter vi 1 per chip)
-    master_prob += pulp.lpSum([wc1[gw] for gw in range(2, 39)]) <= 1
-    master_prob += pulp.lpSum([wc2[gw] for gw in range(2, 39)]) <= 1
-    master_prob += pulp.lpSum([fh[gw] for gw in range(1, 39)]) <= 1
-    master_prob += pulp.lpSum([tc[gw] for gw in range(1, 39)]) <= 1
-    master_prob += pulp.lpSum([bb[gw] for gw in range(1, 39)]) <= 1
-
-    # För att inte krocka chippen i samma omgång
-    for gw in range(2, 39):
-        master_prob += wc1[gw] + wc2[gw] + fh[gw] + tc[gw] + bb[gw] <= 1
-    
-    # Vi kör en genomgång vecka för vecka och sparar ner resultatet i filen
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp med Smarta Chip-Val (GW 1-38)\n\n")
-        f.write("Skriptet har själv räknat ut de optimala omgångarna för att maximera poängen med dina chip.\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Starka Billiga Spelare & Motståndare)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
         
-        # Enkel heuristik/fördelning för skriptets körning baserat på säsongens faser
-        # (AI låter skriptet fördela chippen strategiskt)
         valda_wc1 = 8
         valda_wc2 = 26
         valda_fh = 29
         valda_tc = 17
         valda_bb = 34
+        
+        starka_lag = ["Arsenal", "Manchester City", "Liverpool", "Aston Villa", "Tottenham Hotspur"]
         
         for gw in range(1, 39):
             prob = pulp.LpProblem(f"FPL_GW_{gw}", pulp.LpMaximize)
@@ -112,11 +102,16 @@ def optimera_fpl_med_AI_chip():
             c = pulp.LpVariable.dicts(f"kapten_gw{gw}", spelar_lista, cat='Binary')
             
             omgangs_index = {}
-            for s in spelar_lista:
+     for s in spelar_lista:
                 t_id = lag_id[s]
                 fdr = lag_omgang_fdr.get(t_id, {}).get(gw, 3)
                 modifierare = (6 - fdr) / 2.8  
-                omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
+                
+                # Ge en extra liten poängbonus till billiga spelare (<= 4.5M) om de spelas i ett topplag
+                # så att skriptet väljer dem framför bottenlagsspelare
+                lag_bonus = 1.15 if (pris[s] <= 4.5 and lag[s] in starka_lag) else 1.0
+                
+                omgangs_index[s] = max(1.0, bas_index[s] * modifierare * lag_bonus)
 
             anvander_wildcard = (gw == valda_wc1 or gw == valda_wc2)
             anvander_free_hit = (gw == valda_fh)
@@ -199,13 +194,13 @@ def optimera_fpl_med_AI_chip():
 
                 f.write(f"## 🏆 Gameweek {gw}")
                 if anvander_wildcard:
-                    f.write(" ⚡ **[AI REKOMMENDERAR: WILDCARD AKTIVERAT!]**")
+                    f.write(" ⚡ **[WILDCARD AKTIVERAT!]**")
                 if anvander_free_hit:
-                    f.write(" 🎯 **[AI REKOMMENDERAR: FREE HIT AKTIVERAT!]**")
+                    f.write(" 🎯 **[FREE HIT AKTIVERAT!]**")
                 if anvander_triple_captain:
-                    f.write(" 🔥 **[AI REKOMMENDERAR: TRIPLE CAPTAIN AKTIVERAT (3x)!]**")
+                    f.write(" 🔥 **[TRIPLE CAPTAIN AKTIVERAT!]**")
                 if anvander_bench_boost:
-                    f.write(" 🚀 **[AI REKOMMENDERAR: BENCH BOOST AKTIVERAT!]**")
+                    f.write(" 🚀 **[BENCH BOOST AKTIVERAT!]**")
                 f.write("\n")
                 
                 if gw > 1 and not anvander_wildcard and not anvander_free_hit:
@@ -216,25 +211,30 @@ def optimera_fpl_med_AI_chip():
                 f.write(f"📈 **Förväntad poäng:** `{beraknad_poang:.1f} poäng`\n\n")
                 
                 f.write("### ⚽ Startelva\n")
-                f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
-                f.write("|---|---|---|---|---|\n")
+                f.write("| Spelare | Lag | Motstånd | Pos | Pris | Index |\n")
+                f.write("|---|---|---|---|---|---|\n")
                 for pos in ['GK', 'DEF', 'MID', 'FWD']:
                     for s in sorted(list(startelva)):
                         if positioner[s] == pos:
                             kapten_mark = f" ((C - {int(kapten_multiplikator)}x))" if s == kapten else ""
-                            f.write(f"| {s}{kapten_mark} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
+                            t_id = lag_id[s]
+                            motstandare = omgang_matcher.get(gw, {}).get(t_id, "Spelar ej")
+                            f.write(f"| {s}{kapten_mark} | {lag[s]} | {motstandare} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
                 
                 f.write("\n### 🛋️ Avbytare\n")
-                f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
-                f.write("|---|---|---|---|---|\n")
+                f.write("| Spelare | Lag | Motstånd | Pos | Pris | Index |\n")
+                f.write("|---|---|---|---|---|---|\n")
                 for pos in ['GK', 'DEF', 'MID', 'FWD']:
                     for s in sorted(list(banken)):
                         if positioner[s] == pos:
-                            f.write(f"| {s} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
+                            t_id = lag_id[s]
+                            motstandare = omgang_matcher.get(gw, {}).get(t_id, "Spelar ej")
+                            f.write(f"| {s} | {lag[s]} | {motstandare} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
                 
                 if not anvander_free_hit:
                     for_ra_trupp = nuvarande_trupp
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_med_AI_chip()
+    optimera_fpl_med_starka_billiga()
+

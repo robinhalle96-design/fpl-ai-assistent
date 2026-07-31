@@ -13,7 +13,6 @@ def hamta_och_berakna_fpl_data():
     lag_omgang_fdr = {}
     lag_namn_dict = {team['id']: team['name'] for team in data['teams']}
     
-    # För att hålla koll på vilka lag som möter vilka per omgång
     omgang_matcher = {}
     
     for match in fixtures:
@@ -51,7 +50,6 @@ def hamta_och_berakna_fpl_data():
         minuter_spelade = player.get('minutes', 0)
         pris_mil = player.get('now_cost') / 10.0
         
-        # Strikt minutfilter men tillåt billiga spelare (t.ex. 4.5M) om de är i starka lag och har historik
         if minuter_spelade < 900 and pris_mil > 5.0:
             continue
             
@@ -102,15 +100,12 @@ def optimera_fpl_med_starka_billiga():
             c = pulp.LpVariable.dicts(f"kapten_gw{gw}", spelar_lista, cat='Binary')
             
             omgangs_index = {}
-     for s in spelar_lista:
+            for s in spelar_lista:
                 t_id = lag_id[s]
                 fdr = lag_omgang_fdr.get(t_id, {}).get(gw, 3)
                 modifierare = (6 - fdr) / 2.8  
                 
-                # Ge en extra liten poängbonus till billiga spelare (<= 4.5M) om de spelas i ett topplag
-                # så att skriptet väljer dem framför bottenlagsspelare
                 lag_bonus = 1.15 if (pris[s] <= 4.5 and lag[s] in starka_lag) else 1.0
-                
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare * lag_bonus)
 
             anvander_wildcard = (gw == valda_wc1 or gw == valda_wc2)

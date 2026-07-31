@@ -42,7 +42,13 @@ def hamta_och_berakna_fpl_data():
     
     position_map = {1: 'GK', 2: 'DEF', 3: 'MID', 4: 'FWD'}
     
+    # ID-svartlista för kända reservmålvakter och spelare med felaktiga lag i API:et
+    svartlista_ids = [325, 497] # Karl Darlow (ID:325), Martin Dubravka (ID:497) etc.
+    
     for player in data['elements']:
+        if player['id'] in svartlista_ids:
+            continue
+            
         player_status = player.get('status', 'a')
         if player_status in ['i', 's', 'u']:
             continue
@@ -52,7 +58,8 @@ def hamta_och_berakna_fpl_data():
         
         element_type = player.get('element_type')
         if element_type == 1: 
-            if minuter_spelade < 1500: 
+            # Första målvakter måste ha högt antal spelade minuter
+            if minuter_spelade < 1800: 
                 continue
         else: 
             if minuter_spelade < 1200 and pris_mil > 5.0:
@@ -83,10 +90,10 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_med_byten_och_spar():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Optimerar med dynamisk bytesgräns och sparfunktion...")
+    print("Kör optimering med rensade reservmålvakter...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Med smart sparande av byten)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Rensad på reservmålvakter)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
@@ -120,7 +127,6 @@ def optimera_fpl_med_byten_och_spar():
             anvander_triple_captain = (gw == valda_tc)
             anvander_bench_boost = (gw == valda_bb)
             
-            # Tillgängliga byten beräknas baserat på 1 nytt byte per omgång + det man sparat (max 2 st)
             tillgangliga_byten = 1 + sparade_byten
 
             if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
@@ -182,7 +188,6 @@ def optimera_fpl_med_byten_och_spar():
                 
                 banken = nuvarande_trupp - startelva
 
-                # Beräkna hur många byten som gjordes och uppdatera sparade byten (max 2)
                 if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
                     anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)

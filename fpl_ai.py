@@ -36,6 +36,13 @@ def hamta_och_berakna_fpl_data():
     lag_map = {team['id']: team['name'] for team in data['teams']}
     
     for player in data['elements']:
+        # Hämta spelarens status från API:et ('a' = tillgänglig, 'i' = skadad, 'd' = tveksam, 's' = avstängd)
+        player_status = player.get('status', 'a')
+        
+        # Hoppa över spelare som är skadade, avstängda eller osäkra (du kan anpassa detta om du vill ha med 'd')
+        if player_status in ['i', 's', 'u']:
+            continue
+            
         p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
         
         mal = player.get('goals_scored', 0)
@@ -93,7 +100,6 @@ def optimera_fpl_exakta_sparade_byten():
                     anvander_wildcard_nu = True
                     wildcard_anvandt = True
                 else:
-                    # STRIKT REGLER: Får aldrig göra fler byten än man har tillgängligt (inga minuspoäng)
                     prob += antal_byten <= tillgangliga_byten
             
             prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
@@ -126,7 +132,6 @@ def optimera_fpl_exakta_sparade_byten():
                 
                 if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard_nu:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
-                    # Beräkna hur många byten som finns kvar till nästa omgång (max 2)
                     anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)
                     kvar_i_banken = tillgangliga_byten - anvanda_av_bank
                     sparade_byten = min(2, kvar_i_banken)

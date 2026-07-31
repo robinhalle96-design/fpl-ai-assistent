@@ -78,24 +78,19 @@ def optimera_fpl_med_smart_wildcard():
                 modifierare = (6 - fdr) / 3.0  
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
-            # Kontrollera om vi ska tillämpa bytesgräns eller om det är dags för ett Wildcard
-            # Vi låter skriptet spela sitt Wildcard runt omgång 8 om det ger stor nytta, eller om bytena drar iväg.
             anvander_wildcard_nu = False
             if gw > 1 and len(for_ra_trupp) > 0 and not wildcard_anvandt:
                 byten = pulp.LpVariable.dicts(f"byte_{gw}", list(for_ra_trupp), cat='Binary')
                 for s in for_ra_trupp:
                     prob += byten[s] >= 1 - x[s]
                 
-                antal_byten_om man_byter = pulp.lpSum([byten[s] for s in for_ra_trupp])
+                antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
                 
-                # Om vi är runt omgång 6-9 och skriptet märker att truppen skulle vinna på en totalrenovering, 
-                # eller om vi sätter en regel att den får nollställa en gång när spelschemat svänger.
                 if gw == 8:  # Klassisk period för det första Wildcardet
                     anvander_wildcard_nu = True
                     wildcard_anvandt = True
                 else:
-                    # Annars gäller hård spärr på max 2 byten
-                    prob += antal_byten_om man_byter <= 2
+                    prob += antal_byten <= 2
             
             prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
             

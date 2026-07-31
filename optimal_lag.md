@@ -4,6 +4,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 1
 *Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1338.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -27,6 +28,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 2
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1184.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -50,6 +52,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 3
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1118.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -73,6 +76,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 4
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1046.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -96,6 +100,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 5
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1149.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -119,6 +124,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 6
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1092.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -142,6 +148,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 7
 *Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1106.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -164,6 +171,8 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 ---
 
 ## 🏆 Gameweek 8 ⚡ **[WILDCARD AKTIVERAT - Hela truppen ombyggd!]**
+📈 **Beräknad totalpoäng för truppen:** `1335.3 poäng`
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -186,6 +195,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 9
 *Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1401.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -209,6 +219,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 10
 *Gjorda byten denna omgång: 8 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1296.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -232,6 +243,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 11
 *Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1471.3 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -255,6 +267,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 12
 *Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1242.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -277,15 +290,16 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 ---
 
 ## 🏆 Gameweek 13
-*Gjorda byten denna omgång: 12 | Sparade byten till nästa omgång: 0*
+*Gjorda byten denna omgång: 13 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1400.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
 | Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 20.0 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
+| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 77.3 |
+| Neco Williams (ID:469) | Nott'm Forest | DEF | 5.0M | 49.3 |
 | Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
 | Micky van de Ven (ID:503) | Spurs | DEF | 5.0M | 54.7 |
 | Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
@@ -300,7 +314,8 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 ---
 
 ## 🏆 Gameweek 14
-*Gjorda byten denna omgång: 10 | Sparade byten till nästa omgång: 0*
+*Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1352.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -324,6 +339,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 15
 *Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1259.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -347,6 +363,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 16
 *Gjorda byten denna omgång: 13 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1483.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -370,6 +387,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 17
 *Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1418.7 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -393,6 +411,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 18
 *Gjorda byten denna omgång: 8 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1467.3 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -416,6 +435,7 @@ Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max
 
 ## 🏆 Gameweek 19
 *Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
+📈 **Beräknad totalpoäng för truppen:** `1399.0 poäng`
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|

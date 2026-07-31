@@ -1,4 +1,3 @@
-
 import pulp
 import requests
 
@@ -21,14 +20,11 @@ def hamta_och_berakna_fpl_data():
     for player in data['elements']:
         p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
         
-        # Hämta specifik statistik från FPL
         mal = player.get('goals_scored', 0)
         assist = player.get('assists', 0)
         clean_sheets = player.get('clean_sheets', 0)
         minuter_spelade = player.get('minutes', 0)
         
-        # Skapa en viktad poängformel (Index) för mål, assist och defensiv (clean sheets)
-        # Du kan justera vikterna om du vill värdera mål högre än assist eller tvärtom!
         stat_index = (mal * 5) + (assist * 3) + (clean_sheets * 2)
         
         spelar_lista.append(p_id)
@@ -48,24 +44,19 @@ def optimera_fpl_trupp(spelar_lista, index_poang, pris, lag, positioner, minuter
     
     x = pulp.LpVariable.dicts("spelare", spelar_lista, cat='Binary')
     
-    # Målfunktion: Maximera det sammanlagda statistik-indexet
     prob += pulp.lpSum([index_poang[s] * x[s] for s in spelar_lista])
     
-    # Villkor: 15 spelare totalt (2 GK, 5 DEF, 5 MID, 3 FWD)
     prob += pulp.lpSum([x[s] for s in spelar_lista]) == 15
     prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'GK']) == 2
     prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'DEF']) == 5
     prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'MID']) == 5
     prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'FWD']) == 3
     
-    # Budgetvillkor (100.0 miljoner)
     prob += pulp.lpSum([pris[s] * x[s] for s in spelar_lista]) <= 100.0
     
-    # Max 3 spelare från samma lag
     for l in set(lag.values()):
         prob += pulp.lpSum([x[s] for s in spelar_lista if lag[s] == l]) <= 3
         
-    # Spelminuters-krav (säkerställer att spelarna faktiskt spelar i sina lag)
     for s in spelar_lista:
         if minuter[s] < 90:
             prob += x[s] == 0
@@ -93,7 +84,18 @@ def optimera_fpl_trupp(spelar_lista, index_poang, pris, lag, positioner, minuter
     print(f"Total kostnad för truppen: {total_kostnad:.1f}M")
     print("==============================================\n")
 
+    # Spara ner resultatet till en fil direkt i mappen
+    with open("optimal_lag.md", "w", encoding="utf-8") as f:
+        f.write("# 🤖 AI-Optimerad 15-Mannatrupp\n\n")
+        f.write(f"**Total kostnad:** {total_kostnad:.1f}M / 100.0M\n\n")
+        
+        for pos in ['GK', 'DEF', 'MID', 'FWD']:
+            f.write(f"### {pos}\n")
+            for s in spelar_lista:
+                if positioner[s] == pos and x[s].varValue == 1:
+                    f.write(f"- **{s}** | Lag: {lag[s]} | Pris: {pris[s]}M | Index: {index_poang[s]}\n")
+            f.write("\n")
+
 if __name__ == "__main__":
     spelar_lista, index_poang, pris, lag, positioner, minuter = hamta_och_berakna_fpl_data()
     optimera_fpl_trupp(spelar_lista, index_poang, pris, lag, positioner, minuter)
-

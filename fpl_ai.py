@@ -50,13 +50,11 @@ def hamta_och_berakna_fpl_data():
         minuter_spelade = player.get('minutes', 0)
         pris_mil = player.get('now_cost') / 10.0
         
-        # Säkra att spelaren faktiskt har spelat tillräckligt mycket (rensar bort bänkpjäser som Ben Davies)
-        # Målvakter och utespelare måste ha konsekventa minuter
         element_type = player.get('element_type')
-        if element_type == 1: # Målvakt
-            if minuter_spelade < 1500: # Första målvakter spelar nästan allt
+        if element_type == 1: 
+            if minuter_spelade < 1500: 
                 continue
-        else: # Utespelare
+        else: 
             if minuter_spelade < 1200 and pris_mil > 5.0:
                 continue
             if minuter_spelade < 800 and pris_mil <= 5.0:
@@ -82,13 +80,13 @@ def hamta_och_berakna_fpl_data():
         
     return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr, omgang_matcher
 
-def optimera_fpl_med_starka_billiga():
+def optimera_fpl_med_byten_och_spar():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Optimerar med strikt minutkrav på ordinarie spelare...")
+    print("Optimerar med dynamisk bytesgräns och sparfunktion...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Endast ordinarie startspelare)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Med smart sparande av byten)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
@@ -122,6 +120,7 @@ def optimera_fpl_med_starka_billiga():
             anvander_triple_captain = (gw == valda_tc)
             anvander_bench_boost = (gw == valda_bb)
             
+            # Tillgängliga byten beräknas baserat på 1 nytt byte per omgång + det man sparat (max 2 st)
             tillgangliga_byten = 1 + sparade_byten
 
             if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
@@ -183,6 +182,7 @@ def optimera_fpl_med_starka_billiga():
                 
                 banken = nuvarande_trupp - startelva
 
+                # Beräkna hur många byten som gjordes och uppdatera sparade byten (max 2)
                 if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
                     anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)
@@ -208,9 +208,9 @@ def optimera_fpl_med_starka_billiga():
                 f.write("\n")
                 
                 if gw > 1 and not anvander_wildcard and not anvander_free_hit:
-                    f.write(f"*Gjorda byten: {faktiska_byten} | Sparade byten: {sparade_byten}*\n")
+                    f.write(f"*Gjorda byten: {faktiska_byten} | Sparade byten till nästa omgång: {sparade_byten}*\n")
                 elif not gw > 1:
-                    f.write(f"*Sparade byten: {sparade_byten}*\n")
+                    f.write(f"*Sparade byten till nästa omgång: {sparade_byten}*\n")
                 
                 f.write(f"📈 **Förväntad poäng:** `{beraknad_poang:.1f} poäng`\n\n")
                 
@@ -240,5 +240,5 @@ def optimera_fpl_med_starka_billiga():
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_med_starka_billiga()
+    optimera_fpl_med_byten_och_spar()
 

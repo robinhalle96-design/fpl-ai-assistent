@@ -1,8 +1,8 @@
-# 🤖 AI-Optimerad Trupp med Transfer-logik (GW 1-19)
+# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)
 
-Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga spelare för att undvika onödiga minusbyten.
+Här väger skriptet om det är värt att göra byten eller om det är smartare att spara gratisbytet till en bättre omgång.
 
-## 🏆 Gameweek 1
+## 🏆 Gameweek 1 (Sparade byten till nästa: 1)
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
@@ -23,7 +23,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 2
+## 🏆 Gameweek 2 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 8*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | GK | 5.5M | 30.0 |
@@ -44,7 +46,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 3
+## 🏆 Gameweek 3 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 10*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 22.0 |
@@ -65,7 +69,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 4
+## 🏆 Gameweek 4 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -86,7 +92,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 5
+## 🏆 Gameweek 5 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 9*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 13.3 |
@@ -107,32 +115,36 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 6
+## 🏆 Gameweek 6 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 9*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 20.0 |
+| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
 | Robin Roefs (ID:529) | Sunderland | GK | 5.0M | 26.7 |
 | Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 78.7 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
 | Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
 | Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Declan Rice (ID:13) | Arsenal | MID | 7.5M | 110.7 |
 | Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
 | Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
+| Enzo Le Fée (ID:542) | Sunderland | MID | 6.0M | 84.0 |
 | Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
 | Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
 
 ---
 
-## 🏆 Gameweek 7
+## 🏆 Gameweek 7 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 20.0 |
+| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 24.0 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
 | Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
@@ -149,13 +161,15 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 8
+## 🏆 Gameweek 8 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 12*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Dean Henderson (ID:198) | Crystal Palace | GK | 5.0M | 29.3 |
+| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 24.0 |
+| Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 59.0 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 50.7 |
 | Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
 | Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
 | Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
@@ -166,20 +180,22 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Hugo Ekitiké (ID:380) | Liverpool | FWD | 7.5M | 108.0 |
+| Jean-Philippe Mateta (ID:223) | Crystal Palace | FWD | 6.5M | 101.3 |
 
 ---
 
-## 🏆 Gameweek 9
+## 🏆 Gameweek 9 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 12*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
 | Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 8.0 |
 | Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 46.7 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 53.3 |
-| Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 38.0 |
 | Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
 | Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
+| Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 41.3 |
 | Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
 | Junior Kroupi (ID:78) | Bournemouth | MID | 7.5M | 113.3 |
 | Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
@@ -191,7 +207,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 10
+## 🏆 Gameweek 10 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 8*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
@@ -212,7 +230,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 11
+## 🏆 Gameweek 11 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 22.0 |
@@ -233,7 +253,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 12
+## 🏆 Gameweek 12 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 7*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 26.7 |
@@ -254,7 +276,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 13
+## 🏆 Gameweek 13 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
@@ -275,7 +299,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 14
+## 🏆 Gameweek 14 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 10*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -296,7 +322,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 15
+## 🏆 Gameweek 15 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -317,7 +345,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 16
+## 🏆 Gameweek 16 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 14*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
@@ -338,7 +368,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 17
+## 🏆 Gameweek 17 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 11*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -359,7 +391,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 18
+## 🏆 Gameweek 18 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 7*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
@@ -380,7 +414,9 @@ Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga 
 
 ---
 
-## 🏆 Gameweek 19
+## 🏆 Gameweek 19 (Sparade byten till nästa: 1)
+*Antal gjorda byten denna omgång: 9*
+
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |

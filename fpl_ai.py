@@ -10,13 +10,13 @@ def hamta_och_berakna_fpl_data():
     fixtures_response = requests.get(fixtures_url)
     fixtures = fixtures_response.json()
     
-    # Extra manuell svartlista om det behövs (t.ex. [30] för Digne om API:et bråkar)
-    svartlista_ids = [] 
+    # ── TVÄRSÄKER SVARTLISTA (Namn eller ID) ──
+    blockerade_namn = ["Digne", "Darlow"]  # Lägg till fler namn här om någon annan spökar
+    svartlista_ids = []                    # Eller ID-nummer om du hellre vill det
     
-    # ── AUTOMATISKA MINUTGRÄNSER (Rensar bort de som spelar lite) ──
-    min_minuter_gk = 2000      # Målvakter måste ha spelat mycket för att räknas
-    min_minuter_dyr = 1500     # Dyrare utespelare (> 5.0M) som kräver ordinarie plats
-    min_minuter_billig = 1000  # Billigare budgetspelare
+    min_minuter_gk = 2000      
+    min_minuter_dyr = 1500     
+    min_minuter_billig = 1000  
     
     lag_omgang_fdr = {}
     lag_namn_dict = {team['id']: team['name'] for team in data['teams']}
@@ -53,10 +53,13 @@ def hamta_och_berakna_fpl_data():
         p_id_num = player['id']
         full_namn = f"{player['first_name']} {player['second_name']}"
         
+        # ── KONTROLLERA OM SPELAREN SKALL BLOCKERAS ──
         if p_id_num in svartlista_ids:
             continue
             
-        # Blockera skadade, avstängda eller osäkra spelare direkt från FPL-status
+        if any(namn.lower() in full_namn.lower() for namn in blockerade_namn):
+            continue
+            
         player_status = player.get('status', 'a')
         if player_status in ['i', 's', 'u', 'n']:
             continue
@@ -65,11 +68,10 @@ def hamta_och_berakna_fpl_data():
         pris_mil = player.get('now_cost') / 10.0
         element_type = player.get('element_type')
         
-        # ── AUTOMATISK RENSNING AV SPELARE MED FÅ MINUTER ──
-        if element_type == 1:  # Målvakt
+        if element_type == 1:  
             if minuter_spelade < min_minuter_gk:
                 continue
-        else:  # Utespelare
+        else:  
             if pris_mil > 5.0 and minuter_spelade < min_minuter_dyr:
                 continue
             if pris_mil <= 5.0 and minuter_spelade < min_minuter_billig:
@@ -101,10 +103,10 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_med_chips():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Optimerar FPL-trupp med automatisk minutrensning...")
+    print("Optimerar FPL-trupp med namnspecifik svartlista...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Aktivt Minutfilter)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Blockerade Spelare Borttagna)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  

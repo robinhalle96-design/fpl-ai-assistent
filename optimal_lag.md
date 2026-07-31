@@ -1,7 +1,7 @@
-# 🤖 AI-Optimerad FPL-Trupp (Endast ordinarie startspelare)
+# 🤖 AI-Optimerad FPL-Trupp (Med smart sparande av byten)
 
 ## 🏆 Gameweek 1
-*Sparade byten: 0*
+*Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `82.6 poäng`
 
 ### ⚽ Startelva
@@ -30,7 +30,7 @@
 ---
 
 ## 🏆 Gameweek 2
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `71.2 poäng`
 
 ### ⚽ Startelva
@@ -59,7 +59,7 @@
 ---
 
 ## 🏆 Gameweek 3
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `80.4 poäng`
 
 ### ⚽ Startelva
@@ -88,7 +88,7 @@
 ---
 
 ## 🏆 Gameweek 4
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `66.8 poäng`
 
 ### ⚽ Startelva
@@ -117,7 +117,7 @@
 ---
 
 ## 🏆 Gameweek 5
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `82.2 poäng`
 
 ### ⚽ Startelva
@@ -146,7 +146,7 @@
 ---
 
 ## 🏆 Gameweek 6
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `72.6 poäng`
 
 ### ⚽ Startelva
@@ -175,7 +175,7 @@
 ---
 
 ## 🏆 Gameweek 7
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `81.1 poäng`
 
 ### ⚽ Startelva
@@ -232,7 +232,7 @@
 ---
 
 ## 🏆 Gameweek 9
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `63.2 poäng`
 
 ### ⚽ Startelva
@@ -261,7 +261,7 @@
 ---
 
 ## 🏆 Gameweek 10
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `68.6 poäng`
 
 ### ⚽ Startelva
@@ -290,7 +290,7 @@
 ---
 
 ## 🏆 Gameweek 11
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `77.5 poäng`
 
 ### ⚽ Startelva
@@ -319,7 +319,7 @@
 ---
 
 ## 🏆 Gameweek 12
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `60.7 poäng`
 
 ### ⚽ Startelva
@@ -343,12 +343,12 @@
 | Alisson Becker (ID:350) | Liverpool | vs Everton (B) | GK | 5.5M | 1.3 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Man City (H) | DEF | 8.0M | 2.8 |
 | Issa Diop (ID:259) | Ipswich Town | vs Aston Villa (H) | DEF | 4.0M | 1.4 |
-| Rayan Cherki (ID:399) | Man City | vs Arsenal (B) | MID | 7.5M | 2.4 |
+| Antoine Semenyo (ID:397) | Man City | vs Arsenal (B) | MID | 8.5M | 2.1 |
 
 ---
 
 ## 🏆 Gameweek 13
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `70.4 poäng`
 
 ### ⚽ Startelva
@@ -377,7 +377,7 @@
 ---
 
 ## 🏆 Gameweek 14
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `71.4 poäng`
 
 ### ⚽ Startelva
@@ -406,7 +406,7 @@
 ---
 
 ## 🏆 Gameweek 15
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `61.5 poäng`
 
 ### ⚽ Startelva
@@ -435,7 +435,7 @@
 ---
 
 ## 🏆 Gameweek 16
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `71.9 poäng`
 
 ### ⚽ Startelva
@@ -464,7 +464,7 @@
 ---
 
 ## 🏆 Gameweek 17 🔥 **[TRIPLE CAPTAIN AKTIVERAT!]**
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `80.0 poäng`
 
 ### ⚽ Startelva
@@ -493,7 +493,7 @@
 ---
 
 ## 🏆 Gameweek 18
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `77.6 poäng`
 
 ### ⚽ Startelva
@@ -522,7 +522,7 @@
 ---
 
 ## 🏆 Gameweek 19
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `78.0 poäng`
 
 ### ⚽ Startelva
@@ -544,23 +544,23 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Coventry City (H) | GK | 5.5M | 1.7 |
+| Adam Smith (ID:64) | Bournemouth | vs Aston Villa (H) | DEF | 4.5M | 3.0 |
 | Issa Diop (ID:259) | Ipswich Town | vs Arsenal (B) | DEF | 4.0M | 1.0 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Nott'm Forest (B) | DEF | 4.5M | 3.3 |
 | Ismaïla Sarr (ID:208) | Crystal Palace | vs Brentford (B) | MID | 6.5M | 5.1 |
 
 ---
 
 ## 🏆 Gameweek 20
-*Gjorda byten: 1 | Sparade byten: 0*
-📈 **Förväntad poäng:** `65.7 poäng`
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
+📈 **Förväntad poäng:** `65.5 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | vs Brentford (H) | GK | 6.0M | 2.1 |
+| Adam Smith (ID:64) | Bournemouth | vs Brighton (B) | DEF | 4.5M | 3.0 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Brentford (H) | DEF | 8.0M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Crystal Palace (B) | DEF | 5.5M | 3.8 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Spurs (H) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Leeds (B) | MID | 8.5M | 6.3 |
 | Harry Wilson (ID:260) | Leeds | vs Man City (H) | MID | 6.5M | 3.8 |
 | Noah Okafor (ID:336) | Leeds | vs Man City (H) | MID | 6.0M | 4.2 |
@@ -580,16 +580,16 @@
 ---
 
 ## 🏆 Gameweek 21
-*Gjorda byten: 1 | Sparade byten: 0*
-📈 **Förväntad poäng:** `80.2 poäng`
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
+📈 **Förväntad poäng:** `80.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | vs Hull City (B) | GK | 6.0M | 2.9 |
+| Adam Smith (ID:64) | Bournemouth | vs Ipswich Town (H) | DEF | 4.5M | 4.1 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Hull City (B) | DEF | 8.0M | 5.6 |
 | Reece James (ID:142) | Chelsea | vs Sunderland (H) | DEF | 5.5M | 5.1 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Newcastle (B) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Nott'm Forest (H) | MID | 8.5M | 6.3 |
 | Harry Wilson (ID:260) | Leeds | vs Spurs (B) | MID | 6.5M | 5.8 |
 | Noah Okafor (ID:336) | Leeds | vs Spurs (B) | MID | 6.0M | 6.3 |
@@ -609,7 +609,7 @@
 ---
 
 ## 🏆 Gameweek 22
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `73.2 poäng`
 
 ### ⚽ Startelva
@@ -631,23 +631,23 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Man Utd (B) | GK | 5.5M | 1.0 |
+| Adam Smith (ID:64) | Bournemouth | vs Nott'm Forest (B) | DEF | 4.5M | 3.0 |
 | Issa Diop (ID:259) | Ipswich Town | vs Hull City (H) | DEF | 4.0M | 1.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Aston Villa (H) | DEF | 4.5M | 3.3 |
 | Noah Okafor (ID:336) | Leeds | vs Chelsea (H) | MID | 6.0M | 4.2 |
 
 ---
 
 ## 🏆 Gameweek 23
-*Gjorda byten: 1 | Sparade byten: 0*
-📈 **Förväntad poäng:** `70.7 poäng`
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
+📈 **Förväntad poäng:** `71.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Everton (H) | GK | 5.5M | 1.3 |
+| Adam Smith (ID:64) | Bournemouth | vs Fulham (H) | DEF | 4.5M | 4.1 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Hull City (B) | DEF | 5.5M | 4.9 |
 | Reece James (ID:142) | Chelsea | vs Nott'm Forest (H) | DEF | 5.5M | 3.8 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Bournemouth (B) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Arsenal (H) | MID | 8.5M | 4.2 |
 | Ismaïla Sarr (ID:208) | Crystal Palace | vs Hull City (B) | MID | 6.5M | 6.8 |
 | Noah Okafor (ID:336) | Leeds | vs Coventry City (B) | MID | 6.0M | 8.4 |
@@ -667,16 +667,16 @@
 ---
 
 ## 🏆 Gameweek 24
-*Gjorda byten: 1 | Sparade byten: 0*
-📈 **Förväntad poäng:** `70.3 poäng`
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
+📈 **Förväntad poäng:** `70.8 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | vs Liverpool (H) | GK | 6.0M | 1.4 |
+| Adam Smith (ID:64) | Bournemouth | vs Leeds (B) | DEF | 4.5M | 3.0 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Coventry City (H) | DEF | 5.5M | 4.9 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Liverpool (H) | DEF | 8.0M | 2.8 |
-| Reece James (ID:142) | Chelsea | vs Man Utd (B) | DEF | 5.5M | 2.6 |
 | Antoine Semenyo (ID:397) | Man City | vs Fulham (B) | MID | 8.5M | 6.3 |
 | Ismaïla Sarr (ID:208) | Crystal Palace | vs Coventry City (H) | MID | 6.5M | 6.8 |
 | Noah Okafor (ID:336) | Leeds | vs Bournemouth (H) | MID | 6.0M | 6.3 |
@@ -690,13 +690,13 @@
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Arsenal (B) | GK | 5.5M | 1.0 |
 | Issa Diop (ID:259) | Ipswich Town | vs Spurs (H) | DEF | 4.0M | 1.4 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Man City (H) | DEF | 4.5M | 2.2 |
+| Reece James (ID:142) | Chelsea | vs Man Utd (B) | DEF | 5.5M | 2.6 |
 | Jérémy Doku (ID:400) | Man City | vs Fulham (B) | MID | 7.5M | 6.1 |
 
 ---
 
 ## 🏆 Gameweek 25
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `71.7 poäng`
 
 ### ⚽ Startelva
@@ -718,8 +718,8 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Coventry City (B) | GK | 5.5M | 1.7 |
+| Adam Smith (ID:64) | Bournemouth | vs Aston Villa (B) | DEF | 4.5M | 2.0 |
 | Issa Diop (ID:259) | Ipswich Town | vs Arsenal (H) | DEF | 4.0M | 1.0 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Nott'm Forest (H) | DEF | 4.5M | 3.3 |
 | Danny Welbeck (ID:136) | Brighton | vs Man Utd (B) | FWD | 6.0M | 4.2 |
 
 ---
@@ -753,7 +753,7 @@
 ---
 
 ## 🏆 Gameweek 27
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `75.8 poäng`
 
 ### ⚽ Startelva
@@ -782,7 +782,7 @@
 ---
 
 ## 🏆 Gameweek 28
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `80.2 poäng`
 
 ### ⚽ Startelva
@@ -839,7 +839,7 @@
 ---
 
 ## 🏆 Gameweek 30
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `77.6 poäng`
 
 ### ⚽ Startelva
@@ -868,7 +868,7 @@
 ---
 
 ## 🏆 Gameweek 31
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `83.7 poäng`
 
 ### ⚽ Startelva
@@ -897,7 +897,7 @@
 ---
 
 ## 🏆 Gameweek 32
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `75.1 poäng`
 
 ### ⚽ Startelva
@@ -926,7 +926,7 @@
 ---
 
 ## 🏆 Gameweek 33
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `67.8 poäng`
 
 ### ⚽ Startelva
@@ -955,7 +955,7 @@
 ---
 
 ## 🏆 Gameweek 34 🚀 **[BENCH BOOST AKTIVERAT!]**
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `78.9 poäng`
 
 ### ⚽ Startelva
@@ -984,7 +984,7 @@
 ---
 
 ## 🏆 Gameweek 35
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `65.9 poäng`
 
 ### ⚽ Startelva
@@ -1013,7 +1013,7 @@
 ---
 
 ## 🏆 Gameweek 36
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `85.9 poäng`
 
 ### ⚽ Startelva
@@ -1042,7 +1042,7 @@
 ---
 
 ## 🏆 Gameweek 37
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `75.6 poäng`
 
 ### ⚽ Startelva
@@ -1071,7 +1071,7 @@
 ---
 
 ## 🏆 Gameweek 38
-*Gjorda byten: 1 | Sparade byten: 0*
+*Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
 📈 **Förväntad poäng:** `78.6 poäng`
 
 ### ⚽ Startelva

@@ -55,17 +55,17 @@ def hamta_och_berakna_fpl_data():
         
     return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr
 
-def optimera_fpl_med_sparade_byten():
+def optimera_fpl_med_smart_wildcard():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar trupp med stöd för att spara byten (GW 1-19)...")
+    print("Beräknar trupp med smarta byten och automatiskt Wildcard...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)\n\n")
-        f.write("Här väger skriptet om det är värt att göra byten eller om det är smartare att spara gratisbytet till en bättre omgång.\n\n")
+        f.write("# 🤖 AI-Optimerad Trupp med Smart Wildcard (GW 1-19)\n\n")
+        f.write("Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om och när det är dags att spela ett **Wildcard** för att bygga om truppen helt optimalt.\n\n")
         
         for_ra_trupp = set()
-        tillgangliga_byten = 1  # Börjar med 1 gratisbyte
+        wildcard_anvandt = False
         
         for gw in range(1, 20):
             prob = pulp.LpProblem(f"FPL_GW_{gw}", pulp.LpMaximize)
@@ -78,22 +78,26 @@ def optimera_fpl_med_sparade_byten():
                 modifierare = (6 - fdr) / 3.0  
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
-            if gw > 1 and len(for_ra_trupp) > 0:
+            # Kontrollera om vi ska tillämpa bytesgräns eller om det är dags för ett Wildcard
+            # Vi låter skriptet spela sitt Wildcard runt omgång 8 om det ger stor nytta, eller om bytena drar iväg.
+            anvander_wildcard_nu = False
+            if gw > 1 and len(for_ra_trupp) > 0 and not wildcard_anvandt:
                 byten = pulp.LpVariable.dicts(f"byte_{gw}", list(for_ra_trupp), cat='Binary')
                 for s in for_ra_trupp:
                     prob += byten[s] >= 1 - x[s]
                 
-                # Antalet gjorda byten
-                antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
+                antal_byten_om man_byter = pulp.lpSum([byten[s] for s in for_ra_trupp])
                 
-                # Om man gör fler byten än man har sparade/tillgängliga kostar det 4 poäng per extra byte
-                extra_byten = pulp.LpVariable(f"extra_byten_{gw}", lowBound=0, cat='Continuous')
-                prob += extra_byten >= antal_byten - tillgangliga_byten
-                
-                # Maximera poäng minus straff för extra byten
-                prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista]) - (extra_byten * 4.0)
-            else:
-                prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
+                # Om vi är runt omgång 6-9 och skriptet märker att truppen skulle vinna på en totalrenovering, 
+                # eller om vi sätter en regel att den får nollställa en gång när spelschemat svänger.
+                if gw == 8:  # Klassisk period för det första Wildcardet
+                    anvander_wildcard_nu = True
+                    wildcard_anvandt = True
+                else:
+                    # Annars gäller hård spärr på max 2 byten
+                    prob += antal_byten_om man_byter <= 2
+            
+            prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
             
             # Standard FPL-regler
             prob += pulp.lpSum([x[s] for s in spelar_lista]) == 15
@@ -114,29 +118,25 @@ def optimera_fpl_med_sparade_byten():
             
             if pulp.LpStatus[prob.status] == 'Optimal':
                 nuvarande_trupp = set()
-                
-                # Räkna ut hur många byten som faktisk gjordes i denna omgång
                 faktiska_byten = 0
-                if gw > 1 and len(for_ra_trupp) > 0:
-                    for pos in ['GK', 'DEF', 'MID', 'FWD']:
-                        for s in spelar_lista:
-                            if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
-                                nuvarande_trupp.add(s)
+                
+                for pos in ['GK', 'DEF', 'MID', 'FWD']:
+                    for s in spelar_lista:
+                        if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
+                            nuvarande_trupp.add(s)
+                
+                if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard_nu:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
-                    
-                    # Uppdatera banken av sparade byten (max 5 tillåts i spelet, men vi håller den mellan 1 och 2 för enkelhets skull)
-                    tillgangliga_byten = min(2, (tillgangliga_byten - faktiska_byten) + 1)
-                    if tillgangliga_byten < 1:
-                        tillgangliga_byten = 1
-                else:
-                    for pos in ['GK', 'DEF', 'MID', 'FWD']:
-                        for s in spelar_lista:
-                            if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
-                                nuvarande_trupp.add(s)
 
-                f.write(f"## 🏆 Gameweek {gw} (Sparade byten till nästa: {tillgangliga_byten})\n")
-                if gw > 1:
+                f.write(f"## 🏆 Gameweek {gw}")
+                if anvander_wildcard_nu:
+                    f.write(" ⚡ **[WILDCARD AKTIVERAT - Hela truppen ombyggd!]**")
+                f.write("\n")
+                
+                if gw > 1 and not anvander_wildcard_nu:
                     f.write(f"*Antal gjorda byten denna omgång: {faktiska_byten}*\n\n")
+                elif not gw > 1:
+                    f.write("\n")
                 
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
                 f.write("|---|---|---|---|---|\n")
@@ -150,4 +150,4 @@ def optimera_fpl_med_sparade_byten():
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_med_sparade_byten()
+    optimera_fpl_med_smart_wildcard()

@@ -50,8 +50,17 @@ def hamta_och_berakna_fpl_data():
         minuter_spelade = player.get('minutes', 0)
         pris_mil = player.get('now_cost') / 10.0
         
-        if minuter_spelade < 900 and pris_mil > 5.0:
-            continue
+        # Säkra att spelaren faktiskt har spelat tillräckligt mycket (rensar bort bänkpjäser som Ben Davies)
+        # Målvakter och utespelare måste ha konsekventa minuter
+        element_type = player.get('element_type')
+        if element_type == 1: # Målvakt
+            if minuter_spelade < 1500: # Första målvakter spelar nästan allt
+                continue
+        else: # Utespelare
+            if minuter_spelade < 1200 and pris_mil > 5.0:
+                continue
+            if minuter_spelade < 800 and pris_mil <= 5.0:
+                continue
             
         p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
         
@@ -76,10 +85,10 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_med_starka_billiga():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Optimerar trupp med fokus på starka lag även för billiga spelare samt matchscheman...")
+    print("Optimerar med strikt minutkrav på ordinarie spelare...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Starka Billiga Spelare & Motståndare)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Endast ordinarie startspelare)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  

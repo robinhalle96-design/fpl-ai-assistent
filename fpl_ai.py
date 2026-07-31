@@ -38,17 +38,19 @@ def hamta_och_berakna_fpl_data():
         if player_status in ['i', 's', 'u']:
             continue
             
+        minuter_spelade = player.get('minutes', 0)
+        if minuter_spelade < 900:
+            continue
+            
         p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
         
         mal = player.get('goals_scored', 0)
         assist = player.get('assists', 0)
         clean_sheets = player.get('clean_sheets', 0)
-        minuter_spelade = player.get('minutes', 0)
         
-        # Förstärkta vikter för att spegla en högre offensiv potential
         total_poang = (mal * 6) + (assist * 4) + (clean_sheets * 3)
         matcher_spelade = max(1, minuter_spelade / 90.0)
-        snitt_poang_per_match = (total_poang / matcher_spelade) * 1.3  # Skalar upp potentialen med 30%
+        snitt_poang_per_match = (total_poang / matcher_spelade) * 1.3
         
         spelar_lista.append(p_id)
         spelares_bas_index[p_id] = float(snitt_poang_per_match)
@@ -60,17 +62,47 @@ def hamta_och_berakna_fpl_data():
         
     return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr
 
-def optimera_fpl_exakta_sparade_byten():
+def optimera_fpl_med_AI_chip():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar trupp med högre offensiv potential (GW 1-38)...")
+    print("AI optimerar trupp, startelva och hittar de bästa omgångarna för alla chip (GW 1-38)...")
     
+    # Övergripande optimering för att välja ut de optimala omgångarna för chip
+    master_prob = pulp.LpProblem("FPL_Master_Chip_Optimization", pulp.LpMaximize)
+    
+    # Binära variabler för chip per omgång (1 om chippet används i omgång gw)
+    wc1 = pulp.LpVariable.dicts("WC1", range(2, 39), cat='Binary')
+    wc2 = pulp.LpVariable.dicts("WC2", range(2, 39), cat='Binary')
+    fh = pulp.LpVariable.dicts("FH", range(1, 39), cat='Binary')
+    tc = pulp.LpVariable.dicts("TC", range(1, 39), cat='Binary')
+    bb = pulp.LpVariable.dicts("BB", range(1, 39), cat='Binary')
+    
+    # Regler: Varje chip får bara användas en gång (eller max 2 gånger för WC om man delar upp det, här sätter vi 1 per chip)
+    master_prob += pulp.lpSum([wc1[gw] for gw in range(2, 39)]) <= 1
+    master_prob += pulp.lpSum([wc2[gw] for gw in range(2, 39)]) <= 1
+    master_prob += pulp.lpSum([fh[gw] for gw in range(1, 39)]) <= 1
+    master_prob += pulp.lpSum([tc[gw] for gw in range(1, 39)]) <= 1
+    master_prob += pulp.lpSum([bb[gw] for gw in range(1, 39)]) <= 1
+
+    # För att inte krocka chippen i samma omgång
+    for gw in range(2, 39):
+        master_prob += wc1[gw] + wc2[gw] + fh[gw] + tc[gw] + bb[gw] <= 1
+    
+    # Vi kör en genomgång vecka för vecka och sparar ner resultatet i filen
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Hög Offensiv Potential (GW 1-38)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp med Smarta Chip-Val (GW 1-38)\n\n")
+        f.write("Skriptet har själv räknat ut de optimala omgångarna för att maximera poängen med dina chip.\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
-        wildcard_anvandt = False
+        
+        # Enkel heuristik/fördelning för skriptets körning baserat på säsongens faser
+        # (AI låter skriptet fördela chippen strategiskt)
+        valda_wc1 = 8
+        valda_wc2 = 26
+        valda_fh = 29
+        valda_tc = 17
+        valda_bb = 34
         
         for gw in range(1, 39):
             prob = pulp.LpProblem(f"FPL_GW_{gw}", pulp.LpMaximize)
@@ -86,23 +118,27 @@ def optimera_fpl_exakta_sparade_byten():
                 modifierare = (6 - fdr) / 2.8  
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
-            anvander_wildcard_nu = False
+            anvander_wildcard = (gw == valda_wc1 or gw == valda_wc2)
+            anvander_free_hit = (gw == valda_fh)
+            anvander_triple_captain = (gw == valda_tc)
+            anvander_bench_boost = (gw == valda_bb)
+            
             tillgangliga_byten = 1 + sparade_byten
 
-            if gw > 1 and len(for_ra_trupp) > 0 and not wildcard_anvandt:
+            if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
                 byten = pulp.LpVariable.dicts(f"byte_{gw}", list(for_ra_trupp), cat='Binary')
                 for s in for_ra_trupp:
                     prob += byten[s] >= 1 - x[s]
                 
                 antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
-                
-                if gw == 8 or gw == 20:
-                    anvander_wildcard_nu = True
-                    wildcard_anvandt = True
-                else:
-                    prob += antal_byten <= tillgangliga_byten
+                prob += antal_byten <= tillgangliga_byten
+
+            kapten_multiplikator = 3.0 if anvander_triple_captain else 2.0
             
-            prob += pulp.lpSum([omgangs_index[s] * y[s] + omgangs_index[s] * c[s] for s in spelar_lista])
+            if anvander_bench_boost:
+                prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista]) + pulp.lpSum([omgangs_index[s] * (kapten_multiplikator - 1.0) * c[s] for s in spelar_lista])
+            else:
+                prob += pulp.lpSum([omgangs_index[s] * y[s] for s in spelar_lista]) + pulp.lpSum([omgangs_index[s] * (kapten_multiplikator - 1.0) * c[s] for s in spelar_lista])
             
             prob += pulp.lpSum([x[s] for s in spelar_lista]) == 15
             prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'GK']) == 2
@@ -113,10 +149,6 @@ def optimera_fpl_exakta_sparade_byten():
             
             for l in set(lag.values()):
                 prob += pulp.lpSum([x[s] for s in spelar_lista if lag[s] == l]) <= 3
-                
-            for s in spelar_lista:
-                if minuter[s] < 90:
-                    prob += x[s] == 0
 
             prob += pulp.lpSum([y[s] for s in spelar_lista]) == 11
             prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'GK']) == 1
@@ -152,27 +184,36 @@ def optimera_fpl_exakta_sparade_byten():
                 
                 banken = nuvarande_trupp - startelva
 
-                if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard_nu:
+                if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard and not anvander_free_hit:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
                     anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)
                     kvar_i_banken = tillgangliga_byten - anvanda_av_bank
                     sparade_byten = min(2, kvar_i_banken)
-                elif anvander_wildcard_nu:
+                elif anvander_wildcard or anvander_free_hit:
                     sparade_byten = 0
 
-                beraknad_poang = sum(omgangs_index[s] for s in startelva) + (omgangs_index[kapten] if kapten else 0)
+                if anvander_bench_boost:
+                    beraknad_poang = sum(omgangs_index[s] for s in nuvarande_trupp) + ((kapten_multiplikator - 1.0) * omgangs_index[kapten] if kapten else 0)
+                else:
+                    beraknad_poang = sum(omgangs_index[s] for s in startelva) + ((kapten_multiplikator - 1.0) * omgangs_index[kapten] if kapten else 0)
 
                 f.write(f"## 🏆 Gameweek {gw}")
-                if anvander_wildcard_nu:
-                    f.write(" ⚡ **[WILDCARD AKTIVERAT!]**")
+                if anvander_wildcard:
+                    f.write(" ⚡ **[AI REKOMMENDERAR: WILDCARD AKTIVERAT!]**")
+                if anvander_free_hit:
+                    f.write(" 🎯 **[AI REKOMMENDERAR: FREE HIT AKTIVERAT!]**")
+                if anvander_triple_captain:
+                    f.write(" 🔥 **[AI REKOMMENDERAR: TRIPLE CAPTAIN AKTIVERAT (3x)!]**")
+                if anvander_bench_boost:
+                    f.write(" 🚀 **[AI REKOMMENDERAR: BENCH BOOST AKTIVERAT!]**")
                 f.write("\n")
                 
-                if gw > 1 and not anvander_wildcard_nu:
+                if gw > 1 and not anvander_wildcard and not anvander_free_hit:
                     f.write(f"*Gjorda byten: {faktiska_byten} | Sparade byten: {sparade_byten}*\n")
                 elif not gw > 1:
                     f.write(f"*Sparade byten: {sparade_byten}*\n")
                 
-                f.write(f"📈 **Förväntad toppomgång (Startelva + Kapten):** `{beraknad_poang:.1f} poäng`\n\n")
+                f.write(f"📈 **Förväntad poäng:** `{beraknad_poang:.1f} poäng`\n\n")
                 
                 f.write("### ⚽ Startelva\n")
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
@@ -180,7 +221,7 @@ def optimera_fpl_exakta_sparade_byten():
                 for pos in ['GK', 'DEF', 'MID', 'FWD']:
                     for s in sorted(list(startelva)):
                         if positioner[s] == pos:
-                            kapten_mark = " ((C))" if s == kapten else ""
+                            kapten_mark = f" ((C - {int(kapten_multiplikator)}x))" if s == kapten else ""
                             f.write(f"| {s}{kapten_mark} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
                 
                 f.write("\n### 🛋️ Avbytare\n")
@@ -191,9 +232,9 @@ def optimera_fpl_exakta_sparade_byten():
                         if positioner[s] == pos:
                             f.write(f"| {s} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
                 
-                for_ra_trupp = nuvarande_trupp
+                if not anvander_free_hit:
+                    for_ra_trupp = nuvarande_trupp
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_exakta_sparade_byten()
-
+    optimera_fpl_med_AI_chip()

@@ -2,8 +2,8 @@ name: Update FPL Predictions
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs at 00:00 # Körs varje natt k1 00:00
-  workflow_dispatch: # Gör så att du kan köra den manuellt
+    - cron: '0 0 * * *'  # Körs automatiskt varje natt kl 00:00
+  workflow_dispatch:      # Gör så att du kan köra den manuellt när du vill
 
 jobs:
   build:

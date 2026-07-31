@@ -55,16 +55,17 @@ def hamta_och_berakna_fpl_data():
         
     return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr
 
-def optimera_fpl_med_smart_wildcard():
+def optimera_fpl_exakta_sparade_byten():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar trupp med smarta byten och automatiskt Wildcard...")
+    print("Beräknar trupp med exakt logik för sparade byten (inga minuspoäng)...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Smart Wildcard (GW 1-19)\n\n")
-        f.write("Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om och när det är dags att spela ett **Wildcard** för att bygga om truppen helt optimalt.\n\n")
+        f.write("# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)\n\n")
+        f.write("Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max 2. Inga minuspoäng tillåts!\n\n")
         
         for_ra_trupp = set()
+        sparade_byten = 0  # Börjar med 0 sparade byten inför omgång 2 (1 tillgängligt)
         wildcard_anvandt = False
         
         for gw in range(1, 20):
@@ -79,6 +80,8 @@ def optimera_fpl_med_smart_wildcard():
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
             anvander_wildcard_nu = False
+            tillgangliga_byten = 1 + sparade_byten
+
             if gw > 1 and len(for_ra_trupp) > 0 and not wildcard_anvandt:
                 byten = pulp.LpVariable.dicts(f"byte_{gw}", list(for_ra_trupp), cat='Binary')
                 for s in for_ra_trupp:
@@ -86,11 +89,12 @@ def optimera_fpl_med_smart_wildcard():
                 
                 antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
                 
-                if gw == 8:  # Klassisk period för det första Wildcardet
+                if gw == 8:  # Wildcard i omgång 8
                     anvander_wildcard_nu = True
                     wildcard_anvandt = True
                 else:
-                    prob += antal_byten <= 2
+                    # STRIKT REGLER: Får aldrig göra fler byten än man har tillgängligt (inga minuspoäng)
+                    prob += antal_byten <= tillgangliga_byten
             
             prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
             
@@ -122,6 +126,12 @@ def optimera_fpl_med_smart_wildcard():
                 
                 if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard_nu:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
+                    # Beräkna hur många byten som finns kvar till nästa omgång (max 2)
+                    anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)
+                    kvar_i_banken = tillgangliga_byten - anvanda_av_bank
+                    sparade_byten = min(2, kvar_i_banken)
+                elif anvander_wildcard_nu:
+                    sparade_byten = 0
 
                 f.write(f"## 🏆 Gameweek {gw}")
                 if anvander_wildcard_nu:
@@ -129,9 +139,9 @@ def optimera_fpl_med_smart_wildcard():
                 f.write("\n")
                 
                 if gw > 1 and not anvander_wildcard_nu:
-                    f.write(f"*Antal gjorda byten denna omgång: {faktiska_byten}*\n\n")
+                    f.write(f"*Gjorda byten denna omgång: {faktiska_byten} | Sparade byten till nästa omgång: {sparade_byten}*\n\n")
                 elif not gw > 1:
-                    f.write("\n")
+                    f.write(f"*Sparade byten till nästa omgång: {sparade_byten}*\n\n")
                 
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
                 f.write("|---|---|---|---|---|\n")
@@ -145,4 +155,4 @@ def optimera_fpl_med_smart_wildcard():
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_med_smart_wildcard()
+    optimera_fpl_exakta_sparade_byten()

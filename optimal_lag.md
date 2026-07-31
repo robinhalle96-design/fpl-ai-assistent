@@ -1,1105 +1,1103 @@
 # 🤖 AI-Optimerad Trupp med Startelva & Kapten (GW 1-38)
 
-Skriptet optimerar 15-mannatrupp, startelva, kapten och sparade byten för hela säsongen.
-
 ## 🏆 Gameweek 1
 *Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1359.0 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 58.0 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 2
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1245.7 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `44.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 25.3 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 44.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 58.0 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 64.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 1.4 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 2.4 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 3.9 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 3.6 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 3.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 8.7 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 3
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1186.7 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.5 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 25.3 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 44.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 77.3 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 48.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 30.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) ((C)) | Brentford | FWD | 8.0M | 177.3 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 64.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 1.4 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 2.4 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 3.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 4
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1164.3 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `49.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 38.7 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 32.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 84.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 87.3 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) ((C)) | Chelsea | FWD | 7.5M | 162.7 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.2 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 2.6 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 3.6 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 3.8 |
+| Stefanos Tzimas (ID:137) ((C)) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 3.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 17.3 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 5
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1210.7 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `55.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 77.3 |
-| Antoine Semenyo (ID:397) ((C)) | Man City | MID | 8.5M | 169.3 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.2 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 3.6 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 3.7 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 6
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1091.3 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 38.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 84.7 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 131.0 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 1.5 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 2.5 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 7
 *Gjorda byten: 1 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1207.7 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `53.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 77.3 |
-| Antoine Semenyo (ID:397) ((C)) | Man City | MID | 8.5M | 169.3 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.2 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 3.6 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 3.7 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 4.7 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 2.3 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 8 ⚡ **[WILDCARD AKTIVERAT!]**
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1293.3 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) ((C)) | Brentford | FWD | 8.0M | 177.3 |
-| Jean-Philippe Mateta (ID:223) | Crystal Palace | FWD | 6.5M | 101.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 4.9 |
+| Taiwo Awoniyi (ID:492) ((C)) | Nott'm Forest | FWD | 5.5M | 7.0 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 4.7 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Luke O'Nien (ID:539) | Sunderland | DEF | 4.0M | 9.3 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 8.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Scott (ID:69) | Bournemouth | MID | 6.0M | 0.9 |
 
 ---
 
 ## 🏆 Gameweek 9
-*Gjorda byten: 11 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1476.3 poäng`
+*Gjorda byten: 8 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `53.1 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 2.3 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 2.1 |
+| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 4.8 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 3.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 4.7 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 12.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 21.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 6.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 10
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1304.0 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `55.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Declan Rice (ID:13) | Arsenal | MID | 7.5M | 110.7 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Kai Havertz (ID:26) | Arsenal | FWD | 7.5M | 5.6 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 8.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Zach Abbott (ID:477) | Nott'm Forest | DEF | 4.0M | 1.0 |
-| Harry Howell (ID:132) | Brighton | MID | 4.5M | 1.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.9 |
 
 ---
 
 ## 🏆 Gameweek 11
-*Gjorda byten: 11 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1551.0 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `60.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 26.7 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Enzo Fernández (ID:155) | Chelsea | MID | 7.0M | 108.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 4.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 7.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 6.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 12
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1184.7 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Dean Henderson (ID:198) | Crystal Palace | GK | 5.0M | 29.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 53.3 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 53.0 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Ismaïla Sarr (ID:208) | Crystal Palace | MID | 6.5M | 92.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Ollie Watkins (ID:55) ((C)) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 2.3 |
+| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 4.3 |
+| Matt O'Riley (ID:126) | Brighton | MID | 5.5M | 4.2 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 3.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Charalampos Kostoulas (ID:138) | Brighton | FWD | 5.5M | 5.1 |
+| Stefanos Tzimas (ID:137) ((C)) | Brighton | FWD | 5.5M | 7.3 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 4.7 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 18.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 14.0 |
-| Noah Sadiki (ID:545) | Sunderland | MID | 5.0M | 24.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 13
-*Gjorda byten: 12 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1476.0 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `59.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Cody Gakpo (ID:367) | Liverpool | MID | 7.0M | 93.3 |
-| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 3.0 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 8.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 14
-*Gjorda byten: 7 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1358.0 poäng`
+*Gjorda byten: 4 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `54.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Jayden Bogle (ID:330) | Leeds | DEF | 4.5M | 42.7 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Francisco Evanilson de Lima Barbosa (ID:79) | Bournemouth | FWD | 6.0M | 97.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.2 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Taiwo Awoniyi (ID:492) ((C)) | Nott'm Forest | FWD | 5.5M | 7.0 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 8.7 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 15
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1203.0 poäng`
+*Gjorda byten: 5 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Cody Gakpo (ID:367) | Liverpool | MID | 7.0M | 93.3 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| Ollie Watkins (ID:55) ((C)) | Aston Villa | FWD | 8.0M | 146.7 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 2.3 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 3.8 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
+| William Osula (ID:465) ((C)) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 6.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 16
-*Gjorda byten: 11 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1528.0 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `55.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 53.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Maxim De Cuyper (ID:115) | Brighton | DEF | 4.5M | 2.5 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 3.0 |
+| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 4.3 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 18.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 21.0 |
-| Yéremy Pino Santos (ID:211) | Crystal Palace | MID | 5.5M | 30.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 17
-*Gjorda byten: 8 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1397.3 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 53.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Enzo Fernández (ID:155) | Chelsea | MID | 7.0M | 108.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 5.9 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 8.7 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.9 |
 
 ---
 
 ## 🏆 Gameweek 18
-*Gjorda byten: 7 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1435.3 poäng`
+*Gjorda byten: 2 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `54.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Caoimhín Kelleher (ID:82) | Brentford | GK | 5.0M | 26.7 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Micky van de Ven (ID:503) | Spurs | DEF | 5.0M | 54.7 |
-| Reece James (ID:142) | Chelsea | DEF | 5.5M | 58.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 5.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Harry Howell (ID:132) | Brighton | MID | 4.5M | 1.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 19
-*Gjorda byten: 9 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1380.7 poäng`
+*Gjorda byten: 5 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Neco Williams (ID:469) | Nott'm Forest | DEF | 5.0M | 49.3 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Declan Rice (ID:13) | Arsenal | MID | 7.5M | 110.7 |
-| Enzo Fernández (ID:155) | Chelsea | MID | 7.0M | 108.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 2.3 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 1.1 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 20
-*Gjorda byten: 8 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1266.3 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `53.1 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 22.0 |
-| Luke Shaw (ID:423) | Man Utd | DEF | 4.5M | 37.3 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
-| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 36.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Bryan Mbeumo (ID:427) | Man Utd | MID | 8.0M | 106.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Jesus Maciel da Cruz (ID:491) | Nott'm Forest | FWD | 6.0M | 88.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 3.8 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) ((C)) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 8.7 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 21
-*Gjorda byten: 9 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1417.0 poäng`
+*Gjorda byten: 8 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Micky van de Ven (ID:503) | Spurs | DEF | 5.0M | 54.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 2.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alejandro Garnacho Ferreyra (ID:160) | Aston Villa | MID | 6.0M | 1.2 |
 
 ---
 
 ## 🏆 Gameweek 22
-*Gjorda byten: 8 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1282.0 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `54.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 41.3 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Declan Rice (ID:13) | Arsenal | MID | 7.5M | 110.7 |
-| Enzo Le Fée (ID:542) | Sunderland | MID | 6.0M | 84.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 2.1 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 3.5 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 3.8 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Kai Havertz (ID:26) | Arsenal | FWD | 7.5M | 5.6 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Zach Abbott (ID:477) | Nott'm Forest | DEF | 4.0M | 1.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 6.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 23
-*Gjorda byten: 13 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1210.3 poäng`
+*Gjorda byten: 9 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Ismaïla Sarr (ID:208) | Crystal Palace | MID | 6.5M | 92.0 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 123.3 |
-| Ollie Watkins (ID:55) ((C)) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 2.3 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 4.3 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 5.0 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| William Osula (ID:465) ((C)) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 18.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 14.0 |
-| Noah Sadiki (ID:545) | Sunderland | MID | 5.0M | 24.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 24
 *Gjorda byten: 8 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1274.3 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `53.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Dean Henderson (ID:198) | Crystal Palace | GK | 5.0M | 29.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Danny Welbeck (ID:136) | Brighton | FWD | 6.0M | 117.3 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Maxim De Cuyper (ID:115) | Brighton | DEF | 4.5M | 2.5 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | MID | 6.5M | 3.8 |
+| Matt O'Riley (ID:126) | Brighton | MID | 5.5M | 4.2 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 3.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 3.8 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) ((C)) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 12.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 28.0 |
-| Yéremy Pino Santos (ID:211) | Crystal Palace | MID | 5.5M | 40.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alejandro Garnacho Ferreyra (ID:160) | Aston Villa | MID | 6.0M | 1.8 |
 
 ---
 
 ## 🏆 Gameweek 25
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1332.7 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `56.5 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Kai Havertz (ID:26) | Arsenal | FWD | 7.5M | 5.6 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 5.3 |
-| João Victor de Souza Menezes (ID:511) | Spurs | DEF | 4.0M | 1.0 |
-| Zach Abbott (ID:477) | Nott'm Forest | DEF | 4.0M | 1.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 26
-*Gjorda byten: 9 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1585.3 poäng`
+*Gjorda byten: 2 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `60.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Michael Kayode (ID:88) | Brentford | DEF | 4.5M | 41.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Enzo Fernández (ID:155) | Chelsea | MID | 7.0M | 108.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 3.0 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 7.5 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Kai Havertz (ID:26) | Arsenal | FWD | 7.5M | 5.6 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 4.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 27
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1452.3 poäng`
+*Gjorda byten: 8 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `56.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Ismaïla Sarr (ID:208) | Crystal Palace | MID | 6.5M | 92.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Danny Welbeck (ID:136) | Brighton | FWD | 6.0M | 117.3 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Maxim De Cuyper (ID:115) | Brighton | DEF | 4.5M | 2.5 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 4.8 |
+| Matt O'Riley (ID:126) | Brighton | MID | 5.5M | 4.2 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 24.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Vitalii Mykolenko (ID:233) | Everton | DEF | 4.5M | 21.0 |
-| Yéremy Pino Santos (ID:211) | Crystal Palace | MID | 5.5M | 40.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.9 |
 
 ---
 
 ## 🏆 Gameweek 28
-*Gjorda byten: 8 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1428.7 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `56.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bart Verbruggen (ID:109) | Brighton | GK | 4.5M | 26.7 |
-| Neco Williams (ID:469) | Nott'm Forest | DEF | 5.0M | 49.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Reece James (ID:142) | Chelsea | DEF | 5.5M | 58.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
+| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 1.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Maxim De Cuyper (ID:115) | Brighton | DEF | 4.5M | 2.5 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 4.3 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) ((C)) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 4.3 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 29
 *Gjorda byten: 6 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1524.0 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `56.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 3.0 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 6.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 30
 *Gjorda byten: 9 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1294.7 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `60.1 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Reece James (ID:142) | Chelsea | DEF | 5.5M | 58.7 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 118.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Danny Welbeck (ID:136) | Brighton | FWD | 6.0M | 117.3 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) ((C)) | Chelsea | FWD | 7.5M | 162.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Reece James (ID:142) | Chelsea | DEF | 5.5M | 2.7 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Matt O'Riley (ID:126) | Brighton | MID | 5.5M | 4.2 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 7.3 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 17.3 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alejandro Garnacho Ferreyra (ID:160) | Aston Villa | MID | 6.0M | 1.8 |
 
 ---
 
 ## 🏆 Gameweek 31
 *Gjorda byten: 6 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1412.0 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 53.3 |
-| Virgil van Dijk (ID:356) | Liverpool | DEF | 6.5M | 70.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 174.7 |
-| Enzo Fernández (ID:155) | Chelsea | MID | 7.0M | 108.0 |
-| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 122.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.9 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.9 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Estêvão Almeida de Oliveira Gonçalves (ID:157) | Chelsea | MID | 6.5M | 4.7 |
+| Federico Chiesa (ID:370) | Liverpool | MID | 5.5M | 4.9 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 5.5 |
+| Kai Havertz (ID:26) | Arsenal | FWD | 7.5M | 5.6 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 32
-*Gjorda byten: 7 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1340.0 poäng`
+*Gjorda byten: 8 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `48.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Bernd Leno (ID:250) | Fulham | GK | 4.5M | 24.0 |
-| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 58.0 |
-| Michael Kayode (ID:88) | Brentford | DEF | 4.5M | 41.3 |
-| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
+| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 1.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 3.3 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Dango Ouattara (ID:95) | Brentford | MID | 6.5M | 3.8 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 5.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 3.8 |
+| Benjamin Sesko (ID:439) | Man Utd | FWD | 7.0M | 4.8 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 4.9 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 4.3 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Harry Howell (ID:132) | Brighton | MID | 4.5M | 0.5 |
 
 ---
 
 ## 🏆 Gameweek 33
 *Gjorda byten: 9 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1307.0 poäng`
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `53.6 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Jan Paul van Hecke (ID:112) | Spurs | DEF | 5.0M | 58.7 |
-| Micky van de Ven (ID:503) | Spurs | DEF | 5.0M | 54.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) ((C)) | Brentford | FWD | 8.0M | 177.3 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 1.3 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Jeremie Frimpong (ID:357) | Liverpool | DEF | 5.5M | 2.2 |
+| Lucas Digne (ID:30) | Aston Villa | DEF | 4.5M | 2.3 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 3.8 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) ((C)) | Nott'm Forest | FWD | 5.5M | 7.0 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 8.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 34
-*Gjorda byten: 11 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1330.7 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `51.1 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Đorđe Petrović (ID:57) | Bournemouth | GK | 4.5M | 29.3 |
-| Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
-| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Francisco Evanilson de Lima Barbosa (ID:79) | Bournemouth | FWD | 6.0M | 97.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 2.2 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 2.1 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 5.9 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Rayan Vitor Simplício Rocha (ID:67) | Bournemouth | MID | 6.5M | 4.6 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 9.3 |
-| Luke O'Nien (ID:539) | Sunderland | DEF | 4.0M | 9.3 |
-| Harry Howell (ID:132) | Brighton | MID | 4.5M | 1.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 1.1 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 1.0 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 35
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1160.7 poäng`
+*Gjorda byten: 6 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 52.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| James Tarkowski (ID:229) | Everton | DEF | 6.0M | 54.7 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Danny Welbeck (ID:136) | Brighton | FWD | 6.0M | 117.3 |
-| Igor Thiago Nascimento Rodrigues (ID:106) ((C)) | Brentford | FWD | 8.0M | 133.0 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Maxim De Cuyper (ID:115) | Brighton | DEF | 4.5M | 2.5 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 3.8 |
+| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 3.8 |
+| Matt O'Riley (ID:126) | Brighton | MID | 5.5M | 4.2 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Stefanos Tzimas (ID:137) ((C)) | Brighton | FWD | 5.5M | 7.3 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 5.2 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Will Hughes (ID:212) | Crystal Palace | MID | 4.5M | 13.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.9 |
 
 ---
 
 ## 🏆 Gameweek 36
-*Gjorda byten: 12 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1493.3 poäng`
+*Gjorda byten: 5 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Dean Henderson (ID:198) | Crystal Palace | GK | 5.0M | 29.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 53.3 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
-| Ismaïla Sarr (ID:208) | Crystal Palace | MID | 6.5M | 92.0 |
-| John McGinn (ID:45) | Aston Villa | MID | 5.5M | 70.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 246.7 |
-| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 4.4 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 4.8 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Rayan Cherki (ID:399) | Man City | MID | 7.5M | 5.1 |
+| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 7.5 |
+| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 5.0 |
+| Stefanos Tzimas (ID:137) | Brighton | FWD | 5.5M | 5.5 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 10.7 |
-| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 6.7 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 4.7 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 2.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.5 |
+| Alex Iwobi (ID:261) | Fulham | MID | 5.5M | 1.9 |
 
 ---
 
 ## 🏆 Gameweek 37
-*Gjorda byten: 10 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1386.0 poäng`
+*Gjorda byten: 7 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `52.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 38.0 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 66.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
-| Kevin Schade (ID:94) | Brentford | MID | 6.0M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| Dominic Calvert-Lewin (ID:346) | Leeds | FWD | 6.0M | 122.7 |
-| Erling Haaland (ID:411) ((C)) | Man City | FWD | 15.5M | 185.0 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.0 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 2.2 |
+| Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 2.4 |
+| Harry Wilson (ID:260) | Leeds | MID | 6.5M | 4.3 |
+| Max Dowman (ID:20) | Arsenal | MID | 5.5M | 5.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Noah Okafor (ID:336) | Leeds | MID | 6.0M | 4.7 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 4.9 |
+| Taiwo Awoniyi (ID:492) ((C)) | Nott'm Forest | FWD | 5.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Ryan Yates (ID:489) | Nott'm Forest | MID | 4.5M | 8.0 |
+| Martin Dubravka (ID:497) | Spurs | GK | 4.0M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 0.8 |
+| Alex Scott (ID:69) | Bournemouth | MID | 6.0M | 0.9 |
 
 ---
 
 ## 🏆 Gameweek 38
-*Gjorda byten: 7 | Sparade byten: 0*
-📈 **Realistisk förväntad poäng (Startelva + Kapten):** `1350.0 poäng`
+*Gjorda byten: 8 | Sparade byten: 0*
+📈 **Realistisk förväntad poäng (Startelva + Kapten):** `58.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 69.3 |
-| Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
-| Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
-| Bruno Borges Fernandes (ID:426) ((C)) | Man Utd | MID | 12.0M | 174.7 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Walter Benítez (ID:199) | Crystal Palace | GK | 4.5M | 2.7 |
+| Ben Davies (ID:508) | Spurs | DEF | 4.0M | 2.2 |
+| Daniel Muñoz Mejía (ID:201) | Crystal Palace | DEF | 5.5M | 2.6 |
+| Riccardo Calafiori (ID:8) | Arsenal | DEF | 5.5M | 2.6 |
+| Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 5.1 |
+| Bukayo Saka (ID:12) | Arsenal | MID | 9.5M | 4.8 |
+| Max Dowman (ID:20) ((C)) | Arsenal | MID | 5.5M | 7.9 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 4.1 |
+| Erling Haaland (ID:411) | Man City | FWD | 15.5M | 5.6 |
+| Taiwo Awoniyi (ID:492) | Nott'm Forest | FWD | 5.5M | 7.0 |
+| William Osula (ID:465) | Newcastle | FWD | 6.0M | 6.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
-| Freddie Woodman (ID:352) | Liverpool | GK | 4.0M | 1.0 |
-| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 1.0 |
-| Issa Diop (ID:259) | Ipswich Town | DEF | 4.0M | 7.0 |
-| Joël Piroe (ID:348) | Leeds | FWD | 5.0M | 2.0 |
+| Guglielmo Vicario (ID:494) | Spurs | GK | 4.5M | 0.5 |
+| Arthur Masuaku (ID:540) | Sunderland | DEF | 4.0M | 0.5 |
+| Ethan Pinnock (ID:91) | Brentford | DEF | 4.5M | 0.5 |
+| Diego Gómez Amarilla (ID:127) | Brighton | MID | 5.0M | 0.6 |
 
 ---
 

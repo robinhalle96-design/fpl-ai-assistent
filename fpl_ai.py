@@ -10,11 +10,14 @@ def hamta_och_berakna_fpl_data():
     fixtures_response = requests.get(fixtures_url)
     fixtures = fixtures_response.json()
     
+    # Lägg till ID för spelare som ska blockeras direkt här
+    svartlista_ids = [30] # Exempel: Lucas Digne (ID:30) om han behöver rensas
+    klubb_override = {}
+    
     lag_omgang_fdr = {}
     lag_namn_dict = {team['id']: team['name'] for team in data['teams']}
     
     omgang_matcher = {}
-    
     for match in fixtures:
         gw = match.get('event')
         if gw and gw <= 38:
@@ -42,11 +45,10 @@ def hamta_och_berakna_fpl_data():
     
     position_map = {1: 'GK', 2: 'DEF', 3: 'MID', 4: 'FWD'}
     
-    # ID-svartlista för kända reservmålvakter och spelare med felaktiga lag i API:et
-    svartlista_ids = [325, 497] # Karl Darlow (ID:325), Martin Dubravka (ID:497) etc.
-    
     for player in data['elements']:
-        if player['id'] in svartlista_ids:
+        p_id_num = player['id']
+        
+        if p_id_num in svartlista_ids:
             continue
             
         player_status = player.get('status', 'a')
@@ -58,8 +60,7 @@ def hamta_och_berakna_fpl_data():
         
         element_type = player.get('element_type')
         if element_type == 1: 
-            # Första målvakter måste ha högt antal spelade minuter
-            if minuter_spelade < 1800: 
+            if minuter_spelade < 1500: 
                 continue
         else: 
             if minuter_spelade < 1200 and pris_mil > 5.0:
@@ -67,7 +68,7 @@ def hamta_och_berakna_fpl_data():
             if minuter_spelade < 800 and pris_mil <= 5.0:
                 continue
             
-        p_id = f"{player['first_name']} {player['second_name']} (ID:{player['id']})"
+        p_id = f"{player['first_name']} {player['second_name']} (ID:{p_id_num})"
         
         mal = player.get('goals_scored', 0)
         assist = player.get('assists', 0)
@@ -77,11 +78,16 @@ def hamta_och_berakna_fpl_data():
         matcher_spelade = max(1, minuter_spelade / 90.0)
         snitt_poang_per_match = (total_poang / matcher_spelade) * 1.3
         
+        lag_id_num = player['team']
+        lag_namn = lag_namn_dict.get(lag_id_num, 'Okänt')
+        if str(p_id_num) in klubb_override:
+            lag_namn = klubb_override[str(p_id_num)]
+        
         spelar_lista.append(p_id)
         spelares_bas_index[p_id] = float(snitt_poang_per_match)
         spelares_pris[p_id] = pris_mil
-        spelares_lag[p_id] = lag_namn_dict.get(player['team'], 'Okänt')
-        spelares_lag_id[p_id] = player['team']
+        spelares_lag[p_id] = lag_namn
+        spelares_lag_id[p_id] = lag_id_num
         spelares_position[p_id] = position_map.get(player['element_type'], 'Unknown')
         spelares_minuter[p_id] = minuter_spelade
         
@@ -90,10 +96,10 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_med_byten_och_spar():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Kör optimering med rensade reservmålvakter...")
+    print("Kör FPL-optimering...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Rensad på reservmålvakter)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  

@@ -1,58 +1,58 @@
-# 🤖 AI-Optimerad FPL-Trupp (Aktivt Minutfilter)
+# 🤖 AI-Optimerad FPL-Trupp (Blockerade Spelare Borttagna)
 
 ## 🏆 Gameweek 1
 *Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `82.4 poäng`
+📈 **Förväntad poäng:** `82.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Bournemouth (H) | GK | 5.5M | 1.8 |
-| Lucas Digne (ID:30) | Aston Villa | vs Brighton (B) | DEF | 4.5M | 3.8 |
-| Maxim De Cuyper (ID:115) | Brighton | vs Aston Villa (H) | DEF | 4.5M | 3.5 |
+| Nico O'Reilly (ID:387) | Man City | vs Bournemouth (H) | DEF | 6.5M | 4.2 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Ipswich Town (B) | DEF | 5.5M | 3.9 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Coventry City (H) | DEF | 5.5M | 5.2 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Hull City (B) | MID | 12.0M | 9.3 |
-| Eberechi Eze (ID:14) | Arsenal | vs Coventry City (H) | MID | 6.5M | 7.7 |
+| Bukayo Saka (ID:12) | Arsenal | vs Coventry City (H) | MID | 9.5M | 8.9 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Leeds (H) | MID | 8.0M | 7.3 |
-| Noah Okafor (ID:336) | Leeds | vs Nott'm Forest (B) | MID | 6.0M | 6.3 |
+| Rayan Cherki (ID:399) | Man City | vs Bournemouth (H) | MID | 7.5M | 7.1 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Hull City (B) | FWD | 7.0M | 8.2 |
-| Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Bournemouth (H) | FWD | 15.5M | 9.9 |
-| Viktor Gyökeres (ID:25) | Arsenal | vs Coventry City (H) | FWD | 7.5M | 9.3 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Fulham (B) | FWD | 7.5M | 7.4 |
+| Viktor Gyökeres (ID:25) ((C - 2x)) | Arsenal | vs Coventry City (H) | FWD | 7.5M | 9.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Brentford (B) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Brentford (B) | DEF | 4.5M | 1.9 |
-| Antonee Robinson (ID:254) | Fulham | vs Chelsea (H) | DEF | 4.5M | 1.0 |
+| Matty Cash (ID:32) | Aston Villa | vs Brighton (B) | DEF | 4.5M | 2.6 |
+| Maxim De Cuyper (ID:115) | Brighton | vs Aston Villa (H) | DEF | 4.5M | 3.5 |
 | Will Hughes (ID:212) | Crystal Palace | vs Everton (B) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 2
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `70.5 poäng`
+📈 **Förväntad poäng:** `73.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Crystal Palace (B) | GK | 5.5M | 1.8 |
-| Andrew Robertson (ID:502) | Spurs | vs Newcastle (H) | DEF | 4.5M | 2.6 |
-| Lucas Digne (ID:30) | Aston Villa | vs Arsenal (H) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Crystal Palace (B) | DEF | 6.5M | 4.2 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Fulham (H) | DEF | 5.5M | 3.9 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Aston Villa (B) | DEF | 5.5M | 2.6 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Ipswich Town (H) | MID | 12.0M | 9.3 |
-| Eberechi Eze (ID:14) | Arsenal | vs Aston Villa (B) | MID | 6.5M | 3.9 |
+| Bukayo Saka (ID:12) | Arsenal | vs Aston Villa (B) | MID | 9.5M | 4.4 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Liverpool (B) | MID | 8.0M | 3.7 |
-| Noah Okafor (ID:336) | Leeds | vs Brentford (H) | MID | 6.0M | 6.3 |
+| Rayan Cherki (ID:399) | Man City | vs Crystal Palace (B) | MID | 7.5M | 7.1 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Ipswich Town (H) | FWD | 7.0M | 8.2 |
-| Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Crystal Palace (B) | FWD | 15.5M | 9.9 |
-| João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Brighton (H) | FWD | 7.5M | 9.8 |
+| João Pedro Junqueira de Jesus (ID:165) ((C - 2x)) | Chelsea | vs Brighton (H) | FWD | 7.5M | 9.8 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Newcastle (H) | FWD | 6.0M | 8.8 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Newcastle (H) | GK | 4.0M | 1.0 |
-| Antonee Robinson (ID:254) | Fulham | vs Sunderland (B) | DEF | 4.5M | 1.5 |
+| Matty Cash (ID:32) | Aston Villa | vs Arsenal (H) | DEF | 4.5M | 1.7 |
 | Maxim De Cuyper (ID:115) | Brighton | vs Chelsea (B) | DEF | 4.5M | 2.3 |
 | Will Hughes (ID:212) | Crystal Palace | vs Man City (H) | MID | 4.5M | 1.0 |
 
@@ -60,145 +60,145 @@
 
 ## 🏆 Gameweek 3
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.3 poäng`
+📈 **Förväntad poäng:** `73.1 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Coventry City (H) | GK | 5.5M | 2.5 |
-| Lucas Digne (ID:30) | Aston Villa | vs Hull City (B) | DEF | 4.5M | 5.1 |
+| Matty Cash (ID:32) | Aston Villa | vs Hull City (B) | DEF | 4.5M | 3.4 |
 | Maxim De Cuyper (ID:115) | Brighton | vs Leeds (H) | DEF | 4.5M | 4.6 |
-| Riccardo Calafiori (ID:8) | Arsenal | vs Chelsea (H) | DEF | 5.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Coventry City (H) | DEF | 6.5M | 5.6 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Everton (B) | MID | 12.0M | 7.0 |
-| Eberechi Eze (ID:14) | Arsenal | vs Chelsea (H) | MID | 6.5M | 3.9 |
+| Bukayo Saka (ID:12) | Arsenal | vs Chelsea (H) | MID | 9.5M | 4.4 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Spurs (H) | MID | 8.0M | 5.5 |
-| Noah Okafor (ID:336) | Leeds | vs Brighton (B) | MID | 6.0M | 6.3 |
+| Rayan Cherki (ID:399) ((C - 2x)) | Man City | vs Coventry City (H) | MID | 7.5M | 9.4 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Everton (B) | FWD | 7.0M | 6.2 |
-| Danny Welbeck (ID:136) | Brighton | vs Leeds (H) | FWD | 6.0M | 8.3 |
-| Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Coventry City (H) | FWD | 15.5M | 13.2 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Sunderland (H) | FWD | 8.0M | 8.5 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Nott'm Forest (B) | FWD | 6.0M | 6.6 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Nott'm Forest (B) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Nott'm Forest (B) | DEF | 4.5M | 1.9 |
-| Antonee Robinson (ID:254) | Fulham | vs Crystal Palace (H) | DEF | 4.5M | 1.5 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Brentford (B) | DEF | 5.5M | 2.9 |
+| Riccardo Calafiori (ID:8) | Arsenal | vs Chelsea (H) | DEF | 5.5M | 2.6 |
 | Will Hughes (ID:212) | Crystal Palace | vs Fulham (B) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 4
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `70.7 poäng`
+📈 **Förväntad poäng:** `64.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Man Utd (B) | GK | 5.5M | 1.2 |
-| Lucas Digne (ID:30) | Aston Villa | vs Nott'm Forest (H) | DEF | 4.5M | 3.8 |
 | Maxim De Cuyper (ID:115) | Brighton | vs Coventry City (B) | DEF | 4.5M | 4.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Man Utd (B) | DEF | 6.5M | 2.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Sunderland (B) | DEF | 5.5M | 3.9 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Man City (H) | MID | 12.0M | 4.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Sunderland (B) | MID | 6.5M | 5.8 |
+| Bukayo Saka (ID:12) | Arsenal | vs Sunderland (B) | MID | 9.5M | 6.7 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Aston Villa (B) | MID | 8.0M | 3.7 |
-| Noah Okafor (ID:336) | Leeds | vs Newcastle (H) | MID | 6.0M | 8.4 |
-| Danny Welbeck (ID:136) | Brighton | vs Coventry City (B) | FWD | 6.0M | 8.3 |
-| Erling Haaland (ID:411) | Man City | vs Man Utd (B) | FWD | 15.5M | 6.6 |
+| Rayan Cherki (ID:399) | Man City | vs Man Utd (B) | MID | 7.5M | 4.7 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Bournemouth (B) | FWD | 8.0M | 6.3 |
 | João Pedro Junqueira de Jesus (ID:165) ((C - 2x)) | Chelsea | vs Hull City (H) | FWD | 7.5M | 9.8 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Everton (H) | FWD | 6.0M | 6.6 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Everton (H) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Everton (H) | DEF | 4.5M | 1.9 |
-| Antonee Robinson (ID:254) | Fulham | vs Liverpool (B) | DEF | 4.5M | 1.0 |
+| Matty Cash (ID:32) | Aston Villa | vs Nott'm Forest (H) | DEF | 4.5M | 2.6 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Arsenal (H) | DEF | 5.5M | 2.0 |
 | Will Hughes (ID:212) | Crystal Palace | vs Ipswich Town (H) | MID | 4.5M | 2.0 |
 
 ---
 
 ## 🏆 Gameweek 5
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `80.5 poäng`
+📈 **Förväntad poäng:** `76.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Sunderland (H) | GK | 5.5M | 2.5 |
-| Lucas Digne (ID:30) | Aston Villa | vs Spurs (B) | DEF | 4.5M | 3.8 |
-| Maxim De Cuyper (ID:115) | Brighton | vs Arsenal (H) | DEF | 4.5M | 2.3 |
+| Matty Cash (ID:32) | Aston Villa | vs Spurs (B) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Sunderland (H) | DEF | 6.5M | 5.6 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Brighton (B) | DEF | 5.5M | 3.9 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Fulham (B) | MID | 12.0M | 7.0 |
-| Eberechi Eze (ID:14) | Arsenal | vs Brighton (B) | MID | 6.5M | 5.8 |
+| Bukayo Saka (ID:12) | Arsenal | vs Brighton (B) | MID | 9.5M | 6.7 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Coventry City (H) | MID | 8.0M | 7.3 |
-| Noah Okafor (ID:336) | Leeds | vs Crystal Palace (H) | MID | 6.0M | 6.3 |
-| Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Sunderland (H) | FWD | 15.5M | 13.2 |
+| Rayan Cherki (ID:399) ((C - 2x)) | Man City | vs Sunderland (H) | MID | 7.5M | 9.4 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Brentford (B) | FWD | 7.5M | 7.4 |
 | Norberto Bercique Gomes Betuncal (ID:248) | Everton | vs Ipswich Town (H) | FWD | 5.5M | 7.9 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Aston Villa (H) | FWD | 6.0M | 6.6 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Aston Villa (H) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Aston Villa (H) | DEF | 4.5M | 1.9 |
-| Antonee Robinson (ID:254) | Fulham | vs Man Utd (H) | DEF | 4.5M | 1.0 |
+| Maxim De Cuyper (ID:115) | Brighton | vs Arsenal (H) | DEF | 4.5M | 2.3 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Man City (B) | DEF | 5.5M | 1.0 |
 | Will Hughes (ID:212) | Crystal Palace | vs Leeds (B) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 6
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `70.5 poäng`
+📈 **Förväntad poäng:** `73.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Liverpool (B) | GK | 5.5M | 1.2 |
-| Lucas Digne (ID:30) | Aston Villa | vs Brentford (H) | DEF | 4.5M | 3.8 |
 | Maxim De Cuyper (ID:115) | Brighton | vs Sunderland (B) | DEF | 4.5M | 3.5 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Brighton (H) | DEF | 5.5M | 3.9 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Leeds (H) | DEF | 5.5M | 5.2 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Spurs (H) | MID | 12.0M | 7.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | vs Coventry City (B) | MID | 7.0M | 6.8 |
-| Eberechi Eze (ID:14) | Arsenal | vs Leeds (H) | MID | 6.5M | 7.7 |
+| Bukayo Saka (ID:12) | Arsenal | vs Leeds (H) | MID | 9.5M | 8.9 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Crystal Palace (B) | MID | 8.0M | 5.5 |
-| Erling Haaland (ID:411) | Man City | vs Liverpool (B) | FWD | 15.5M | 6.6 |
+| Rayan Cherki (ID:399) | Man City | vs Liverpool (B) | MID | 7.5M | 4.7 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Bournemouth (H) | FWD | 7.5M | 7.4 |
-| Norberto Bercique Gomes Betuncal (ID:248) ((C - 2x)) | Everton | vs Hull City (B) | FWD | 5.5M | 7.9 |
+| Norberto Bercique Gomes Betuncal (ID:248) | Everton | vs Hull City (B) | FWD | 5.5M | 7.9 |
+| Viktor Gyökeres (ID:25) ((C - 2x)) | Arsenal | vs Leeds (H) | FWD | 7.5M | 9.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Man Utd (B) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Man Utd (B) | DEF | 4.5M | 1.3 |
-| Antonee Robinson (ID:254) | Fulham | vs Ipswich Town (B) | DEF | 4.5M | 2.0 |
+| Matty Cash (ID:32) | Aston Villa | vs Brentford (H) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Liverpool (B) | DEF | 6.5M | 2.8 |
 | Will Hughes (ID:212) | Crystal Palace | vs Nott'm Forest (H) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 7
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.7 poäng`
+📈 **Förväntad poäng:** `74.8 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Gianluigi Donnarumma (ID:384) | Man City | vs Ipswich Town (H) | GK | 5.5M | 2.5 |
-| Lucas Digne (ID:30) | Aston Villa | vs Newcastle (B) | DEF | 4.5M | 3.8 |
 | Maxim De Cuyper (ID:115) | Brighton | vs Crystal Palace (H) | DEF | 4.5M | 3.5 |
+| Nico O'Reilly (ID:387) | Man City | vs Ipswich Town (H) | DEF | 6.5M | 5.6 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Nott'm Forest (B) | DEF | 5.5M | 3.9 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | vs Leeds (B) | MID | 12.0M | 7.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | vs Aston Villa (H) | MID | 7.0M | 5.1 |
-| Eberechi Eze (ID:14) | Arsenal | vs Nott'm Forest (B) | MID | 6.5M | 5.8 |
-| Rayan Cherki (ID:399) | Man City | vs Ipswich Town (H) | MID | 7.5M | 9.4 |
-| Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Ipswich Town (H) | FWD | 15.5M | 13.2 |
+| Bukayo Saka (ID:12) | Arsenal | vs Nott'm Forest (B) | MID | 9.5M | 6.7 |
+| Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Arsenal (H) | MID | 8.0M | 3.7 |
+| Rayan Cherki (ID:399) ((C - 2x)) | Man City | vs Ipswich Town (H) | MID | 7.5M | 9.4 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Everton (B) | FWD | 7.5M | 7.4 |
-| Norberto Bercique Gomes Betuncal (ID:248) | Everton | vs Chelsea (H) | FWD | 5.5M | 3.9 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Coventry City (H) | FWD | 6.0M | 8.8 |
+| Viktor Gyökeres (ID:25) | Arsenal | vs Nott'm Forest (B) | FWD | 7.5M | 7.0 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Coventry City (H) | GK | 4.0M | 1.0 |
-| Andrew Robertson (ID:502) | Spurs | vs Coventry City (H) | DEF | 4.5M | 2.6 |
-| Antonee Robinson (ID:254) | Fulham | vs Hull City (H) | DEF | 4.5M | 2.0 |
+| Matty Cash (ID:32) | Aston Villa | vs Newcastle (B) | DEF | 4.5M | 2.6 |
+| Nordi Mukiele (ID:533) | Sunderland | vs Bournemouth (B) | DEF | 5.5M | 2.9 |
 | Will Hughes (ID:212) | Crystal Palace | vs Brighton (B) | MID | 4.5M | 1.5 |
 
 ---
@@ -372,13 +372,13 @@
 | Alisson Becker (ID:350) | Liverpool | vs Sunderland (H) | GK | 5.5M | 1.7 |
 | Antonee Robinson (ID:254) | Fulham | vs Spurs (B) | DEF | 4.5M | 1.5 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Chelsea (B) | DEF | 5.5M | 2.4 |
-| Alex Iwobi (ID:261) | Fulham | vs Spurs (B) | MID | 5.5M | 2.6 |
+| Noah Okafor (ID:336) | Leeds | vs Man City (B) | MID | 6.0M | 2.1 |
 
 ---
 
 ## 🏆 Gameweek 14
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `65.8 poäng`
+📈 **Förväntad poäng:** `69.8 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
@@ -391,7 +391,7 @@
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Brighton (H) | MID | 8.0M | 7.3 |
 | Noah Okafor (ID:336) ((C - 2x)) | Leeds | vs Ipswich Town (H) | MID | 6.0M | 8.4 |
 | Rayan Cherki (ID:399) | Man City | vs Brentford (B) | MID | 7.5M | 7.1 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Man City (H) | FWD | 8.0M | 4.2 |
+| Benjamin Sesko (ID:439) | Man Utd | vs Coventry City (H) | FWD | 7.0M | 8.2 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Liverpool (H) | FWD | 7.5M | 4.9 |
 | Viktor Gyökeres (ID:25) | Arsenal | vs Spurs (B) | FWD | 7.5M | 7.0 |
 
@@ -401,13 +401,13 @@
 | Alisson Becker (ID:350) | Liverpool | vs Chelsea (B) | GK | 5.5M | 1.0 |
 | Andrew Robertson (ID:502) | Spurs | vs Arsenal (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Everton (B) | DEF | 4.5M | 1.5 |
-| Alex Iwobi (ID:261) | Fulham | vs Everton (B) | MID | 5.5M | 2.6 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Aston Villa (B) | MID | 6.5M | 3.4 |
 
 ---
 
 ## 🏆 Gameweek 15
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `61.9 poäng`
+📈 **Förväntad poäng:** `61.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
@@ -420,7 +420,7 @@
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Sunderland (B) | MID | 8.0M | 5.5 |
 | Noah Okafor (ID:336) | Leeds | vs Liverpool (B) | MID | 6.0M | 4.2 |
 | Rayan Cherki (ID:399) | Man City | vs Chelsea (H) | MID | 7.5M | 4.7 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Fulham (B) | FWD | 8.0M | 6.3 |
+| Benjamin Sesko (ID:439) | Man Utd | vs Crystal Palace (B) | FWD | 7.0M | 6.2 |
 | Richarlison de Andrade (ID:527) ((C - 2x)) | Spurs | vs Hull City (B) | FWD | 6.0M | 8.8 |
 | Viktor Gyökeres (ID:25) | Arsenal | vs Bournemouth (H) | FWD | 7.5M | 7.0 |
 
@@ -430,13 +430,13 @@
 | Alisson Becker (ID:350) | Liverpool | vs Leeds (H) | GK | 5.5M | 1.7 |
 | Antonee Robinson (ID:254) | Fulham | vs Brentford (H) | DEF | 4.5M | 1.5 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Man Utd (H) | DEF | 5.5M | 2.4 |
-| Alex Iwobi (ID:261) | Fulham | vs Brentford (H) | MID | 5.5M | 2.6 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Man Utd (H) | MID | 6.5M | 3.4 |
 
 ---
 
 ## 🏆 Gameweek 16
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `73.9 poäng`
+📈 **Förväntad poäng:** `70.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
@@ -446,10 +446,10 @@
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Man Utd (H) | DEF | 8.0M | 2.8 |
 | Ryan Sessegnon (ID:269) | Fulham | vs Leeds (B) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Hull City (H) | MID | 8.5M | 8.5 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Sunderland (B) | MID | 6.5M | 5.1 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Everton (H) | MID | 8.0M | 5.5 |
 | Noah Okafor (ID:336) | Leeds | vs Fulham (H) | MID | 6.0M | 8.4 |
 | Rayan Cherki (ID:399) ((C - 2x)) | Man City | vs Hull City (H) | MID | 7.5M | 9.4 |
-| Danny Welbeck (ID:136) | Brighton | vs Ipswich Town (H) | FWD | 6.0M | 8.3 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Newcastle (H) | FWD | 8.0M | 8.5 |
 | Viktor Gyökeres (ID:25) | Arsenal | vs Man Utd (H) | FWD | 7.5M | 4.7 |
 
@@ -459,7 +459,7 @@
 | Alisson Becker (ID:350) | Liverpool | vs Spurs (H) | GK | 5.5M | 1.3 |
 | Andrew Robertson (ID:502) | Spurs | vs Liverpool (B) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Leeds (B) | DEF | 4.5M | 1.5 |
-| Alex Iwobi (ID:261) | Fulham | vs Leeds (B) | MID | 5.5M | 2.6 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Liverpool (B) | FWD | 6.0M | 4.4 |
 
 ---
 
@@ -488,7 +488,7 @@
 | Alisson Becker (ID:350) | Liverpool | vs Hull City (B) | GK | 5.5M | 1.7 |
 | Andrew Robertson (ID:502) | Spurs | vs Bournemouth (H) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Brighton (H) | DEF | 4.5M | 2.0 |
-| Alex Iwobi (ID:261) | Fulham | vs Brighton (H) | MID | 5.5M | 3.5 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Arsenal (H) | MID | 6.5M | 3.4 |
 
 ---
 
@@ -515,9 +515,9 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Aston Villa (B) | GK | 5.5M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Brighton (H) | DEF | 4.5M | 2.6 |
 | Antonee Robinson (ID:254) | Fulham | vs Arsenal (H) | DEF | 4.5M | 1.0 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Arsenal (H) | DEF | 4.5M | 2.2 |
-| Alex Iwobi (ID:261) | Fulham | vs Arsenal (H) | MID | 5.5M | 1.8 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Bournemouth (H) | MID | 6.5M | 5.1 |
 
 ---
 
@@ -544,9 +544,9 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Coventry City (H) | GK | 5.5M | 1.7 |
+| Andrew Robertson (ID:502) | Spurs | vs Man City (B) | DEF | 4.5M | 1.0 |
 | Antonee Robinson (ID:254) | Fulham | vs Nott'm Forest (B) | DEF | 4.5M | 1.5 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Nott'm Forest (B) | DEF | 4.5M | 3.3 |
-| Alex Iwobi (ID:261) | Fulham | vs Nott'm Forest (B) | MID | 5.5M | 2.6 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Brentford (B) | MID | 6.5M | 5.1 |
 
 ---
 
@@ -573,15 +573,15 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Sunderland (B) | GK | 5.5M | 1.3 |
+| Andrew Robertson (ID:502) | Spurs | vs Fulham (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Spurs (H) | DEF | 4.5M | 1.5 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Spurs (H) | DEF | 4.5M | 3.3 |
-| Alex Iwobi (ID:261) | Fulham | vs Spurs (H) | MID | 5.5M | 2.6 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Chelsea (H) | MID | 6.5M | 3.4 |
 
 ---
 
 ## 🏆 Gameweek 21
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.6 poäng`
+📈 **Förväntad poäng:** `78.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
@@ -590,8 +590,8 @@
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Hull City (B) | DEF | 8.0M | 5.6 |
 | Nico O'Reilly (ID:387) | Man City | vs Nott'm Forest (H) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Sunderland (H) | DEF | 5.5M | 5.1 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Newcastle (B) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Nott'm Forest (H) | MID | 8.5M | 6.3 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Liverpool (B) | MID | 6.5M | 3.4 |
 | Noah Okafor (ID:336) | Leeds | vs Spurs (B) | MID | 6.0M | 6.3 |
 | Rayan Cherki (ID:399) | Man City | vs Nott'm Forest (H) | MID | 7.5M | 7.1 |
 | João Pedro Junqueira de Jesus (ID:165) ((C - 2x)) | Chelsea | vs Sunderland (H) | FWD | 7.5M | 9.8 |
@@ -602,8 +602,8 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Crystal Palace (H) | GK | 5.5M | 1.3 |
+| Andrew Robertson (ID:502) | Spurs | vs Leeds (H) | DEF | 4.5M | 2.6 |
 | Antonee Robinson (ID:254) | Fulham | vs Newcastle (B) | DEF | 4.5M | 1.5 |
-| Alex Iwobi (ID:261) | Fulham | vs Newcastle (B) | MID | 5.5M | 2.6 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Man City (B) | MID | 8.0M | 1.8 |
 
 ---
@@ -631,23 +631,23 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Man Utd (B) | GK | 5.5M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Crystal Palace (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Aston Villa (H) | DEF | 4.5M | 1.5 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Aston Villa (H) | DEF | 4.5M | 3.3 |
 | Noah Okafor (ID:336) | Leeds | vs Chelsea (H) | MID | 6.0M | 4.2 |
 
 ---
 
 ## 🏆 Gameweek 23
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `66.0 poäng`
+📈 **Förväntad poäng:** `65.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Everton (H) | GK | 5.5M | 1.3 |
+| Andrew Robertson (ID:502) | Spurs | vs Sunderland (H) | DEF | 4.5M | 2.6 |
 | Nico O'Reilly (ID:387) | Man City | vs Arsenal (H) | DEF | 6.5M | 2.8 |
 | Reece James (ID:142) | Chelsea | vs Nott'm Forest (H) | DEF | 5.5M | 3.8 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Bournemouth (B) | DEF | 4.5M | 3.3 |
 | Antoine Semenyo (ID:397) | Man City | vs Arsenal (H) | MID | 8.5M | 4.2 |
 | Chemsdine Talbi (ID:549) | Sunderland | vs Spurs (B) | MID | 5.5M | 4.3 |
 | Noah Okafor (ID:336) | Leeds | vs Coventry City (B) | MID | 6.0M | 8.4 |
@@ -674,9 +674,9 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | vs Liverpool (H) | GK | 6.0M | 1.4 |
+| Andrew Robertson (ID:502) | Spurs | vs Ipswich Town (B) | DEF | 4.5M | 2.6 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Liverpool (H) | DEF | 8.0M | 2.8 |
 | Nico O'Reilly (ID:387) | Man City | vs Fulham (B) | DEF | 6.5M | 4.2 |
-| Reece James (ID:142) | Chelsea | vs Man Utd (B) | DEF | 5.5M | 2.6 |
 | Antoine Semenyo (ID:397) | Man City | vs Fulham (B) | MID | 8.5M | 6.3 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Brentford (H) | MID | 8.0M | 5.5 |
 | Noah Okafor (ID:336) | Leeds | vs Bournemouth (H) | MID | 6.0M | 6.3 |
@@ -690,7 +690,7 @@
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Arsenal (B) | GK | 5.5M | 1.0 |
 | Antonee Robinson (ID:254) | Fulham | vs Man City (H) | DEF | 4.5M | 1.0 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Man City (H) | DEF | 4.5M | 2.2 |
+| Reece James (ID:142) | Chelsea | vs Man Utd (B) | DEF | 5.5M | 2.6 |
 | Chemsdine Talbi (ID:549) | Sunderland | vs Aston Villa (H) | MID | 5.5M | 4.3 |
 
 ---
@@ -718,100 +718,100 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Coventry City (B) | GK | 5.5M | 1.7 |
+| Andrew Robertson (ID:502) | Spurs | vs Man City (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Nott'm Forest (H) | DEF | 4.5M | 1.5 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Nott'm Forest (H) | DEF | 4.5M | 3.3 |
 | Richarlison de Andrade (ID:527) | Spurs | vs Man City (H) | FWD | 6.0M | 4.4 |
 
 ---
 
 ## 🏆 Gameweek 26 ⚡ **[WILDCARD AKTIVERAT!]**
-📈 **Förväntad poäng:** `94.7 poäng`
+📈 **Förväntad poäng:** `94.5 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Ipswich Town (H) | GK | 5.0M | 1.7 |
-| Lucas Digne (ID:30) | Aston Villa | vs Leeds (B) | DEF | 4.5M | 3.8 |
+| Nico O'Reilly (ID:387) | Man City | vs Newcastle (H) | DEF | 6.5M | 5.6 |
 | Reece James (ID:142) | Chelsea | vs Ipswich Town (H) | DEF | 5.5M | 5.1 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Fulham (H) | DEF | 5.5M | 5.2 |
 | Bukayo Saka (ID:12) | Arsenal | vs Fulham (H) | MID | 9.5M | 8.9 |
-| Eberechi Eze (ID:14) | Arsenal | vs Fulham (H) | MID | 6.5M | 7.7 |
-| Jérémy Doku (ID:400) | Man City | vs Newcastle (H) | MID | 7.5M | 8.1 |
+| Dango Ouattara (ID:95) | Brentford | vs Coventry City (H) | MID | 6.5M | 6.8 |
+| Noah Okafor (ID:336) | Leeds | vs Aston Villa (H) | MID | 6.0M | 6.3 |
 | Rayan Cherki (ID:399) | Man City | vs Newcastle (H) | MID | 7.5M | 9.4 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Newcastle (H) | FWD | 15.5M | 13.2 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Coventry City (H) | FWD | 8.0M | 8.5 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Ipswich Town (H) | FWD | 7.5M | 9.8 |
+| Viktor Gyökeres (ID:25) | Arsenal | vs Fulham (H) | FWD | 7.5M | 9.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Brighton (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Brighton (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Arsenal (B) | DEF | 4.5M | 1.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Aston Villa (H) | DEF | 4.5M | 1.0 |
 | Will Hughes (ID:212) | Crystal Palace | vs Bournemouth (B) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 27
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `75.6 poäng`
+📈 **Förväntad poäng:** `76.6 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Liverpool (H) | GK | 4.0M | 1.0 |
-| Lucas Digne (ID:30) | Aston Villa | vs Chelsea (H) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Hull City (B) | DEF | 6.5M | 5.6 |
 | Reece James (ID:142) | Chelsea | vs Aston Villa (B) | DEF | 5.5M | 2.6 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Man Utd (B) | DEF | 5.5M | 2.6 |
 | Bukayo Saka (ID:12) | Arsenal | vs Man Utd (B) | MID | 9.5M | 4.4 |
-| Eberechi Eze (ID:14) | Arsenal | vs Man Utd (B) | MID | 6.5M | 3.9 |
-| Jérémy Doku (ID:400) | Man City | vs Hull City (B) | MID | 7.5M | 8.1 |
+| Dango Ouattara (ID:95) | Brentford | vs Newcastle (B) | MID | 6.5M | 5.1 |
+| Noah Okafor (ID:336) | Leeds | vs Fulham (B) | MID | 6.0M | 6.3 |
 | Rayan Cherki (ID:399) | Man City | vs Hull City (B) | MID | 7.5M | 9.4 |
 | Danny Welbeck (ID:136) | Brighton | vs Ipswich Town (B) | FWD | 6.0M | 8.3 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Hull City (B) | FWD | 15.5M | 13.2 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Newcastle (B) | FWD | 8.0M | 6.3 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Aston Villa (B) | FWD | 7.5M | 4.9 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Aston Villa (B) | GK | 5.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Liverpool (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Leeds (H) | DEF | 4.5M | 2.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Fulham (B) | DEF | 4.5M | 1.0 |
 | Will Hughes (ID:212) | Crystal Palace | vs Sunderland (H) | MID | 4.5M | 2.0 |
 
 ---
 
 ## 🏆 Gameweek 28
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.1 poäng`
+📈 **Förväntad poäng:** `82.8 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Coventry City (H) | GK | 5.0M | 1.7 |
-| Lucas Digne (ID:30) | Aston Villa | vs Liverpool (B) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Everton (H) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Coventry City (H) | DEF | 5.5M | 5.1 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Crystal Palace (H) | DEF | 5.5M | 3.9 |
-| Bukayo Saka (ID:12) | Arsenal | vs Crystal Palace (H) | MID | 9.5M | 6.7 |
-| Jérémy Doku (ID:400) | Man City | vs Everton (H) | MID | 7.5M | 6.1 |
+| Dango Ouattara (ID:95) | Brentford | vs Ipswich Town (H) | MID | 6.5M | 6.8 |
+| Harry Wilson (ID:260) | Leeds | vs Hull City (H) | MID | 6.5M | 7.7 |
 | Noah Okafor (ID:336) | Leeds | vs Hull City (H) | MID | 6.0M | 8.4 |
 | Rayan Cherki (ID:399) | Man City | vs Everton (H) | MID | 7.5M | 7.1 |
 | Danny Welbeck (ID:136) | Brighton | vs Fulham (H) | FWD | 6.0M | 8.3 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Everton (H) | FWD | 15.5M | 9.9 |
-| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Ipswich Town (H) | FWD | 8.0M | 8.5 |
+| João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Coventry City (H) | FWD | 7.5M | 9.8 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Bournemouth (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Bournemouth (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Brighton (B) | DEF | 4.5M | 1.5 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Hull City (H) | DEF | 4.5M | 1.0 |
-| Eberechi Eze (ID:14) | Arsenal | vs Crystal Palace (H) | MID | 6.5M | 5.8 |
+| Will Hughes (ID:212) | Crystal Palace | vs Arsenal (B) | MID | 4.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 29 🎯 **[FREE HIT AKTIVERAT!]**
-📈 **Förväntad poäng:** `91.6 poäng`
+📈 **Förväntad poäng:** `90.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
@@ -819,9 +819,9 @@
 | Alisson Becker (ID:350) | Liverpool | vs Ipswich Town (H) | GK | 5.5M | 1.7 |
 | Adam Smith (ID:64) | Bournemouth | vs Newcastle (H) | DEF | 4.5M | 4.1 |
 | Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Fulham (H) | DEF | 5.5M | 4.9 |
-| Lucas Digne (ID:30) | Aston Villa | vs Hull City (H) | DEF | 4.5M | 5.1 |
-| Antoine Semenyo (ID:397) | Man City | vs Coventry City (B) | MID | 8.5M | 8.5 |
+| Nico O'Reilly (ID:387) | Man City | vs Coventry City (B) | DEF | 6.5M | 5.6 |
 | Harry Wilson (ID:260) | Leeds | vs Brighton (H) | MID | 6.5M | 7.7 |
+| Ismaïla Sarr (ID:208) | Crystal Palace | vs Fulham (H) | MID | 6.5M | 6.8 |
 | Noah Okafor (ID:336) | Leeds | vs Brighton (H) | MID | 6.0M | 8.4 |
 | Rayan Cherki (ID:399) | Man City | vs Coventry City (B) | MID | 7.5M | 9.4 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Coventry City (B) | FWD | 15.5M | 13.2 |
@@ -834,25 +834,25 @@
 | Martin Dubravka (ID:497) | Spurs | vs Nott'm Forest (H) | GK | 4.0M | 1.0 |
 | Andrew Robertson (ID:502) | Spurs | vs Nott'm Forest (H) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Crystal Palace (B) | DEF | 4.5M | 1.5 |
-| Will Hughes (ID:212) | Crystal Palace | vs Fulham (H) | MID | 4.5M | 2.0 |
+| Amine Adli (ID:77) | Bournemouth | vs Newcastle (H) | MID | 5.0M | 5.4 |
 
 ---
 
 ## 🏆 Gameweek 30
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.0 poäng`
+📈 **Förväntad poäng:** `75.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Hull City (B) | GK | 5.0M | 1.7 |
-| Lucas Digne (ID:30) | Aston Villa | vs Nott'm Forest (B) | DEF | 4.5M | 3.8 |
+| Nico O'Reilly (ID:387) | Man City | vs Man Utd (H) | DEF | 6.5M | 2.8 |
 | Reece James (ID:142) | Chelsea | vs Hull City (B) | DEF | 5.5M | 5.1 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Sunderland (H) | DEF | 5.5M | 5.2 |
 | Bukayo Saka (ID:12) | Arsenal | vs Sunderland (H) | MID | 9.5M | 8.9 |
-| Eberechi Eze (ID:14) | Arsenal | vs Sunderland (H) | MID | 6.5M | 7.7 |
+| Dango Ouattara (ID:95) | Brentford | vs Bournemouth (H) | MID | 6.5M | 5.1 |
+| Harry Wilson (ID:260) | Leeds | vs Newcastle (B) | MID | 6.5M | 5.8 |
 | Noah Okafor (ID:336) | Leeds | vs Newcastle (B) | MID | 6.0M | 6.3 |
-| Rayan Cherki (ID:399) | Man City | vs Man Utd (H) | MID | 7.5M | 4.7 |
 | Danny Welbeck (ID:136) | Brighton | vs Coventry City (H) | FWD | 6.0M | 8.3 |
 | Erling Haaland (ID:411) | Man City | vs Man Utd (H) | FWD | 15.5M | 6.6 |
 | João Pedro Junqueira de Jesus (ID:165) ((C - 2x)) | Chelsea | vs Hull City (B) | FWD | 7.5M | 9.8 |
@@ -861,87 +861,87 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Everton (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Everton (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Liverpool (H) | DEF | 4.5M | 1.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Newcastle (B) | DEF | 4.5M | 1.0 |
-| Jérémy Doku (ID:400) | Man City | vs Man Utd (H) | MID | 7.5M | 4.1 |
+| Will Hughes (ID:212) | Crystal Palace | vs Ipswich Town (B) | MID | 4.5M | 2.0 |
 
 ---
 
 ## 🏆 Gameweek 31
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `83.4 poäng`
+📈 **Förväntad poäng:** `81.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Fulham (H) | GK | 5.0M | 1.7 |
-| Lucas Digne (ID:30) | Aston Villa | vs Brighton (H) | DEF | 4.5M | 5.1 |
+| Nico O'Reilly (ID:387) | Man City | vs Bournemouth (B) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Fulham (H) | DEF | 5.5M | 5.1 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Coventry City (B) | DEF | 5.5M | 5.2 |
 | Bukayo Saka (ID:12) | Arsenal | vs Coventry City (B) | MID | 9.5M | 8.9 |
-| Eberechi Eze (ID:14) | Arsenal | vs Coventry City (B) | MID | 6.5M | 7.7 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Hull City (H) | MID | 8.0M | 6.7 |
+| Dango Ouattara (ID:95) | Brentford | vs Spurs (B) | MID | 6.5M | 5.1 |
+| Harry Wilson (ID:260) | Leeds | vs Nott'm Forest (H) | MID | 6.5M | 5.8 |
 | Noah Okafor (ID:336) | Leeds | vs Nott'm Forest (H) | MID | 6.0M | 6.3 |
-| Rayan Cherki (ID:399) | Man City | vs Bournemouth (B) | MID | 7.5M | 7.1 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Bournemouth (B) | FWD | 15.5M | 9.9 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Fulham (H) | FWD | 7.5M | 9.8 |
+| Viktor Gyökeres (ID:25) | Arsenal | vs Coventry City (B) | FWD | 7.5M | 9.3 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Brentford (H) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Brentford (H) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Chelsea (B) | DEF | 4.5M | 1.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Nott'm Forest (H) | DEF | 4.5M | 1.0 |
-| Danny Welbeck (ID:136) | Brighton | vs Aston Villa (B) | FWD | 6.0M | 4.2 |
+| Will Hughes (ID:212) | Crystal Palace | vs Everton (H) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 32
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `73.1 poäng`
+📈 **Förväntad poäng:** `74.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Brighton (B) | GK | 5.0M | 1.3 |
+| Nico O'Reilly (ID:387) | Man City | vs Crystal Palace (H) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Brighton (B) | DEF | 5.5M | 3.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Aston Villa (H) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Sunderland (H) | DEF | 4.5M | 4.4 |
 | Bukayo Saka (ID:12) | Arsenal | vs Aston Villa (H) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Aston Villa (H) | MID | 6.5M | 5.8 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Ipswich Town (B) | MID | 8.0M | 6.7 |
+| Dango Ouattara (ID:95) | Brentford | vs Leeds (H) | MID | 6.5M | 6.8 |
+| Harry Wilson (ID:260) | Leeds | vs Brentford (B) | MID | 6.5M | 5.8 |
 | Noah Okafor (ID:336) | Leeds | vs Brentford (B) | MID | 6.0M | 6.3 |
-| Rayan Cherki (ID:399) | Man City | vs Crystal Palace (H) | MID | 7.5M | 7.1 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Crystal Palace (H) | FWD | 15.5M | 9.9 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Leeds (H) | FWD | 8.0M | 8.5 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | vs Brighton (B) | FWD | 7.5M | 7.4 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Newcastle (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Newcastle (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Sunderland (H) | DEF | 4.5M | 2.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Brentford (B) | DEF | 4.5M | 1.0 |
-| Danny Welbeck (ID:136) | Brighton | vs Chelsea (H) | FWD | 6.0M | 4.2 |
+| Will Hughes (ID:212) | Crystal Palace | vs Man City (B) | MID | 4.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 33
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `63.4 poäng`
+📈 **Förväntad poäng:** `64.4 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Hull City (H) | GK | 4.0M | 1.0 |
-| Reece James (ID:142) | Chelsea | vs Man City (H) | DEF | 5.5M | 2.6 |
+| Andrew Robertson (ID:502) | Spurs | vs Hull City (H) | DEF | 4.5M | 2.6 |
+| Nico O'Reilly (ID:387) | Man City | vs Chelsea (B) | DEF | 6.5M | 2.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Bournemouth (B) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Brentford (B) | DEF | 4.5M | 3.3 |
 | Bukayo Saka (ID:12) | Arsenal | vs Bournemouth (B) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Bournemouth (B) | MID | 6.5M | 5.8 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Crystal Palace (H) | MID | 8.0M | 5.0 |
-| Rayan Cherki (ID:399) | Man City | vs Chelsea (B) | MID | 7.5M | 4.7 |
-| Danny Welbeck (ID:136) | Brighton | vs Everton (B) | FWD | 6.0M | 6.2 |
+| Dango Ouattara (ID:95) | Brentford | vs Fulham (H) | MID | 6.5M | 6.8 |
+| Harry Wilson (ID:260) | Leeds | vs Liverpool (H) | MID | 6.5M | 3.8 |
+| Noah Okafor (ID:336) | Leeds | vs Liverpool (H) | MID | 6.0M | 4.2 |
 | Erling Haaland (ID:411) | Man City | vs Chelsea (B) | FWD | 15.5M | 6.6 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | vs Fulham (H) | FWD | 8.0M | 8.5 |
 | Richarlison de Andrade (ID:527) ((C - 2x)) | Spurs | vs Hull City (H) | FWD | 6.0M | 8.8 |
 
 ### 🛋️ Avbytare
@@ -949,28 +949,28 @@
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Man City (H) | GK | 5.0M | 1.0 |
 | Antonee Robinson (ID:254) | Fulham | vs Brentford (B) | DEF | 4.5M | 1.5 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Liverpool (H) | DEF | 4.5M | 1.0 |
-| Noah Okafor (ID:336) | Leeds | vs Liverpool (H) | MID | 6.0M | 4.2 |
+| Reece James (ID:142) | Chelsea | vs Man City (H) | DEF | 5.5M | 2.6 |
+| Will Hughes (ID:212) | Crystal Palace | vs Man Utd (B) | MID | 4.5M | 1.0 |
 
 ---
 
 ## 🏆 Gameweek 34 🚀 **[BENCH BOOST AKTIVERAT!]**
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `83.2 poäng`
+📈 **Förväntad poäng:** `71.3 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Arsenal (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Arsenal (B) | DEF | 4.5M | 1.0 |
 | Antonee Robinson (ID:254) | Fulham | vs Everton (H) | DEF | 4.5M | 1.5 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Ipswich Town (B) | DEF | 4.5M | 1.0 |
+| Nico O'Reilly (ID:387) | Man City | vs Brentford (H) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Liverpool (B) | DEF | 5.5M | 2.6 |
 | Bukayo Saka (ID:12) | Arsenal | vs Spurs (H) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Spurs (H) | MID | 6.5M | 5.8 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Coventry City (B) | MID | 8.0M | 6.7 |
+| Dango Ouattara (ID:95) | Brentford | vs Man City (B) | MID | 6.5M | 1.7 |
+| Harry Wilson (ID:260) | Leeds | vs Ipswich Town (B) | MID | 6.5M | 7.7 |
 | Noah Okafor (ID:336) | Leeds | vs Ipswich Town (B) | MID | 6.0M | 8.4 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Coventry City (B) | FWD | 7.0M | 8.2 |
-| Danny Welbeck (ID:136) | Brighton | vs Nott'm Forest (H) | FWD | 6.0M | 6.2 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Brentford (H) | FWD | 15.5M | 9.9 |
 
 ### 🛋️ Avbytare
@@ -978,26 +978,26 @@
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Liverpool (B) | GK | 5.0M | 1.0 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Spurs (H) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Everton (H) | DEF | 4.5M | 3.3 |
-| Rayan Cherki (ID:399) | Man City | vs Brentford (H) | MID | 7.5M | 7.1 |
+| Will Hughes (ID:212) | Crystal Palace | vs Aston Villa (H) | MID | 4.5M | 1.5 |
+| Richarlison de Andrade (ID:527) | Spurs | vs Arsenal (B) | FWD | 6.0M | 2.2 |
 
 ---
 
 ## 🏆 Gameweek 35
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `67.1 poäng`
+📈 **Förväntad poäng:** `61.0 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Spurs (B) | GK | 5.0M | 1.3 |
+| Nico O'Reilly (ID:387) | Man City | vs Liverpool (H) | DEF | 6.5M | 2.8 |
 | Reece James (ID:142) | Chelsea | vs Spurs (B) | DEF | 5.5M | 3.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Leeds (B) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Ipswich Town (H) | DEF | 4.5M | 4.4 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | vs Coventry City (H) | MID | 7.0M | 6.8 |
 | Bukayo Saka (ID:12) | Arsenal | vs Leeds (B) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Leeds (B) | MID | 6.5M | 5.8 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Bournemouth (B) | MID | 8.0M | 5.0 |
+| Dango Ouattara (ID:95) | Brentford | vs Aston Villa (H) | MID | 6.5M | 5.1 |
+| Harry Wilson (ID:260) | Leeds | vs Arsenal (H) | MID | 6.5M | 3.8 |
+| Noah Okafor (ID:336) | Leeds | vs Arsenal (H) | MID | 6.0M | 4.2 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Bournemouth (B) | FWD | 7.0M | 6.2 |
 | Danny Welbeck (ID:136) ((C - 2x)) | Brighton | vs Sunderland (H) | FWD | 6.0M | 8.3 |
 | Erling Haaland (ID:411) | Man City | vs Liverpool (H) | FWD | 15.5M | 6.6 |
@@ -1006,26 +1006,26 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Chelsea (H) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Chelsea (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Ipswich Town (H) | DEF | 4.5M | 2.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Arsenal (H) | DEF | 4.5M | 1.0 |
-| Noah Okafor (ID:336) | Leeds | vs Arsenal (H) | MID | 6.0M | 4.2 |
+| Will Hughes (ID:212) | Crystal Palace | vs Nott'm Forest (B) | MID | 4.5M | 1.5 |
 
 ---
 
 ## 🏆 Gameweek 36
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `82.9 poäng`
+📈 **Förväntad poäng:** `79.6 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Everton (H) | GK | 5.0M | 1.3 |
+| Nico O'Reilly (ID:387) | Man City | vs Ipswich Town (B) | DEF | 6.5M | 5.6 |
 | Reece James (ID:142) | Chelsea | vs Everton (H) | DEF | 5.5M | 3.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Nott'm Forest (H) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Hull City (B) | DEF | 4.5M | 4.4 |
 | Bukayo Saka (ID:12) | Arsenal | vs Nott'm Forest (H) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Nott'm Forest (H) | MID | 6.5M | 5.8 |
-| Matheus Santos Carneiro da Cunha (ID:428) | Man Utd | vs Leeds (H) | MID | 8.0M | 6.7 |
+| Harry Wilson (ID:260) | Leeds | vs Man Utd (B) | MID | 6.5M | 3.8 |
+| Noah Okafor (ID:336) | Leeds | vs Man Utd (B) | MID | 6.0M | 4.2 |
 | Rayan Cherki (ID:399) | Man City | vs Ipswich Town (B) | MID | 7.5M | 9.4 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Leeds (H) | FWD | 7.0M | 8.2 |
 | Danny Welbeck (ID:136) | Brighton | vs Crystal Palace (B) | FWD | 6.0M | 6.2 |
@@ -1035,67 +1035,67 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Coventry City (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Coventry City (B) | DEF | 4.5M | 2.6 |
 | Antonee Robinson (ID:254) | Fulham | vs Hull City (B) | DEF | 4.5M | 2.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Man Utd (B) | DEF | 4.5M | 1.0 |
-| Noah Okafor (ID:336) | Leeds | vs Man Utd (B) | MID | 6.0M | 4.2 |
+| Dango Ouattara (ID:95) | Brentford | vs Liverpool (B) | MID | 6.5M | 3.4 |
 
 ---
 
 ## 🏆 Gameweek 37
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `75.0 poäng`
+📈 **Förväntad poäng:** `76.7 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Bournemouth (B) | GK | 5.0M | 1.3 |
+| Nico O'Reilly (ID:387) | Man City | vs Aston Villa (H) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Bournemouth (B) | DEF | 5.5M | 3.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Everton (B) | DEF | 5.5M | 3.9 |
-| Ryan Sessegnon (ID:269) | Fulham | vs Coventry City (H) | DEF | 4.5M | 4.4 |
 | Bukayo Saka (ID:12) | Arsenal | vs Everton (B) | MID | 9.5M | 6.7 |
-| Eberechi Eze (ID:14) | Arsenal | vs Everton (B) | MID | 6.5M | 5.8 |
+| Dango Ouattara (ID:95) | Brentford | vs Hull City (H) | MID | 6.5M | 6.8 |
 | Harry Wilson (ID:260) | Leeds | vs Sunderland (H) | MID | 6.5M | 7.7 |
 | Noah Okafor (ID:336) | Leeds | vs Sunderland (H) | MID | 6.0M | 8.4 |
 | Rayan Cherki (ID:399) | Man City | vs Aston Villa (H) | MID | 7.5M | 7.1 |
-| Benjamin Sesko (ID:439) | Man Utd | vs Spurs (B) | FWD | 7.0M | 6.2 |
+| Dominic Calvert-Lewin (ID:346) | Leeds | vs Sunderland (H) | FWD | 6.0M | 7.1 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Aston Villa (H) | FWD | 15.5M | 9.9 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Man Utd (H) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Man Utd (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Coventry City (H) | DEF | 4.5M | 2.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Sunderland (H) | DEF | 4.5M | 1.0 |
 | Danny Welbeck (ID:136) | Brighton | vs Liverpool (H) | FWD | 6.0M | 4.2 |
 
 ---
 
 ## 🏆 Gameweek 38
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `78.9 poäng`
+📈 **Förväntad poäng:** `75.9 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Robert Lynch Sánchez (ID:140) | Chelsea | vs Brentford (H) | GK | 5.0M | 1.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Leeds (H) | DEF | 5.5M | 4.9 |
+| Nico O'Reilly (ID:387) | Man City | vs Sunderland (B) | DEF | 6.5M | 4.2 |
 | Reece James (ID:142) | Chelsea | vs Brentford (H) | DEF | 5.5M | 3.8 |
 | Riccardo Calafiori (ID:8) | Arsenal | vs Brighton (H) | DEF | 5.5M | 5.2 |
 | Bukayo Saka (ID:12) | Arsenal | vs Brighton (H) | MID | 9.5M | 8.9 |
-| Eberechi Eze (ID:14) | Arsenal | vs Brighton (H) | MID | 6.5M | 7.7 |
 | Harry Wilson (ID:260) | Leeds | vs Crystal Palace (B) | MID | 6.5M | 5.8 |
 | Noah Okafor (ID:336) | Leeds | vs Crystal Palace (B) | MID | 6.0M | 6.3 |
 | Rayan Cherki (ID:399) | Man City | vs Sunderland (B) | MID | 7.5M | 7.1 |
 | Benjamin Sesko (ID:439) | Man Utd | vs Fulham (H) | FWD | 7.0M | 8.2 |
+| Dominic Calvert-Lewin (ID:346) | Leeds | vs Crystal Palace (B) | FWD | 6.0M | 5.3 |
 | Erling Haaland (ID:411) ((C - 2x)) | Man City | vs Sunderland (B) | FWD | 15.5M | 9.9 |
 
 ### 🛋️ Avbytare
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Martin Dubravka (ID:497) | Spurs | vs Aston Villa (B) | GK | 4.0M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Aston Villa (B) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Man Utd (B) | DEF | 4.5M | 1.0 |
-| Gabriel Gudmundsson (ID:331) | Leeds | vs Crystal Palace (B) | DEF | 4.5M | 1.0 |
-| Danny Welbeck (ID:136) | Brighton | vs Arsenal (B) | FWD | 6.0M | 2.1 |
+| Dango Ouattara (ID:95) | Brentford | vs Chelsea (B) | MID | 6.5M | 3.4 |
 
 ---
 

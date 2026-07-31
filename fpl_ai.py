@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 import os
+import pulp
 
 # 1. Hämta data från FPL API
 BASE_URL = "https://fantasy.premierleague.com/api/"
@@ -30,12 +31,19 @@ for f in fixtures:
         team_fdr[f['team_h']].append(f['team_h_difficulty'])
         team_fdr[f['team_a']].append(f['team_a_difficulty'])
 
-# 3. Beräkna poängprognos
+# 3. Beräkna poängprognos med SÄKRARE FILTRERING
 player_projections = []
 for p in players:
-    if p['status'] != 'a' and p['chance_of_playing_next_round'] is not None and p['chance_of_playing_next_round'] < 50:
+    # FILTER 1: Måste vara helt frisk och ordinarie (inte skadad/avstängd)
+    if p['status'] != 'a':
         continue
-    if p['minutes'] < 180:
+    
+    # FILTER 2: Måste ha 100% chans att spela nästa omgång (om status finns)
+    if p['chance_of_playing_next_round'] is not None and p['chance_of_playing_next_round'] < 100:
+        continue
+        
+    # FILTER 3: Måste ha spelat minst 300 minuter för att säkerställa att de är rotade i laget
+    if p['minutes'] < 300:
         continue
 
     form = float(p['form'])
@@ -68,109 +76,94 @@ for p in players:
     })
 
 df = pd.DataFrame(player_projections)
-df = df.sort_values(by='Totalt xP (GW15)', ascending=False)
-df.to_csv('fpl_predictions.csv', index=False)
 
-# 4. Bygg optimalt 15-mannalag under 100m utan dubbletter
-gks = df[df['pos_type'] == 1].to_dict('records')
-defs = df[df['pos_type'] == 2].to_dict('records')
-mids = df[df['pos_type'] == 3].to_dict('records')
-fwds = df[df['pos_type'] == 4].to_dict('records')
+# 4. Optimera truppen (PuLP)
+prob = pulp.LpProblem("FPL_Optimization", pulp.LpMaximize)
 
-def build_squad():
-    squad = []
-    team_counts = {}
+player_vars = {p['id']: pulp.LpVariable(f"p_{p['id']}", cat='Binary') for p in player_projections}
 
-    def can_add(p):
-        is_not_in_squad = p['id'] not in [x['id'] for x in squad]
-        has_club_space = team_counts.get(p['team_id'], 0) < 3
-        return is_not_in_squad and has_club_space
+# Maximera xP
+prob += pulp.lpSum([p['Totalt xP (GW15)'] * player_vars[p['id']] for p in player_projections])
 
-    def add_player(p):
-        squad.append(p)
-        team_counts[p['team_id']] = team_counts.get(p['team_id'], 0) + 1
+# Restriktioner
+prob += pulp.lpSum([player_vars[p['id']] for p in player_projections]) == 15
+prob += pulp.lpSum([p['Pris'] * player_vars[p['id']] for p in player_projections]) <= 100.0
 
-    # Välj målvakter
-    for p in gks:
-        if len([x for x in squad if x['pos_type'] == 1]) < 2 and can_add(p):
-            add_player(p)
+# Kvantiteter per position
+prob += pulp.lpSum([player_vars[p['id']] for p in player_projections if p['pos_type'] == 1]) == 2
+prob += pulp.lpSum([player_vars[p['id']] for p in player_projections if p['pos_type'] == 2]) == 5
+prob += pulp.lpSum([player_vars[p['id']] for p in player_projections if p['pos_type'] == 3]) == 5
+prob += pulp.lpSum([player_vars[p['id']] for p in player_projections if p['pos_type'] == 4]) == 3
 
-    # Välj försvarare
-    for p in defs:
-        if len([x for x in squad if x['pos_type'] == 2]) < 5 and can_add(p):
-            add_player(p)
+# Max 3 spelare per klubb
+for t_id in teams.keys():
+    prob += pulp.lpSum([player_vars[p['id']] for p in player_projections if p['team_id'] == t_id]) <= 3
 
-    # Välj mittfältare
-    for p in mids:
-        if len([x for x in squad if x['pos_type'] == 3]) < 5 and can_add(p):
-            add_player(p)
+# Lös problemet
+prob.solve(pulp.PULP_CBC_CMD(msg=False))
 
-    # Välj forwards
-    for p in fwds:
-        if len([x for x in squad if x['pos_type'] == 4]) < 3 and can_add(p):
-            add_player(p)
+# Plocka ut truppen
+squad_ids = [p_id for p_id, var in player_vars.items() if var.varValue == 1]
+squad_df = df[df['id'].isin(squad_ids)].copy().sort_values(by='Totalt xP (GW15)', ascending=False)
 
-    # Om priset överstiger 100m, ersätt lägst rangerade med nästa unika billigare spelare
-    while sum(p['Pris'] for p in squad) > 100.0:
-        squad.sort(key=lambda x: x['Totalt xP (GW15)'])
-        for i in range(len(squad)):
-            p_to_replace = squad[i]
-            pos = p_to_replace['pos_type']
-            candidates = [p for p in df[df['pos_type'] == pos].to_dict('records') if can_add(p) and p['Pris'] < p_to_replace['Pris']]
-            
-            if candidates:
-                # Minska räknaren för det gamla laget
-                team_counts[p_to_replace['team_id']] -= 1
-                squad[i] = candidates[0]
-                team_counts[candidates[0]['team_id']] = team_counts.get(candidates[0]['team_id'], 0) + 1
-                break
+# 5. Skapa giltig startelva och bänk
+gks = squad_df[squad_df['pos_type'] == 1]
+defs = squad_df[squad_df['pos_type'] == 2]
+mids = squad_df[squad_df['pos_type'] == 3]
+fwds = squad_df[squad_df['pos_type'] == 4]
 
-    return pd.DataFrame(squad)
+# Giltig basformation (1 GK, 3 DEF, 1 FWD krävs som minst)
+start_gk = gks.head(1)
+start_defs = defs.head(3)
+start_fwds = fwds.head(1)
 
-squad_df = build_squad()
+# Resterande 6 bästa utespelare
+remaining_outfield = pd.concat([
+    defs.iloc[3:], 
+    mids, 
+    fwds.iloc[1:]
+]).sort_values(by='Totalt xP (GW15)', ascending=False)
+
+start_others = remaining_outfield.head(6)
+
+# Kombinera startelva och bänk
+start_xi = pd.concat([start_gk, start_defs, start_fwds, start_others]).sort_values(by='pos_type')
+bench = squad_df[~squad_df['id'].isin(start_xi['id'])].sort_values(by='pos_type')
+
 total_cost = round(squad_df['Pris'].sum(), 1)
+captain = start_xi.sort_values(by='Totalt xP (GW15)', ascending=False).iloc[0]['Spelare']
 
-starting_gk = squad_df[squad_df['pos_type'] == 1].sort_values(by='Totalt xP (GW15)', ascending=False).head(1)
-outfield = squad_df[squad_df['pos_type'] != 1].sort_values(by='Totalt xP (GW15)', ascending=False)
-starting_10 = outfield.head(10)
-bench = pd.concat([squad_df[squad_df['pos_type'] == 1].tail(1), outfield.tail(4)])
-
-start_xi = pd.concat([starting_gk, starting_10])
-captain = start_xi.iloc[0]['Spelare']
-
-top_20_md = df[['Spelare', 'Lag', 'Pos', 'Pris', 'Snitt FDR', 'Totalt xP (GW15)']].head(20).to_markdown(index=False)
+# 6. Spara till README.md
+top_20_md = df.sort_values(by='Totalt xP (GW15)', ascending=False).head(20)[['Spelare', 'Lag', 'Pos', 'Pris', 'Snitt FDR', 'Totalt xP (GW15)']].to_markdown(index=False)
 xi_md = start_xi[['Spelare', 'Lag', 'Pos', 'Pris', 'Totalt xP (GW15)']].to_markdown(index=False)
 bench_md = bench[['Spelare', 'Lag', 'Pos', 'Pris', 'Totalt xP (GW15)']].to_markdown(index=False)
 
-readme_content = f"""# 🏆 FPL AI Assistant
+readme_content = f"""# 🏆 FPL AI Assistant (Aktiv Trupp)
 
-Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till **Omgång 15**.
+Automatisk poängprognos med enbart **aktiva spelare (100% spelchans, >300 min)**.
 
 ---
 
-## ⚽ Optimal AI-Startelva (GW15-prognos)
+## ⚽ Optimal AI-Startelva
 * **Totalt trupppris:** £{total_cost}m / £100.0m
-* **Vald Kapten 👑:** **{captain}** (högst förväntade poäng)
+* **Vald Kapten 👑:** **{captain}**
 
 ### 🏃 Startelva (11 spelare)
 {xi_md}
 
-### 🪑 Bänk (4 spelare)
+### 🪑 Bänk (4 spelare - alla spelmässigt aktiva)
 {bench_md}
 
 ---
 
 ## 📊 Top 20 Spelare i Ligan
 {top_20_md}
-
-*Databasen uppdateras automatiskt varje natt.*
 """
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in locals() else '.'
 readme_path = os.path.join(script_dir, 'README.md')
 
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content)
 
-print("Klar! README.md har uppdaterats utan dubbletter.")
-
+print("Klar! Truppen innehåller nu enbart spelare som faktiskt får speltid.")

@@ -1,3 +1,4 @@
+
 import pulp
 import requests
 
@@ -54,22 +55,22 @@ def hamta_och_berakna_fpl_data():
         
     return spelar_lista, spelares_bas_index, spelares_pris, spelares_lag, spelares_lag_id, spelares_position, spelares_minuter, lag_omgang_fdr
 
-def optimera_fpl_med_transfers():
+def optimera_fpl_med_sparade_byten():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar realistisk trupp med transfer-logik (GW 1-19)...")
+    print("Beräknar trupp med stöd för att spara byten (GW 1-19)...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Transfer-logik (GW 1-19)\n\n")
-        f.write("Här är truppen som rullar vidare vecka för vecka med hänsyn till befintliga spelare för att undvika onödiga minusbyten.\n\n")
+        f.write("# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)\n\n")
+        f.write("Här väger skriptet om det är värt att göra byten eller om det är smartare att spara gratisbytet till en bättre omgång.\n\n")
         
         for_ra_trupp = set()
+        tillgangliga_byten = 1  # Börjar med 1 gratisbyte
         
         for gw in range(1, 20):
             prob = pulp.LpProblem(f"FPL_GW_{gw}", pulp.LpMaximize)
             x = pulp.LpVariable.dicts(f"spelare_gw{gw}", spelar_lista, cat='Binary')
             
-            # Beräkna omgångsspecifikt index
             omgangs_index = {}
             for s in spelar_lista:
                 t_id = lag_id[s]
@@ -77,22 +78,20 @@ def optimera_fpl_med_transfers():
                 modifierare = (6 - fdr) / 3.0  
                 omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
-            # Om det inte är GW1 vill vi minimera antalet byten från föregående omgång
             if gw > 1 and len(for_ra_trupp) > 0:
-                # Maximera poäng MINUS en straffavgift för spelare som byts ut
-                # Vi skapar en variabel för antalet spelare som INTE fanns med förra veckan (nya byten)
                 byten = pulp.LpVariable.dicts(f"byte_{gw}", list(for_ra_trupp), cat='Binary')
                 for s in for_ra_trupp:
-                    # Om spelaren från förra veckan INTE är med i nuvarande lag (x[s] == 0), så räknas det som ett byte
                     prob += byten[s] >= 1 - x[s]
                 
-                # Om man gör fler än 1 byte per omgång kostar det 4 poäng per extra byte i modulen
-                # (Vi låter skriptet väga poängvinsten mot minuspoängskostnaden på 4p per extra byte)
-                extra_byten_straff = 4.0
-                antal_extra_byten = pulp.LpVariable(f"extra_byten_{gw}", lowBound=0, cat='Continuous')
-                prob += antal_extra_byten >= pulp.lpSum([byten[s] for s in for_ra_trupp]) - 1.0 # 1 gratisbyte per vecka
+                # Antalet gjorda byten
+                antal_byten = pulp.lpSum([byten[s] for s in for_ra_trupp])
                 
-                prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista]) - (antal_extra_byten * extra_byten_straff)
+                # Om man gör fler byten än man har sparade/tillgängliga kostar det 4 poäng per extra byte
+                extra_byten = pulp.LpVariable(f"extra_byten_{gw}", lowBound=0, cat='Continuous')
+                prob += extra_byten >= antal_byten - tillgangliga_byten
+                
+                # Maximera poäng minus straff för extra byten
+                prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista]) - (extra_byten * 4.0)
             else:
                 prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
             
@@ -115,7 +114,30 @@ def optimera_fpl_med_transfers():
             
             if pulp.LpStatus[prob.status] == 'Optimal':
                 nuvarande_trupp = set()
-                f.write(f"## 🏆 Gameweek {gw}\n")
+                
+                # Räkna ut hur många byten som faktisk gjordes i denna omgång
+                faktiska_byten = 0
+                if gw > 1 and len(for_ra_trupp) > 0:
+                    for pos in ['GK', 'DEF', 'MID', 'FWD']:
+                        for s in spelar_lista:
+                            if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
+                                nuvarande_trupp.add(s)
+                    faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
+                    
+                    # Uppdatera banken av sparade byten (max 5 tillåts i spelet, men vi håller den mellan 1 och 2 för enkelhets skull)
+                    tillgangliga_byten = min(2, (tillgangliga_byten - faktiska_byten) + 1)
+                    if tillgangliga_byten < 1:
+                        tillgangliga_byten = 1
+                else:
+                    for pos in ['GK', 'DEF', 'MID', 'FWD']:
+                        for s in spelar_lista:
+                            if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
+                                nuvarande_trupp.add(s)
+
+                f.write(f"## 🏆 Gameweek {gw} (Sparade byten till nästa: {tillgangliga_byten})\n")
+                if gw > 1:
+                    f.write(f"*Antal gjorda byten denna omgång: {faktiska_byten}*\n\n")
+                
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
                 f.write("|---|---|---|---|---|\n")
                 
@@ -123,10 +145,9 @@ def optimera_fpl_med_transfers():
                     for s in spelar_lista:
                         if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
                             f.write(f"| {s} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
-                            nuvarande_trupp.add(s)
                 
                 for_ra_trupp = nuvarande_trupp
                 f.write("\n---\n\n")
 
 if __name__ == "__main__":
-    optimera_fpl_med_transfers()
+    optimera_fpl_med_sparade_byten()

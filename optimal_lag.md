@@ -1,8 +1,9 @@
-# 🤖 AI-Optimerad Trupp med Smart Wildcard (GW 1-19)
+# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)
 
-Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om och när det är dags att spela ett **Wildcard** för att bygga om truppen helt optimalt.
+Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max 2. Inga minuspoäng tillåts!
 
 ## 🏆 Gameweek 1
+*Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -25,7 +26,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 2
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -41,14 +42,14 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 127.0 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 174.7 |
 | Enzo Le Fée (ID:542) | Sunderland | MID | 6.0M | 84.0 |
+| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 64.7 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
 
 ---
 
 ## 🏆 Gameweek 3
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -59,19 +60,19 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 38.0 |
 | Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 48.0 |
 | Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 31.0 |
+| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 30.7 |
 | Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
 | Enzo Le Fée (ID:542) | Sunderland | MID | 6.0M | 63.0 |
+| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 64.7 |
 | Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 146.7 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 177.3 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 81.0 |
 
 ---
 
 ## 🏆 Gameweek 4
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -86,15 +87,15 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Harry Wilson (ID:260) | Leeds | MID | 6.5M | 126.7 |
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 84.7 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 87.3 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 71.3 |
+| Enzo Le Fée (ID:542) | Sunderland | MID | 6.0M | 42.0 |
+| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 133.0 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 162.7 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 81.0 |
 
 ---
 
 ## 🏆 Gameweek 5
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -103,21 +104,21 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 59.0 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 38.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 16.0 |
 | Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 10.3 |
-| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
+| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
+| Iliman Ndiaye (ID:237) | Everton | MID | 6.0M | 73.3 |
 | Harry Wilson (ID:260) | Leeds | MID | 6.5M | 95.0 |
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 142.7 |
+| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
 | Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 81.0 |
 
 ---
 
 ## 🏆 Gameweek 6
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -126,21 +127,21 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 78.7 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 38.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 43.3 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 64.0 |
 | Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 41.3 |
+| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
 | Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
+| Iliman Ndiaye (ID:237) | Everton | MID | 6.0M | 73.3 |
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 84.7 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 104.0 |
-| Morgan Gibbs-White (ID:480) | Nott'm Forest | MID | 8.0M | 107.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 129.3 |
+| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 54.0 |
 
 ---
 
 ## 🏆 Gameweek 7
-*Antal gjorda byten denna omgång: 2*
+*Gjorda byten denna omgång: 1 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -149,16 +150,16 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 | Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 59.0 |
 | Matty Cash (ID:32) | Aston Villa | DEF | 4.5M | 40.0 |
 | Tyrick Mitchell (ID:204) | Crystal Palace | DEF | 4.5M | 38.0 |
-| Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 86.7 |
+| Nordi Mukiele (ID:533) | Sunderland | DEF | 5.5M | 48.0 |
 | Trai Hume (ID:534) | Sunderland | DEF | 4.5M | 31.0 |
-| Junior Kroupi (ID:78) | Bournemouth | MID | 7.5M | 113.3 |
+| Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
+| Morgan Rogers (ID:40) | Chelsea | MID | 7.5M | 92.0 |
+| Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 51.3 |
 | Antoine Semenyo (ID:397) | Man City | MID | 8.5M | 169.3 |
-| Phil Foden (ID:398) | Man City | MID | 7.0M | 96.0 |
 | Bruno Borges Fernandes (ID:426) | Man Utd | MID | 12.0M | 131.0 |
-| Bruno Guimarães Rodriguez Moura (ID:452) | Newcastle | MID | 7.0M | 78.0 |
-| Viktor Gyökeres (ID:25) | Arsenal | FWD | 7.5M | 97.0 |
+| Ollie Watkins (ID:55) | Aston Villa | FWD | 8.0M | 110.0 |
+| Igor Thiago Nascimento Rodrigues (ID:106) | Brentford | FWD | 8.0M | 88.7 |
 | João Pedro Junqueira de Jesus (ID:165) | Chelsea | FWD | 7.5M | 122.0 |
-| Richarlison de Andrade (ID:527) | Spurs | FWD | 6.0M | 108.0 |
 
 ---
 
@@ -184,7 +185,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 9
-*Antal gjorda byten denna omgång: 12*
+*Gjorda byten denna omgång: 12 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -207,17 +208,17 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 10
-*Antal gjorda byten denna omgång: 9*
+*Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
+| David Raya Martín (ID:1) | Arsenal | GK | 6.0M | 50.7 |
 | Jordan Pickford (ID:226) | Everton | GK | 5.5M | 29.3 |
-| Gianluigi Donnarumma (ID:384) | Man City | GK | 5.5M | 30.0 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | DEF | 8.0M | 88.0 |
-| Jurriën Timber (ID:5) | Arsenal | DEF | 6.5M | 78.7 |
 | Adrien Truffert (ID:61) | Bournemouth | DEF | 5.5M | 60.0 |
 | Ryan Sessegnon (ID:269) | Fulham | DEF | 4.5M | 48.0 |
 | Nico O'Reilly (ID:387) | Man City | DEF | 6.5M | 65.0 |
+| Marc Guéhi (ID:388) | Man City | DEF | 6.0M | 58.0 |
 | Marcus Tavernier (ID:68) | Bournemouth | MID | 6.0M | 92.0 |
 | Junior Kroupi (ID:78) | Bournemouth | MID | 7.5M | 113.3 |
 | Kiernan Dewsbury-Hall (ID:236) | Everton | MID | 6.5M | 102.7 |
@@ -230,7 +231,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 11
-*Antal gjorda byten denna omgång: 12*
+*Gjorda byten denna omgång: 12 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -253,7 +254,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 12
-*Antal gjorda byten denna omgång: 9*
+*Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -276,7 +277,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 13
-*Antal gjorda byten denna omgång: 11*
+*Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -299,7 +300,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 14
-*Antal gjorda byten denna omgång: 10*
+*Gjorda byten denna omgång: 10 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -322,7 +323,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 15
-*Antal gjorda byten denna omgång: 11*
+*Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -345,7 +346,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 16
-*Antal gjorda byten denna omgång: 14*
+*Gjorda byten denna omgång: 14 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -368,7 +369,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 17
-*Antal gjorda byten denna omgång: 11*
+*Gjorda byten denna omgång: 11 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -391,7 +392,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 18
-*Antal gjorda byten denna omgång: 7*
+*Gjorda byten denna omgång: 7 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|
@@ -414,7 +415,7 @@ Här rullar laget vidare med max 2 byten per omgång, men skriptet känner av om
 ---
 
 ## 🏆 Gameweek 19
-*Antal gjorda byten denna omgång: 9*
+*Gjorda byten denna omgång: 9 | Sparade byten till nästa omgång: 0*
 
 | Spelare | Lag | Pos | Pris | Omgångs-Index |
 |---|---|---|---|---|

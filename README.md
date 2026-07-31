@@ -1,15 +1,15 @@
 # 🏆 FPL AI Assistant
 
-Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till **Omgång 38**.
+Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till **Omgång 15**.
 
 ---
 
-## ⚽ Optimal AI-Startelva (GW38-prognos)
+## ⚽ Optimal AI-Startelva (GW15-prognos)
 * **Totalt trupppris:** £100.0m / £100.0m
-* **Vald Kapten 👑:** **Fernandes** (högst förväntade poäng)
+* **Vald Kapten 👑:** **Dubravka** (högst förväntade poäng)
 
 ### 🏃 Startelva (11 spelare)
-| Spelare     | Lag            | Pos   |   Pris |   Totalt xP (GW38) |
+| Spelare     | Lag            | Pos   |   Pris |   Totalt xP (GW15) |
 |:------------|:---------------|:------|-------:|-------------------:|
 | Dubravka    | Spurs          | GKP   |    4   |               33.3 |
 | B.Fernandes | Man Utd        | MID   |   12   |              102.4 |
@@ -24,7 +24,7 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 | Mitchell    | Crystal Palace | DEF   |    4.5 |               44.4 |
 
 ### 🪑 Bänk (4 spelare)
-| Spelare   | Lag            | Pos   |   Pris |   Totalt xP (GW38) |
+| Spelare   | Lag            | Pos   |   Pris |   Totalt xP (GW15) |
 |:----------|:---------------|:------|-------:|-------------------:|
 | Dubravka  | Spurs          | GKP   |    4   |               33.3 |
 | Mitchell  | Crystal Palace | DEF   |    4.5 |               44.4 |
@@ -35,7 +35,7 @@ Automatisk poängprognos och **Optimalt Wildcard-lag (£100m budget)** fram till
 ---
 
 ## 📊 Top 20 Spelare i Ligan
-| Spelare     | Lag           | Pos   |   Pris |   Snitt FDR |   Totalt xP (GW38) |
+| Spelare     | Lag           | Pos   |   Pris |   Snitt FDR |   Totalt xP (GW15) |
 |:------------|:--------------|:------|-------:|------------:|-------------------:|
 | B.Fernandes | Man Utd       | MID   |   12   |        3    |              102.4 |
 | Haaland     | Man City      | FWD   |   15.5 |        3    |               91.2 |

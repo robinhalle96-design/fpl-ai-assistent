@@ -62,11 +62,11 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_exakta_sparade_byten():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar trupp med exakt logik för sparade byten (inga minuspoäng)...")
+    print("Beräknar trupp med startelva, kapten och realistisk poängberäkning...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Sparade Byten (GW 1-19)\n\n")
-        f.write("Här följer skriptet reglerna: 1 gratisbyte per omgång som kan sparas till max 2. Inga minuspoäng tillåts!\n\n")
+        f.write("# 🤖 AI-Optimerad Trupp med Startelva & Kapten (GW 1-19)\n\n")
+        f.write("Skriptet optimerar 15-mannatrupp, väljer ut startelvan (11 spelare) samt en kapten (2x poäng).\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
@@ -74,7 +74,13 @@ def optimera_fpl_exakta_sparade_byten():
         
         for gw in range(1, 20):
             prob = pulp.LpProblem(f"FPL_GW_{gw}", pulp.LpMaximize)
+            
+            # x = 1 om spelaren är med i 15-mannatruppen
             x = pulp.LpVariable.dicts(f"spelare_gw{gw}", spelar_lista, cat='Binary')
+            # y = 1 om spelaren är med i startelvan (11 st)
+            y = pulp.LpVariable.dicts(f"start_gw{gw}", spelar_lista, cat='Binary')
+            # c = 1 om spelaren är kapten (exakt 1 i startelvan)
+            c = pulp.LpVariable.dicts(f"kapten_gw{gw}", spelar_lista, cat='Binary')
             
             omgangs_index = {}
             for s in spelar_lista:
@@ -99,8 +105,10 @@ def optimera_fpl_exakta_sparade_byten():
                 else:
                     prob += antal_byten <= tillgangliga_byten
             
-            prob += pulp.lpSum([omgangs_index[s] * x[s] for s in spelar_lista])
+            # Målet är att maximera poängen för startelvan + extrapoäng för kaptenen
+            prob += pulp.lpSum([omgangs_index[s] * y[s] + omgangs_index[s] * c[s] for s in spelar_lista])
             
+            # Standard FPL-regler för 15-mannatruppen (x)
             prob += pulp.lpSum([x[s] for s in spelar_lista]) == 15
             prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'GK']) == 2
             prob += pulp.lpSum([x[s] for s in spelar_lista if positioner[s] == 'DEF']) == 5
@@ -115,17 +123,45 @@ def optimera_fpl_exakta_sparade_byten():
                 if minuter[s] < 90:
                     prob += x[s] == 0
 
+            # Regler för Startelvan (y) och Bänken
+            # Startelvan måste vara 11 spelare totalt
+            prob += pulp.lpSum([y[s] for s in spelar_lista]) == 11
+            # Startelvan måste haformationer som är tillåtna (t.ex. minst 1 målvakt, minst 3 backar, minst 1 anfallare)
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'GK']) == 1
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'DEF']) >= 3
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'DEF']) <= 5
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'MID']) >= 2
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'MID']) <= 5
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'FWD']) >= 1
+            prob += pulp.lpSum([y[s] for s in spelar_lista if positioner[s] == 'FWD']) <= 3
+
+            # En spelare kan bara starta om den är med i truppen
+            for s in spelar_lista:
+                prob += y[s] <= x[s]
+
+            # Kaptenregler (c): Exakt 1 kapten som måste komma från startelvan
+            prob += pulp.lpSum([c[s] for s in spelar_lista]) == 1
+            for s in spelar_lista:
+                prob += c[s] <= y[s]
+
             prob.solve()
             
             if pulp.LpStatus[prob.status] == 'Optimal':
                 nuvarande_trupp = set()
+                startelva = set()
+                kapten = None
                 faktiska_byten = 0
                 
-                for pos in ['GK', 'DEF', 'MID', 'FWD']:
-                    for s in spelar_lista:
-                        if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
-                            nuvarande_trupp.add(s)
+                for s in spelar_lista:
+                    if x[s].varValue and x[s].varValue > 0.5:
+                        nuvarande_trupp.add(s)
+                    if y[s].varValue and y[s].varValue > 0.5:
+                        startelva.add(s)
+                    if c[s].varValue and c[s].varValue > 0.5:
+                        kapten = s
                 
+                banken = nuvarande_trupp - startelva
+
                 if gw > 1 and len(for_ra_trupp) > 0 and not anvander_wildcard_nu:
                     faktiska_byten = len(nuvarande_trupp - for_ra_trupp)
                     anvanda_av_bank = min(tillgangliga_byten, faktiska_byten)
@@ -134,8 +170,8 @@ def optimera_fpl_exakta_sparade_byten():
                 elif anvander_wildcard_nu:
                     sparade_byten = 0
 
-                # Beräkna totalt förväntat index för hela truppen i denna omgång
-                total_omgangs_poang = sum(omgangs_index[s] for s in nuvarande_trupp)
+                # Beräkna realistisk förväntad poäng för startelvan inkl. dubbla poäng för kaptenen
+                beraknad_poang = sum(omgangs_index[s] for s in startelva) + (omgangs_index[kapten] if kapten else 0)
 
                 f.write(f"## 🏆 Gameweek {gw}")
                 if anvander_wildcard_nu:
@@ -147,15 +183,23 @@ def optimera_fpl_exakta_sparade_byten():
                 elif not gw > 1:
                     f.write(f"*Sparade byten till nästa omgång: {sparade_byten}*\n")
                 
-                # Skriv ut beräknad totalpoäng
-                f.write(f"📈 **Beräknad totalpoäng för truppen:** `{total_omgangs_poang:.1f} poäng`\n\n")
+                f.write(f"📈 **Realistisk förväntad poäng (Startelva + Kapten):** `{beraknad_poang:.1f} poäng`\n\n")
                 
+                f.write("### ⚽ Startelva\n")
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
                 f.write("|---|---|---|---|---|\n")
-                
                 for pos in ['GK', 'DEF', 'MID', 'FWD']:
-                    for s in spelar_lista:
-                        if positioner[s] == pos and x[s].varValue and x[s].varValue > 0.5:
+                    for s in sorted(list(startelva)):
+                        if positioner[s] == pos:
+                            kapten_mark = " ((C))" if s == kapten else ""
+                            f.write(f"| {s}{kapten_mark} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
+                
+                f.write("\n### 🛋️ Avbytare\n")
+                f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")
+                f.write("|---|---|---|---|---|\n")
+                for pos in ['GK', 'DEF', 'MID', 'FWD']:
+                    for s in sorted(list(banken)):
+                        if positioner[s] == pos:
                             f.write(f"| {s} | {lag[s]} | {pos} | {pris[s]}M | {omgangs_index[s]:.1f} |\n")
                 
                 for_ra_trupp = nuvarande_trupp

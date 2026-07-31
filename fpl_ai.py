@@ -10,8 +10,9 @@ def hamta_och_berakna_fpl_data():
     fixtures_response = requests.get(fixtures_url)
     fixtures = fixtures_response.json()
     
-    # Lägg till ID här om någon spelare behöver svartlistas pga felaktiga övergångar i API:et
-    svartlista_ids = [] 
+    # SVARTLISTA: Lägg till ID för spelare som ska rensas bort helt
+    # Exempel: Lucas Digne (ID: 30) och Karl Darlow (lägg in deras ID-nummer här)
+    svartlista_ids = [30] # Lägg till fler ID:n i listan om det behövs, t.ex. [30, ID_FÖR_DARLOW]
     
     lag_omgang_fdr = {}
     lag_namn_dict = {team['id']: team['name'] for team in data['teams']}
@@ -47,7 +48,9 @@ def hamta_och_berakna_fpl_data():
     for player in data['elements']:
         p_id_num = player['id']
         
-        if p_id_num in svartlista_ids:
+        # Extra kontroll för att säkerställa att även namn som matchar blockeras direkt om man vill
+        full_namn = f"{player['first_name']} {player['second_name']}"
+        if p_id_num in svartlista_ids or "Darlow" in full_namn or "Digne" in full_namn:
             continue
             
         player_status = player.get('status', 'a')
@@ -67,9 +70,8 @@ def hamta_och_berakna_fpl_data():
             if minuter_spelade < 800 and pris_mil <= 5.0:
                 continue
             
-        p_id = f"{player['first_name']} {player['second_name']} (ID:{p_id_num})"
+        p_id = f"{full_namn} (ID:{p_id_num})"
         
-        # Poängberäkning: Mål (6p), Assist (4p), Clean Sheets/Hållna nollor (3p)
         mal = player.get('goals_scored', 0)
         assist = player.get('assists', 0)
         clean_sheets = player.get('clean_sheets', 0)
@@ -94,15 +96,14 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_med_chips():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr, omgang_matcher = hamta_och_berakna_fpl_data()
     
-    print("Optimerar FPL-trupp inklusive chips och match-index...")
+    print("Optimerar FPL-trupp med rensad svartlista...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad FPL-Trupp (Inkl. Chips & Matchpoäng)\n\n")
+        f.write("# 🤖 AI-Optimerad FPL-Trupp (Rensad)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
         
-        # Strategisk placering av chips under säsongen
         valda_wc1 = 8
         valda_wc2 = 26
         valda_fh = 29

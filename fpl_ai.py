@@ -45,10 +45,10 @@ def hamta_och_berakna_fpl_data():
         clean_sheets = player.get('clean_sheets', 0)
         minuter_spelade = player.get('minutes', 0)
         
-        # Beräkna totala poäng och gör om till ett snitt per match (om man spelat matcher)
-        total_poang = (mal * 5) + (assist * 3) + (clean_sheets * 2)
+        # Förstärkta vikter för att spegla en högre offensiv potential
+        total_poang = (mal * 6) + (assist * 4) + (clean_sheets * 3)
         matcher_spelade = max(1, minuter_spelade / 90.0)
-        snitt_poang_per_match = total_poang / matcher_spelade
+        snitt_poang_per_match = (total_poang / matcher_spelade) * 1.3  # Skalar upp potentialen med 30%
         
         spelar_lista.append(p_id)
         spelares_bas_index[p_id] = float(snitt_poang_per_match)
@@ -63,10 +63,10 @@ def hamta_och_berakna_fpl_data():
 def optimera_fpl_exakta_sparade_byten():
     spelar_lista, bas_index, pris, lag, lag_id, positioner, minuter, lag_omgang_fdr = hamta_och_berakna_fpl_data()
     
-    print("Beräknar trupp med normaliserade poäng per omgång (GW 1-38)...")
+    print("Beräknar trupp med högre offensiv potential (GW 1-38)...")
     
     with open("optimal_lag.md", "w", encoding="utf-8") as f:
-        f.write("# 🤖 AI-Optimerad Trupp med Startelva & Kapten (GW 1-38)\n\n")
+        f.write("# 🤖 AI-Optimerad Trupp med Hög Offensiv Potential (GW 1-38)\n\n")
         
         for_ra_trupp = set()
         sparade_byten = 0  
@@ -83,8 +83,8 @@ def optimera_fpl_exakta_sparade_byten():
             for s in spelar_lista:
                 t_id = lag_id[s]
                 fdr = lag_omgang_fdr.get(t_id, {}).get(gw, 3)
-                modifierare = (6 - fdr) / 3.0  
-                omgangs_index[s] = max(0.5, bas_index[s] * modifierare)
+                modifierare = (6 - fdr) / 2.8  
+                omgangs_index[s] = max(1.0, bas_index[s] * modifierare)
 
             anvander_wildcard_nu = False
             tillgangliga_byten = 1 + sparade_byten
@@ -172,7 +172,7 @@ def optimera_fpl_exakta_sparade_byten():
                 elif not gw > 1:
                     f.write(f"*Sparade byten: {sparade_byten}*\n")
                 
-                f.write(f"📈 **Realistisk förväntad poäng (Startelva + Kapten):** `{beraknad_poang:.1f} poäng`\n\n")
+                f.write(f"📈 **Förväntad toppomgång (Startelva + Kapten):** `{beraknad_poang:.1f} poäng`\n\n")
                 
                 f.write("### ⚽ Startelva\n")
                 f.write("| Spelare | Lag | Pos | Pris | Omgångs-Index |\n")

@@ -343,7 +343,7 @@
 | Alisson Becker (ID:350) | Liverpool | vs Everton (B) | GK | 5.5M | 1.3 |
 | Andrew Robertson (ID:502) | Spurs | vs Sunderland (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Bournemouth (H) | DEF | 4.5M | 1.5 |
-| Rayan Cherki (ID:399) | Man City | vs Arsenal (B) | MID | 7.5M | 2.4 |
+| Antoine Semenyo (ID:397) | Man City | vs Arsenal (B) | MID | 8.5M | 2.1 |
 
 ---
 
@@ -631,21 +631,21 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Man Utd (B) | GK | 5.5M | 1.0 |
+| Andrew Robertson (ID:502) | Spurs | vs Crystal Palace (B) | DEF | 4.5M | 1.9 |
 | Antonee Robinson (ID:254) | Fulham | vs Aston Villa (H) | DEF | 4.5M | 1.5 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Spurs (H) | DEF | 5.5M | 3.7 |
 | Noah Okafor (ID:336) | Leeds | vs Chelsea (H) | MID | 6.0M | 4.2 |
 
 ---
 
 ## 🏆 Gameweek 23
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `67.5 poäng`
+📈 **Förväntad poäng:** `65.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Everton (H) | GK | 5.5M | 1.3 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Hull City (B) | DEF | 5.5M | 4.9 |
+| Andrew Robertson (ID:502) | Spurs | vs Sunderland (H) | DEF | 4.5M | 2.6 |
 | Nordi Mukiele (ID:533) | Sunderland | vs Spurs (B) | DEF | 5.5M | 2.9 |
 | Reece James (ID:142) | Chelsea | vs Nott'm Forest (H) | DEF | 5.5M | 3.8 |
 | Antoine Semenyo (ID:397) | Man City | vs Arsenal (H) | MID | 8.5M | 4.2 |
@@ -668,13 +668,13 @@
 
 ## 🏆 Gameweek 24
 *Gjorda byten: 1 | Sparade byten till nästa omgång: 0*
-📈 **Förväntad poäng:** `69.5 poäng`
+📈 **Förväntad poäng:** `67.2 poäng`
 
 ### ⚽ Startelva
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | David Raya Martín (ID:1) | Arsenal | vs Liverpool (H) | GK | 6.0M | 1.4 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Coventry City (H) | DEF | 5.5M | 4.9 |
+| Andrew Robertson (ID:502) | Spurs | vs Ipswich Town (B) | DEF | 4.5M | 2.6 |
 | Gabriel dos Santos Magalhães (ID:4) | Arsenal | vs Liverpool (H) | DEF | 8.0M | 2.8 |
 | Nordi Mukiele (ID:533) | Sunderland | vs Aston Villa (H) | DEF | 5.5M | 2.9 |
 | Antoine Semenyo (ID:397) | Man City | vs Fulham (B) | MID | 8.5M | 6.3 |
@@ -718,8 +718,8 @@
 | Spelare | Lag | Motstånd | Pos | Pris | Index |
 |---|---|---|---|---|---|
 | Alisson Becker (ID:350) | Liverpool | vs Coventry City (B) | GK | 5.5M | 1.7 |
+| Andrew Robertson (ID:502) | Spurs | vs Man City (H) | DEF | 4.5M | 1.3 |
 | Antonee Robinson (ID:254) | Fulham | vs Nott'm Forest (H) | DEF | 4.5M | 1.5 |
-| Daniel Muñoz Mejía (ID:201) | Crystal Palace | vs Brentford (H) | DEF | 5.5M | 3.7 |
 | Morgan Gibbs-White (ID:480) | Nott'm Forest | vs Fulham (B) | MID | 8.0M | 5.5 |
 
 ---

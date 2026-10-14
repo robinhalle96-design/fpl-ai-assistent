@@ -53,9 +53,9 @@ if st.button("Hämta och optimera min trupp"):
                 players = df['id'].tolist()
                 player_data = df.set_index('id').to_dict('index')
                 
-                # Säker skapande av variabler med loop
-                in_spec = {p: pulp.LpVariable(f"squad_{p}", cat="Binary") for p in players}
-                starter = {p: pulp.LpVariable(f"starter_{p}", cat="Binary") for p in players}
+                # Använder pulp.LpBinary direkt
+                in_spec = {p: pulp.LpVariable(f"squad_{p}", cat=pulp.LpBinary) for p in players}
+                starter = {p: pulp.LpVariable(f"starter_{p}", cat=pulp.LpBinary) for p in players}
                 
                 prob += pulp.lpSum(float(player_data[p].get('ep_next', 0)) * starter[p] for p in players)
                 
@@ -72,7 +72,4 @@ if st.button("Hämta och optimera min trupp"):
                 
                 st.write(optimized_players)
             else:
-                st.error("Kunde inte verifiera 15 spelare i truppen.")
-                
-        except Exception as err:
-            st.error(f"Ett fel uppstod: {err}")
+                st.error("Kunde inte verifiera 15 spelare i tr

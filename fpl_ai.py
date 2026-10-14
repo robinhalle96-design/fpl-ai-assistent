@@ -53,17 +53,14 @@ if st.button("Hämta och optimera min trupp"):
                 players = df['id'].tolist()
                 player_data = df.set_index('id').to_dict('index')
                 
-                in_squad = pulp.LpVariable.dicts("squad", players, cat="Binary")
-                starter = pulp.LpVariable.dicts("starter", players, cat="Binary")
-                captain = pulp.LpVariable.dicts("captain", players, cat="Binary")
-                vice_captain = pulp.LpVariable.dicts("vice", players, cat="Binary")
-                transfer_in = pulp.LpVariable.dicts("trans_in", players, cat="Binary")
-                transfer_out = pulp.LpVariable.dicts("trans_out", players, cat="Binary")
+                # Säker skapande av variabler med loop
+                in_spec = {p: pulp.LpVariable(f"squad_{p}", cat="Binary") for p in players}
+                starter = {p: pulp.LpVariable(f"starter_{p}", cat="Binary") for p in players}
                 
                 prob += pulp.lpSum(float(player_data[p].get('ep_next', 0)) * starter[p] for p in players)
                 
                 prob += pulp.lpSum(starter[p] for p in players) == 11
-                prob += pulp.lpSum(in_squad[p] for p in players) == 15
+                prob += pulp.lpSum(in_spec[p] for p in players) == 15
                 
                 prob.solve(pulp.PULP_CBC_CMD(msg=False))
                 

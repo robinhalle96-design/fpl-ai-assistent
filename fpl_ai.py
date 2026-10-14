@@ -56,8 +56,8 @@ if st.button("Hämta och optimera min trupp"):
                 in_spec = {}
                 starter = {}
                 for p in players:
-                    in_spec[p] = pulp.LpVariable(f"squad_{p}", 0, 1, pulp.LpInteger)
-                    starter[p] = pulp.LpVariable(f"starter_{p}", 0, 1, pulp.LpInteger)
+                    in_spec[p] = pulp.LpVariable(name=f"squad_{p}", lowBound=0, upBound=1, cat='Integer')
+                    starter[p] = pulp.LpVariable(name=f"starter_{p}", lowBound=0, upBound=1, cat='Integer')
                 
                 prob += pulp.lpSum(float(player_data[p].get('ep_next', 0)) * starter[p] for p in players)
                 

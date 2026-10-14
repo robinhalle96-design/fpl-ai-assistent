@@ -75,7 +75,7 @@ if st.button("Hämta och optimera min trupp"):
                 
                 st.write(optimized_players)
             else:
-                st.error("Kunde inte verifierie 15 spelare i truppen.")
+                st.error("Kunde inte verifiera 15 spelare i truppen.")
                 
-        except Exception as e:
-            st.error
+        except Exception as err:
+            st.error(f"Ett fel uppstod: {err}")

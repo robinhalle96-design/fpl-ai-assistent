@@ -53,5 +53,28 @@ if st.button("Hämta och optimera min trupp"):
                 players = df['id'].tolist()
                 player_data = df.set_index('id').to_dict('index')
                 
-                in_spec = {p: pulp.LpVariable(f"squad_{p}", lowBound=0, upBound=1, cat='Integer') for p in players}
-                starter = {p: pulp.LpVariable(f"starter_{p
+                in_spec = {}
+                starter = {}
+                for p in players:
+                    in_spec[p] = pulp.LpVariable(f"squad_{p}", 0, 1, pulp.LpInteger)
+                    starter[p] = pulp.LpVariable(f"starter_{p}", 0, 1, pulp.LpInteger)
+                
+                prob += pulp.lpSum(float(player_data[p].get('ep_next', 0)) * starter[p] for p in players)
+                
+                prob += pulp.lpSum(starter[p] for p in players) == 11
+                prob += pulp.lpSum(in_spec[p] for p in players) == 15
+                
+                prob.solve(pulp.PULP_CBC_CMD(msg=False))
+                
+                st.subheader("Optimerad Startelva")
+                optimized_players = []
+                for p in players:
+                    if starter[p].varValue == 1:
+                        optimized_players.append(player_data[p]['web_name'])
+                
+                st.write(optimized_players)
+            else:
+                st.error("Kunde inte verifiera 15 spelare i truppen.")
+                
+        except Exception as err:
+            st.error(f"Ett fel uppst

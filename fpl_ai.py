@@ -7,8 +7,6 @@ st.set_page_config(page_title="Min Personliga FPL AI", page_icon="🏆", layout=
 
 st.title("🏆 Min Personliga FPL AI")
 st.markdown("Din smarta FPL-assistent med avancerad optimering för startelva och kaptensval!")
-        except Exception as err:
-            st.error(f"Ett fel uppstod: {err}")
 
 @st.cache_data(ttl=1800)
 def fetch_fpl_data():
@@ -79,4 +77,4 @@ if st.button("Hämta och optimera min trupp"):
                 st.error("Kunde inte verifiera 15 spelare i truppen.")
                 
         except Exception as err:
-            st.error(f"Ett fel uppst
+            st.error(f"Ett fel uppstod: {err}")
